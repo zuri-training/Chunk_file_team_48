@@ -9,14 +9,14 @@ main {
   padding: 42px 100px;
   color: var(--default-black);
 }
-.hero--info {
+.contact--hero--info {
   align-content: center;
   margin: 44px auto;
   padding: 50px 0;
   text-align: center;
   background-color: var(--title-color);
 }
-.hero--info--title {
+.contact--hero--info--title {
   font-size: var(--fs-large);
   margin-bottom: 16px;
 }
@@ -31,7 +31,7 @@ main {
   display: flex;
   align-items: center;
   height: fit-content;
-  margin-bottom: 527px;
+  margin-bottom: 200px;
 }
 
 .contact--content > img {

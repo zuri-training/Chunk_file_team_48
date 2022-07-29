@@ -13,6 +13,8 @@
   --home-hero-2-color: #b9c6f0;
   --grey-color: #0b0b0b;
   --btn-color: #ffc056;
+  --placeholder-color: #9a9a9a;
+  --form-title: #575757;
 
   --width: 1440px;
 
@@ -20,8 +22,8 @@
   --ff-2: "Poppins", sans-serif;
 
   --fs-large: 48px;
-  --fs-big: 32px;
-  --fs-medium: 16px;
+  --fs-big: 36px;
+  --fs-medium: 24px;
   --fs-small: 16px;
 
   --fw-large: 700;
