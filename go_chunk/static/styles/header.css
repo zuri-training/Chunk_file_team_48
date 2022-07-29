@@ -52,6 +52,7 @@
 }
 
 .login-btn {
+
   width: 132px;
   padding: 10px 12px;
   background-color: #fff;
@@ -62,6 +63,8 @@
   border: 2px solid #2645af;
   border-radius: 4px;
   cursor: pointer;
+  display: inline-block;
+  text-align: center;
 }
 
 .register-btn {
@@ -76,4 +79,7 @@
   border: 2px solid #2645af;
   border-radius: 4px;
   cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  
 }

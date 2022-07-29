@@ -11,7 +11,6 @@ from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 def loginPage(request):
     
-    page = 'login'
     if request.user.is_authenticated:
         return redirect('home')
 
@@ -31,8 +30,27 @@ def loginPage(request):
             return redirect('home')
         else:
             messages.error(request, 'Username or Password does not exist')
-    context = {'page':page}
-    return render(request, 'base/login_register.html', context)
+
+    return render(request, 'base/login.html')
+
+
+def signupPage(request):
+    
+    form = UserCreationForm()
+
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save(commit=FALSE)
+            user.username = user.username.lower()
+            user.save()
+            login(request, user)
+            return redirect('home')
+        else:
+            messages.error(request, 'An error occured during registration')
+
+    context = {'form':form}
+    return render(request, 'base/signup.html', context)
 
 
 def logoutUser(request):
@@ -42,3 +60,22 @@ def logoutUser(request):
 
 def home(request):
     return render(request, 'base/home.html')
+
+def about(request):
+    return render(request, 'base/about.html')
+
+def documentation(request):
+    return render(request, 'base/documentation.html')
+
+def contact(request):
+    return render(request, 'base/contact.html')
+
+def faq(request):
+    return render(request, 'base/faq.html')
+
+def privacy(request):
+    return render(request, 'base/privacy.html')
+
+def t_c(request):
+    return render(request, 'base/t_c.html')
+
