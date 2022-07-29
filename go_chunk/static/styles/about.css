@@ -1,0 +1,66 @@
+main {
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+/*---- Hero ----*/
+
+.about {
+  padding: 42px 100px;
+  color: black;
+}
+.hero--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.hero--info--title {
+  font-size: var(--fs-large);
+}
+.contact--hero--description {
+  font-size: var(--fs-small);
+  max-width: 1237px;
+  line-height: 36px;
+  color: var(--bg-color);
+}
+
+/* -----Contact Form Button----- */
+.contact--form--btn {
+  width: 268px;
+  height: 64px;
+  border: none;
+  border-radius: 8px;
+  background: #ffc056;
+  box-shadow: 5px 10px 20px rgba(255, 192, 86, 0.2);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-big);
+  margin: 108px 0 853px;
+  cursor: pointer;
+}
+
+/*----Contents----*/
+.content--container {
+  margin-top: 108px;
+}
+.content--title {
+  color: var(--bg-color);
+  font-size: var(--fs-big);
+  font-weight: var(--fw-big);
+  margin-top: 52px;
+}
+.content--text {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-small);
+  line-height: 36px;
+  margin-top: 33px;
+}
+.content--text--list {
+  padding: 0 40px;
+}
+
+.intext--links {
+  color: var(--bg-color);
+}
