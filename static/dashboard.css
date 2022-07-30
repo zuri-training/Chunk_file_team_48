@@ -1,0 +1,120 @@
+.show {
+    display: block;
+    width: 140px;
+}
+.hide {
+    display: none;
+}
+.collapse {
+    background-color: green;
+    display: none;
+}
+
+.dashboard--container {
+    /* To be coded */
+}
+
+.dashboard--nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 19px 104px 19px 113px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+/* Nav Toggle */
+.dashboard--nav--toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+.dashboard--nav--toggle__hover {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.dashboard--nav--toggle__hover:hover {
+    background-color: var(--home-hero-2-color);
+}
+.dashboard--nav--toggle--icon {
+    width: 30px;
+}
+.dashboard--nav--toggle--logo {
+    width: 190px;
+}
+
+/* User image and Notifications */
+
+.dashboard--nav--user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+}
+.dashboard--nav--user--bell {
+    width: 33px;
+}
+.dashboard--nav--user--img {
+    width: 46px;
+    border-radius: 50%;
+    border: solid 3px var(--home-hero-2-color);
+}
+
+/* Sidebar */
+
+.dashboard--sidebar {
+    background-color: var(--bg-color);
+    border-top-right-radius: 24px;
+    position: fixed;
+    width: fit-content;
+    height: 100%;
+    top: 106px;
+}
+.dashboard--sidebar--underline {
+    height: 2px;
+    background-color: #FFC056;
+    margin-top: 97px;
+}
+
+/* .dashboard--sidebar--links__center{
+} */
+.dashboard--sidebar--links {
+    margin: 32px 32px 32px 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    text-decoration: none;
+    padding: 3px;
+
+}
+.dashboard--sidebar--links:hover {
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    color: black;
+}
+.dashboard--sidebar--links--icon {
+    /* To be coded */
+    width: 36px;
+}
+.dashboard--sidebar--links--desc {
+    color: var(--link-color);
+    width: 82px;
+    margin-left: 20px;
+    font-size: var(--fs-small);
+}
+
+/* App Functionality */
+.dashboard--main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.dashboard--main--function {
+    /* Set width according to containing contents */
+}
