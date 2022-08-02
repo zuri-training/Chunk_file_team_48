@@ -1,0 +1,189 @@
+.show {
+  display: block;
+  width: 140px;
+}
+.hide {
+  display: none;
+}
+.collapse {
+  background-color: green;
+  display: none;
+}
+
+.dashboard--container {
+  /* To be coded */
+  overflow: hidden;
+}
+
+.dashboard--nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 12px 104px 19px 113px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+/* Nav Toggle */
+.dashboard--nav--toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+}
+.dashboard--nav--toggle__hover {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.dashboard--nav--toggle__hover:hover {
+  background-color: var(--home-hero-2-color);
+}
+.dashboard--nav--toggle--icon {
+  width: 30px;
+}
+.dashboard--nav--toggle--logo {
+  width: 190px;
+}
+
+/* User image and Notifications */
+
+.dashboard--nav--user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
+.dashboard--nav--user--bell {
+  width: 33px;
+}
+.dashboard--nav--user--img {
+  width: 46px;
+  border-radius: 50%;
+  border: solid 3px var(--home-hero-2-color);
+}
+
+/* Sidebar */
+
+.dashboard--sidebar {
+  background-color: var(--bg-color);
+  border-top-right-radius: 24px;
+  position: fixed;
+  width: fit-content;
+  height: 100%;
+  top: 106px;
+}
+.dashboard--sidebar--underline {
+  height: 2px;
+  background-color: #ffc056;
+  margin-top: 60px;
+}
+
+/* .dashboard--sidebar--links__center{
+} */
+.dashboard--sidebar--links {
+  margin: 32px 32px 32px 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  padding: 3px;
+}
+.dashboard--sidebar--links:hover {
+  background-color: var(--btn-color);
+  border-radius: 5px;
+  color: black;
+}
+.dashboard--sidebar--links--icon {
+  /* To be coded */
+  width: 36px;
+}
+.dashboard--sidebar--links--desc {
+  color: var(--link-color);
+  width: 82px;
+  margin-left: 20px;
+  font-size: var(--fs-small);
+}
+
+/* App Functionality */
+.dashboard--main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 60px 0 350px;
+}
+.dashboard--main--function {
+  width: 100%;
+  height: 100%;
+  margin-top: 180px;
+}
+.dashboard--splitted--files--info {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-small);
+}
+.dashboard--splitted--files--info--left > p:nth-child(1) {
+  margin-bottom: 20px;
+}
+.dashboard--splitted--files--notice {
+  margin-bottom: 40px;
+  font-size: var(--fs-small);
+  color: var(--bg-color);
+  font-weight: var(--fw-large);
+}
+.dashboard--splitted--files--view {
+  overflow-y: scroll;
+  padding-right: 20px;
+  height: 295px;
+  font-size: var(--fs-small);
+}
+.dashboard--splitted--files--box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--home-hero-2-color);
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.dashboard--splitted--files--name > img,
+.dashboard--splitted--files--download > img {
+  width: 25px;
+  margin-right: 10px;
+}
+.dashboard--splitted--files--name,
+.dashboard--splitted--files--download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+}
+.dashboard--splitted--files--download > button {
+  border: none;
+  background-color: transparent;
+  color: var(--bg-color);
+  font-family: var(--ff);
+  font-size: var(--fs-small);
+}
+.dashboard--splitted--files--download > button:hover {
+  cursor: pointer;
+}
+
+/* Scrollbar Styling */
+.dashboard--splitted--files--view::-webkit-scrollbar {
+  width: 15px; /* width of the entire scrollbar */
+}
+
+/* .dashboard--splitted--files--view::-webkit-scrollbar-track {
+  /* color of the tracking area */
+/* background: var(--home-hero-2-color);  */
+*/ .dashboard--splitted--files--view::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
+}

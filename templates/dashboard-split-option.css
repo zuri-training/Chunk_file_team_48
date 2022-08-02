@@ -1,0 +1,125 @@
+/* ---------Styles for Dashboard componentt-----  */
+
+.dashboard--component-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dasboard-split-option {
+  font-family: var(--ff);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--bg-color);
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+
+.dasboard-upload-file-description {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 10 0;
+}
+
+/* ------Major container------ */
+.dashboard--component--container {
+  width: 400px;
+  height: 350px;
+  border: 1px solid #9a9a9a;
+  border-radius: 4px;
+  margin: 25px 0 25px;
+}
+
+/* -----Area where drag and drop happens------- */
+.dasboard-upload-outline {
+  width: 350px;
+  height: 215px;
+  border: dashed 2px #9a9a9a;
+  margin: 32px 25px 32px;
+  border-radius: 4px;
+  padding: 24px;
+  text-align: center;
+  align-items: center;
+}
+
+.fa-solid {
+  color: var(--bg-2-color);
+}
+
+.fa-xmark {
+  margin-left: 286px;
+  color: var(--bg-color);
+}
+
+.fa-file-lines {
+  margin: 31px 0 18px;
+}
+
+.dashboard-upload-outline-text {
+  font-size: 16px;
+  font-family: var(--ff-2);
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+.dashboard-upload-outline-text-small {
+  font-size: 12px;
+  font-weight: 600;
+  color: #787878;
+}
+
+.split-number-input {
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.split-number-input > input {
+  width: 162px;
+  height: 36px;
+  margin-left: 16px;
+  justify-content: center;
+  align-content: center;
+  vertical-align: middle;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #787878;
+  border-radius: 4px;
+}
+
+.split-number-input > input:focus {
+  outline: 1px solid blue;
+}
+/* -----Button------ */
+.dashboard-btn {
+  width: 350px;
+  height: 60px;
+  background-color: var(--bg-color);
+  color: #ffff;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  margin: 25px 0 30px 25px;
+}
+
+/* -------Upload options---------- */
+/* .dashboard--upload-options {
+  display: inline-block;
+}
+
+.dashboard--upload-options-icons {
+  width: 24px;
+  margin-left: 24px;
+  vertical-align: middle;
+}
+
+.dashboard--upload-options-text {
+  font-size: 14px;
+  margin-left: 8px;
+  vertical-align: middle;
+} */
