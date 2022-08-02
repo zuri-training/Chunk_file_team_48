@@ -15,8 +15,23 @@
     display: none;
   }
   .hero-text{
-    margin-right:200px ;
+    margin-right:194px ;
   }
+
+  .faq-section{
+    padding-left: 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:100px;
+  }
+
+  .faq-hero-text{
+    padding-left: 80px;
+  }
+  .faq-hero-text-2{
+    padding-left:50px;
+  } 
   .question-box {
     display: flex;
     justify-content: space-between;
@@ -28,10 +43,10 @@
     margin-top: 20px;
     border-radius: 8px;
     background: #2e53d2;
-    -webkit-border-radius: 8px;
+    /* -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    -o-border-radius: 8px; */
   }
   .question-box-2 {
     width: 834px;
@@ -88,10 +103,10 @@
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    -webkit-border-radius: 50%;
+    /* -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    -o-border-radius: 50%; */
   }
   .add-sign:hover {
     cursor: pointer;
@@ -102,15 +117,15 @@
   .minus-sign {
     color: #2e53d2;
     border: 2px solid #2e53d2;
-    padding-left: 5px;
+    padding-left: 6px;
     padding-bottom: 5px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    -webkit-border-radius:;
+    /* -webkit-border-radius:;
     -moz-border-radius:;
     -ms-border-radius:;
-    -o-border-radius:;
+    -o-border-radius:; */
 }
   .minus-sign:hover {
     cursor: pointer;
@@ -119,7 +134,8 @@
     margin-bottom:100px;
   }
   #page {
-    padding-top: 100px;
+    padding-top:100px;
+    padding-left:50px;
     text-align: center;
     height: 1024px;
     width: 1440px;
@@ -150,6 +166,6 @@
     width: 852px;
     height: 120px;
     text-align: justify;
-    margin-left: 200px;
+    margin-left: 194px;
   }
   
