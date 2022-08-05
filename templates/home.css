@@ -64,7 +64,7 @@
   margin-bottom: 51.5px;
   color: var(--bg-color);
   font-weight: var(--fw-large);
-  font-size: var(--fs-large);
+  font-size: var(--fs-big);
   line-height: 65px;
 }
 /* .home--chunk--steps {
@@ -72,10 +72,10 @@
 } */
 .home--chunk--steps > img {
   width: 75px;
-  margin-bottom: 67.5px;
+  margin-bottom: 35px;
 }
 .home--chunk--steps > h3 {
-  font-size: 36px;
+  font-size: 18px;
   font-weight: var(--fw-big);
   color: var(--bg-color);
 }
@@ -92,7 +92,7 @@
   margin: 0 auto; */
 }
 .home--about--title {
-  font-size: var(--fs-large);
+  font-size: var(--fs-big);
   text-align: center;
 }
 .home--about--title > span {
@@ -121,7 +121,7 @@
 .home--about--text > p {
   color: var(--grey-color);
   font-weight: var(--fw-small);
-  font-size: var(--fs-medium);
+  font-size: var(--fs-small);
   margin-bottom: 32px;
   line-height: 36px;
 }
@@ -145,12 +145,12 @@
 }
 .split__flex--heading {
   font-weight: var(--fw-big);
-  font-size: var(--fs-large);
+  font-size: var(--fs-big);
   margin-bottom: 32px;
 }
 .split__flex--text {
   font-weight: var(--fw-small);
-  font-size: var(--fs-medium);
+  font-size: var(--fs-small);
   line-height: 33px;
 }
 .split__flex--text > span {
@@ -182,7 +182,7 @@
   text-align: center;
 }
 .instruction--title {
-  font-size: var(--fs-large);
+  font-size: var(--fs-big);
   font-weight: var(--fw-large);
   margin-bottom: 53px;
 }
@@ -190,7 +190,7 @@
   color: var(--bg-color);
 }
 .instruction--text {
-  font-size: var(--fs-big);
+  font-size: var(--fs-medium);
   width: 946px;
   line-height: 45px;
   margin: 0 auto;
@@ -213,7 +213,7 @@
   margin-bottom: 34px;
 }
 .instruction--steps__flex h3 {
-  font-size: var(--fs-big);
+  font-size: var(--fs-medium);
   font-weight: var(--fw-big);
   line-height: 44px;
   color: var(--bg-color);
@@ -221,7 +221,7 @@
   line-height: 36px;
 }
 .instruction--steps__flex p {
-  font-size: var(--fs-medium);
+  font-size: var(--fs-small);
 }
 .instruction--steps__flex img {
   width: 87px;
@@ -244,7 +244,7 @@
   margin: 0 auto; */
 }
 .testimonials--title {
-  font-size: var(--fs-large);
+  font-size: var(--fs-big);
   font-weight: var(--fw-large);
   color: var(--title-color);
   margin-bottom: 22px;
@@ -292,4 +292,13 @@
 }
 .testimonials--role {
   font-size: var(--fw-small);
+}
+
+.home-hr {
+  width: 100%;
+  height: 1px;
+  background-color: #9a9a9a;
+  opacity: 30%;
+  border: none;
+  margin-top: 50px;
 }

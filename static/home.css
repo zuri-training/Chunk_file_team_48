@@ -116,13 +116,13 @@
 .home--about--text > h2 {
   margin-bottom: 12px;
   color: var(--bg-color);
-  font-size: var(--fs-big);
+  font-size: 32px;
   font-weight: var(--fw-big);
 }
 .home--about--text > p {
   color: var(--grey-color);
   font-weight: var(--fw-small);
-  font-size: var(--fs-medium);
+  font-size: var(--fs-small);
   margin-bottom: 32px;
   line-height: 36px;
 }
@@ -146,7 +146,7 @@
 }
 .split__flex--heading {
   font-weight: var(--fw-big);
-  font-size: var(--fs-large);
+  font-size: var(--fs-medium);
   margin-bottom: 32px;
 }
 .split__flex--text {
@@ -183,7 +183,7 @@
   text-align: center;
 }
 .instruction--title {
-  font-size: var(--fs-large);
+  font-size: var(--fs-medium);
   font-weight: var(--fw-large);
   margin-bottom: 53px;
 }
@@ -191,7 +191,7 @@
   color: var(--bg-color);
 }
 .instruction--text {
-  font-size: var(--fs-big);
+  font-size: var(--fs-small);
   width: 946px;
   line-height: 45px;
   margin: 0 auto;
@@ -222,7 +222,7 @@
   line-height: 36px;
 }
 .instruction--steps__flex p {
-  font-size: var(--fs-medium);
+  font-size: var(--fs-small);
 }
 .instruction--steps__flex img {
   width: 87px;
