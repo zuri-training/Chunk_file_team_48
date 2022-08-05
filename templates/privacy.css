@@ -8,66 +8,68 @@
   /* max-width: 1440px;
   margin: 0 auto; */
 }
-.hero--info {
+.privacy--hero--info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: fit-content;
   width: 100%;
-  margin-bottom: 44px;
+  margin-bottom: 25px;
 }
-.hero--info--title {
+.privacy--hero--info--title {
   font-size: var(--fs-large);
 }
-.hero--description {
+.privacy--hero--description {
   max-width: 735px;
-  color: var(--bg-color);
+  color: var(--body--text-color);
+  margin-bottom: 50px;
 }
-.hero--info--policy > h3 {
+.privacy--hero--info--policy > h3 {
   font-weight: var(--fw-small);
   font-size: var(--fs-small);
 }
-.hero--info--policy > h3:nth-child(1) {
+.privacy--hero--info--policy > h3:nth-child(1) {
   text-align: right;
 }
-.hero--info--policy > h3:nth-child(2) {
+.privacy--hero--info--policy > h3:nth-child(2) {
   margin-top: 12px;
 }
-.hero--info--policy--date {
+.privacy--hero--info--policy--date {
   color: var(--bg-color);
 }
 
 /*----Contents----*/
-.content--container {
-  margin-top: 156px;
+.privacy--content--container {
+  margin-bottom: 25px;
 }
-.content--title {
+.privacy--content--title {
   color: var(--bg-color);
-  font-size: var(--fs-big);
-  font-weight: var(--fw-big);
-  margin-top: 52px;
-}
-.content--text {
   font-size: var(--fs-medium);
+  font-weight: var(--fw-big);
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.privacy--content--text {
+  font-size: var(--fs-small);
   font-weight: var(--fw-small);
   line-height: 36px;
-  margin-top: 33px;
+  margin-bottom: 25px;
 }
-.content--text--list {
+.privacy--content--text--list {
   padding: 0 40px;
 }
-.content--text--list > li {
-  font-size: var(--fs-medium);
+.privacy--content--text--list > li {
+  font-size: var(--fs-small);
   font-weight: var(--fw-small);
   margin-bottom: 16px;
   line-height: 36px;
 }
-.content--subheader {
-  font-size: var(--fs-medium);
+.privacy--content--subheader {
+  font-size: var(--fs-small);
   font-weight: var(--fw-big);
   line-height: 36px;
   margin-top: 32px;
 }
-.text__up {
+.privacy--text__up {
   margin-top: 0;
 }

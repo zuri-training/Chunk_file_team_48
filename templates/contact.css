@@ -30,6 +30,7 @@ main {
 .contact--content {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: fit-content;
   margin-bottom: 200px;
 }
@@ -44,7 +45,7 @@ main {
   background-color: #ffff;
   margin-left: 48px;
   align-content: center;
-  padding: 87px 139px;
+  padding: 60px 139px;
   border: none;
   border-radius: 8px;
   box-shadow: 1px 5px 10px 0px #00000033;

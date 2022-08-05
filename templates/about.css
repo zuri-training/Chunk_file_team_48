@@ -17,18 +17,19 @@ main {
   width: 100%;
   margin-bottom: 30px;
 }
-.hero--info--title {
+.about--hero--info--title {
   font-size: var(--fs-large);
+  margin-bottom: 36px;
 }
-.contact--hero--description {
+.about--hero--description {
   font-size: var(--fs-small);
-  max-width: 1237px;
-  line-height: 36px;
-  color: var(--bg-color);
+  line-height: 32px;
+  color: var(--body--text-color);
+  margin-bottom: 50px;
 }
 
 /* -----Contact Form Button----- */
-.contact--form--btn {
+.about--contact--form--btn {
   width: 268px;
   height: 64px;
   border: none;
@@ -37,25 +38,22 @@ main {
   box-shadow: 5px 10px 20px rgba(255, 192, 86, 0.2);
   font-size: var(--fs-small);
   font-weight: var(--fw-big);
-  margin: 108px 0 853px;
+  margin: 108px 0 200px;
   cursor: pointer;
 }
 
 /*----Contents----*/
-.content--container {
-  margin-top: 108px;
-}
-.content--title {
+
+.about--content--title {
   color: var(--bg-color);
-  font-size: var(--fs-big);
+  font-size: var(--fs-medium);
   font-weight: var(--fw-big);
-  margin-top: 52px;
+  margin-bottom: 25px;
 }
-.content--text {
+.about--content--text {
   font-size: var(--fs-small);
-  font-weight: var(--fw-small);
-  line-height: 36px;
-  margin-top: 33px;
+  line-height: 32px;
+  margin-bottom: 25px;
 }
 .about--content--text--list {
   padding: 0 40px;

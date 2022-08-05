@@ -7,9 +7,9 @@
   box-shadow: 0 0 20px 0px #00000033;
   padding: 15px 100px;
 
-  /* 1440px Screen Size
-    max-width: 1440px;
-    margin: 0 auto; */
+  /* 1440px Screen Size */
+    /* max-width: 1440px;
+    margin: 0 auto;  */
 }
 
 .nav-links ul {
