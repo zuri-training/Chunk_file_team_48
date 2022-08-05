@@ -18,7 +18,8 @@
   margin-right: 194px;
 }
 
-.faq {
+.faq-section {
+  padding-left: 94px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,14 +143,14 @@
 .faq-header {
   margin-bottom: 45px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 48px;
   line-height: 32px;
   margin-bottom: 35px;
 }
 
 .faq-header-description {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 32px;
   margin-bottom: 50px;
 }
