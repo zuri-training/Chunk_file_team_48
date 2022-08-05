@@ -3,14 +3,14 @@
   padding: 0;
 }
 
-main {
+body {
   background: #748ce1;
 }
 
 .signup--container {
   position: relative;
   width: 610px;
-  height: 1000px;
+  height: 900px;
   margin: 100px auto;
   background: #fdfdfd;
   box-shadow: 10px 10px 40px rgba(103, 110, 134, 0.8);
@@ -75,6 +75,10 @@ main {
   margin-bottom: 15px;
 }
 
+.signup--form input:focus {
+  outline: 1px solid #2e53d2;
+}
+
 .signup--form input::placeholder {
   color: var(--placeholder-color);
 }
@@ -103,4 +107,5 @@ main {
   font-weight: var(--fw-large);
   font-size: var(--fs-small);
   margin: 25px 0 10px;
+  cursor: pointer;
 }

@@ -15,6 +15,7 @@
   --btn-color: #ffc056;
   --placeholder-color: #9a9a9a;
   --form-title: #575757;
+  --body--text-color: #2c2c2c;
 
   --width: 1440px;
 
@@ -46,4 +47,12 @@ body {
 main {
   min-width: 1024px;
   margin: 0 auto;
+}
+
+/* ----Horizontal rule-------- */
+hr {
+  height: 1px;
+  background-color: #ffca72;
+  border: none;
+  margin-top: 50px;
 }

@@ -10,10 +10,9 @@
   display: none;
 }
 
-.dashboard--container {
-  /* To be coded */
-  overflow: hidden;
-}
+/* .dashboard--container  */
+/* To be coded */
+/* overflow: hidden; */
 
 .dashboard--nav {
   display: flex;

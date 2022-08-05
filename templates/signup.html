@@ -9,8 +9,6 @@
 
     <!-- Global Stylesheets -->
     <link rel="stylesheet" href="../static/globalstyle.css" />
-    <link rel="stylesheet" href="../static/header.css">
-    <link rel="stylesheet" href="../static/footer.css" />
 
     <!-- Pages Stylesheets -->
     <link rel="stylesheet" href="./signup.css" />
@@ -18,34 +16,6 @@
 
   <body>
     <main>
-      <!-- Navigation -->
-      <div class="nav">
-        <!-- Logo -->
-        <div>
-          <a href="../templates/home.html"><img class="logo"
-              src="../images/Frame 1028.png" alt="" /></a>
-        </div>
-        <!-- NavLinks-->
-        <div class="nav-links">
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </div>
-        <!-- End of NavLinks -->
-        <!-- Nav Buttons -->
-      
-        <div>
-          <a href="./signin.html"> <button class="login-btn">Log in</button></a>
-          <a href="./signup.html"> <button class="register-btn">Register</button></a>
-        </div>
-        <!-- End of Nav Buttons -->
-      </div>
-      <!-- End of Navigation -->
-
       <div class="sign-up-background">
         <div class="signup--container">
           <h3 class="signup--top--content">Register for Go-Chunk</h3>
@@ -77,9 +47,11 @@
               <input type="password" name="name" id="" />
               <p class="signup--after--text">
                 By signing up, you agree to our
-                <a href="" class="signup--intext--links">Terms and Condition</a>
+                <a href="../templates/t&c.html" class="signup--intext--links">Terms
+                  and Condition</a>
                 &
-                <a href="" class="signup--intext--links">Privacy Policy</a>
+                <a href="../templates/privacy.html"
+                  class="signup--intext--links">Privacy Policy</a>
               </p>
               <button class="signup--btn">Register</button>
               <p class="signup--after-btn--text">
@@ -91,91 +63,8 @@
           </div>
         </div>
 
-        <!-- Footer -->
-        <footer class="footer--container">
-          <!-- Top of Footer -->
-          <div class="footer--top">
-            <img class="footer--top--logo" src="../images/LogoFooter.png" alt=""
-              />
-            <div class="footer--top--icons">
-              <a href="" class="footer--top--social">
-                <img src="../images/entypo-social_linkedin-with-circle.png"
-                  alt="linkedin-icon" class="footer--social--icon" />
-              </a>
-              <a href="" class="footer--top--social">
-                <img src="../images/ant-design_twitter-circle-filled.png"
-                  alt="twitter-icon" class="footer--social--icon" />
-              </a>
-              <a href="" class="footer--top--social">
-                <img src="../images/entypo-social_facebook-with-circle.png"
-                  alt="facebook-icon" class="footer--social--icon" />
-              </a>
-              <a href="" class="footer--top--social">
-                <img src="../images/entypo-social_youtube-with-circle.png"
-                  alt="youtube-icon" class="footer--social--icon" />
-              </a>
-            </div>
-          </div>
-          <!-- End of Top of Footer -->
-          <!-- Middle of Footer -->
-          <div class="footer--middle">
-            <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Company</h3>
-              <div class="underline"></div>
-              <div class="footer--middle--link__grid">
-                <a href="#" class="footer--middle--link">Home</a>
-                <a href="#" class="footer--middle--link">About Us</a>
-                <a href="#" class="footer--middle--link">Contact Us</a>
-                <a href="#" class="footer--middle--link">Feedback</a>
-              </div>
-            </div>
-
-            <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Splitter</h3>
-              <div class="underline"></div>
-              <div class="footer--middle--link__grid">
-                <a href="#" class="footer--middle--link">Split CSV file</a>
-                <a href="#" class="footer--middle--link">Split JSON file</a>
-              </div>
-            </div>
-
-            <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Resources</h3>
-              <div class="underline"></div>
-              <div class="footer--middle--link__grid">
-                <a href="#" class="footer--middle--link">Documentation</a>
-                <a href="#" class="footer--middle--link">FAQs</a>
-              </div>
-            </div>
-
-            <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Account</h3>
-              <div class="underline"></div>
-              <div class="footer--middle--link__grid">
-                <a href="#" class="footer--middle--link">Profile</a>
-                <a href="#" class="footer--middle--link">Settings</a>
-              </div>
-            </div>
-          </div>
-          <!-- End of Middle of Footer -->
-          <!-- Bottom of Footer -->
-          <div class="footer--bottom">
-            <h4 class="footer--bottom--copyright">
-              Copyright 2022. All Rights Reserved.
-            </h4>
-            <div class="footer--bottom--links">
-              <a href="./privacy.html" class="footer--bottom--link">Privacy Policy</a>
-              <a href="./t&c.html" class="footer--bottom--link">Terms and Conditions</a>
-            </div>
-          </div>
-          <!-- End of Bottom of Footer -->
-        </footer>
-        <!-- End of Footer -->
-
-
       </div>
     </main>
     <script src="./signup.js"></script>
   </body>
 </html>
-

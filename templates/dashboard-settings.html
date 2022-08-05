@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Dashboard</title>
+
+  <!-- Global Stylesheets -->
+  <link rel="stylesheet" href="../static/globalstyle.css" />
+  <link rel="stylesheet" href="../static/dashboard.css" />
+  <link rel="stylesheet" href="./dashboard-settings.css" />
+</head>
+
+<body>
+  <div class="dashboard--container">
+    <!-- Navigation and Sidebar -->
+    <!-- Navigation -->
+    <div class="dashboard--nav">
+      <div class="dashboard--nav--toggle">
+        <div class="dashboard--nav--toggle__hover">
+          <img src="../images/menu.png" alt="toggle icon" class="dashboard--nav--toggle--icon" />
+        </div>
+        <img src="../images/LogoFooter.png" alt="go-chunk-logo" class="dashboard--nav--toggle--logo" />
+      </div>
+      <div class="dashboard--nav--user">
+        <a href="">
+          <img src="../images/icons for nav bar.png" alt="notification bell" class="dashboard--nav--user--bell" />
+        </a>
+        <img src="../images/Group 199.png" alt="user img" class="dashboard--nav--user--img" />
+        <div class="dashboard--nav--online--icon"></div>
+      </div>
+    </div>
+    <!-- SideBar -->
+    <div class="dashboard--sidebar">
+      <div class="dashboard--sidebar--underline"></div>
+      <div class="dashboard--sidebar--links__center">
+        <!-- Sidebar link -->
+        <a id="split-file-btn" href="" class="dashboard--sidebar--links">
+          <img src="../images/layer-group.svg" alt="sidebar--icon" class="dashboard--sidebar--links--icon" />
+          <p class="dashboard--sidebar--links--desc">Split File</p>
+        </a>
+        <!-- End of sidebar link -->
+        <!-- Sidebar link -->
+        <a href="" class="dashboard--sidebar--links">
+          <img src="../images/tick-square.png" alt="sidebar--icon" class="dashboard--sidebar--links--icon" />
+          <p class="dashboard--sidebar--links--desc">Saved Files</p>
+        </a>
+        <!-- End of sidebar link -->
+        <!-- Sidebar link -->
+        <a href="" class="dashboard--sidebar--links">
+          <img src="../images/message-question.png" alt="sidebar--icon" class="dashboard--sidebar--links--icon" />
+          <p class="dashboard--sidebar--links--desc">FAQ</p>
+        </a>
+        <!-- End of sidebar link -->
+        <!-- Sidebar link -->
+        <a href="" class="dashboard--sidebar--links">
+          <img src="../images/setting-2.png" alt="sidebar--icon" class="dashboard--sidebar--links--icon" />
+          <p class="dashboard--sidebar--links--desc">Settings</p>
+        </a>
+        <!-- End of sidebar link -->
+        <!-- Sidebar link -->
+        <a href="" class="dashboard--sidebar--links">
+          <img src="../images/warning-2.png" alt="sidebar--icon" class="dashboard--sidebar--links--icon" />
+          <p class="dashboard--sidebar--links--desc">About Us</p>
+        </a>
+        <!-- End of sidebar link -->
+        <!-- Sidebar link -->
+        <a href="" class="dashboard--sidebar--links">
+          <img src="../images/login.png" alt="sidebar--icon" class="dashboard--sidebar--links--icon" />
+          <p class="dashboard--sidebar--links--desc">Log Out</p>
+        </a>
+        <!-- End of sidebar link -->
+      </div>
+    </div>
+    <!-- End of navigation and sidebar -->
+    <div class="dashboard--main">
+      <div class="dashboard--main--function">
+        <section class="dashboard--setings">
+          <div class="dashboard--settings--information">
+            <h1>Welcome {Username},</h1>
+            <p>User Email</p>
+            <h3>Update Profile Photo</h3>
+            <form action="">
+              <button type="submit" class="dashboard--settings--information--photo">
+                <img src="../images/Ellipse 93.png" alt="user image">
+                <img src="../images/fontisto_camera.png" alt="camera icon">
+              </button>
+            </form>
+          </div>
+          <!-- Profile Settings -->
+          <div class="dashboard--settings--form">
+
+            <form action="">
+              <h3>Profile Settings</h3>
+              <div class="form--field">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" value="mavis" placeholder="Username">
+              </div>
+              <div class="form--field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="nwaokorieamuchenna@gmail.com" placeholder="Email">
+              </div>
+              <div class="form--field">
+                <label for="date">Date</label>
+                <input type="datetime" name="date" id="date" placeholder="Date">
+              </div>
+            <!-- End of Profile Settings -->
+            <!-- Underline -->
+            <div class="dashboard--settings--underline"></div>
+            <!-- End of Underline -->
+            <div class="dashboard--settings--form">
+              <h3>Password Settings</h3>
+                <!-- Old Password -->
+                <div class="form--field password--container">
+                  <label for="oldPassword">Old Password</label>
+                  <input type="password" name="oldPassword" id="oldPassword" placeholder="Minimum of 8 characters">
+                  <img src="../images/padlock.svg" alt="lock" class="dashboard--settings--form--lock lock__absolute-1">
+                </div>
+                <!-- End of Old Password -->
+                <!-- New Password -->
+                <div class="form--field password--container">
+                  <label for="newPassword">New Password</label>
+                  <input type="password" name="newPassword" id="newPassword" placeholder="Minimum of 8 characters">
+                  <img src="../images/padlock.svg" alt="lock" class="dashboard--settings--form--lock lock__absolute-2">
+                </div>
+                <!-- End of New Password -->
+                <!-- Same Password -->
+                <div class="form--field password--container">
+                  <label for="samePassword">Re-enter New Password</label>
+                  <input type="password" name="samePassword" id="samePassword" placeholder="Minimum of 8 characters">
+                  <img src="../images/padlock.svg" alt="lock" class="dashboard--settings--form--lock lock__absolute-3">
+                </div>
+                <!-- End of Same Password -->
+
+                <button class="dashboard--settings--btn" type="submit">Save Changes</button>
+              </form>
+
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+
+</html>

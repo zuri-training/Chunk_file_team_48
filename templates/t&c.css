@@ -6,23 +6,23 @@ main {
 /*---- Hero ----*/
 
 .tnc {
-  padding: 42px 100px;
+  padding: 48px 100px;
   color: black;
 }
-.hero--info {
+.tnc--hero--info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: fit-content;
   width: 100%;
-  margin-bottom: 44px;
+  margin-bottom: 25px;
 }
-.hero--info--title {
+.tnc--hero--info--title {
   font-size: var(--fs-large);
 }
-.hero--description {
+.tnc--hero--description {
   max-width: 735px;
-  color: var(--bg-color);
+  color: var(--body--text-color);
 }
 /* .hero--info--policy > h3 {
   font-weight: var(--fw-small);
@@ -39,20 +39,21 @@ main {
 } */
 
 /*----Contents----*/
-.content--container {
-  margin-top: 156px;
+.tnc--content--container {
+  margin-top: 50px;
 }
-.content--title {
+.tnc--content--title {
   color: var(--bg-color);
-  font-size: var(--fs-big);
+  font-size: var(--fs-medium);
   font-weight: var(--fw-big);
-  margin-top: 52px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-.content--text {
+.tnc--content--text {
   font-size: var(--fs-small);
   font-weight: var(--fw-small);
   line-height: 36px;
-  margin-top: 33px;
+  margin-bottom: 25px;
 }
 /* .content--text--list {
   padding: 0 40px;
@@ -63,19 +64,12 @@ main {
   margin-bottom: 16px;
   line-height: 36px;
 } */
-.content--subheader {
+.tnc--content--subheader {
   font-size: larger;
   font-weight: var(--fw-big);
   line-height: 36px;
   margin-top: 32px;
 }
-.text__up {
+.tnc--text__up {
   margin-top: 0;
-}
-
-hr {
-  height: 1px;
-  background-color: #ffca72;
-  border: none;
-  margin-top: 50px;
 }

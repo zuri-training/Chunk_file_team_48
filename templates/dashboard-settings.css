@@ -1,0 +1,81 @@
+.dashboard--setings {
+    padding: 80px 0 150px 0;
+}
+.dashboard--settings--form {
+    max-width: 700px;
+}
+.dashboard--settings--information > h1 {
+    margin-bottom: 32px;
+}
+.dashboard--settings--information > p {
+    margin-bottom: 104px;
+}
+.dashboard--settings--information > h3 {
+    margin-bottom: 41px;
+}
+.dashboard--settings--information--photo {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: -1000;
+}
+.dashboard--settings--information--photo > img:nth-child(1) {
+    height: 137px;
+}
+.dashboard--settings--information--photo > img:nth-child(2) {
+    position: absolute;
+    bottom: 20px;
+    left: 115px;
+}
+.form--field {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+.form--field > label, .form--field > input {
+    font-size: var(--fs-small);
+    font-family: var(--ff-2);
+}
+.form--field > label {
+    margin-bottom: 5px;
+}
+.form--field > input {
+    height: 45px;
+    border: none;
+    border: 1px solid var(--placeholder-color);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+input[type="password"] {
+    padding: 0 35px;
+}
+.form--field > input::placeholder {
+    font-size: smaller;
+}
+.dashboard--settings--form h3 {
+    margin-top: 30px;
+}
+.password--container {
+    position: relative;
+}
+.dashboard--settings--form--lock {
+    width: 20px;
+    position: absolute;
+    top: 42px;
+    left: 10px;
+}
+.dashboard--settings--underline {
+    height: 2px;
+    background-color: var(--btn-color);
+    margin-top: 40px;
+}
+.dashboard--settings--btn {
+    background-color: var(--btn-color);
+    width: 208px;
+    height: 62px;
+    font-family: var(--ff-2);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
