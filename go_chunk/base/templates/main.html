@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chunk File Project</title>
+
+    <!-- Global Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/globalstyle.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/header.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/footer.css' %}">
+   
+
+    <!-- Pages Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/home.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/about.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/contact.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/privacy.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/t_c.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/signup.css' %}">
+
+
+  </head>
+
+  <body>
+    <main>
+        {% include 'navbar.html' %}
+
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{massage.tags}}" {% endif %}> {{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    
+        {% block content %}
+    
+        {% endblock content %}
+   
+        {% include 'footer.html' %}
+         
+    </main>
+  </body>
+</html>

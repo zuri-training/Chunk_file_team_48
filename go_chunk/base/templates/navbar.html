@@ -1,0 +1,30 @@
+{% load static %}
+<!-- Navigation -->
+<div class="nav">
+    <!-- Logo -->
+    <div>
+      <img class="logo" src="{% static 'images/Frame 1028.png' %}" alt="" />
+    </div>
+    <!-- NavLinks-->
+    <div class="nav-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="{% url 'base:documentation' %}">Documentation</a></li>
+        <li><a href="{% url 'base:contact' %}">Contact</a></li>
+        <li><a href="{% url 'base:about' %}">About Us</a></li>
+        <li><a href="{% url 'base:faq' %}">FAQs</a></li>
+      </ul>
+    </div>
+    <!-- End of NavLinks -->
+    <!-- Nav Buttons -->
+    <div>
+        {% if request.user.is_authenticated %}
+        <span>Hello {{user.username}} | </span><a href="{% url 'base:logout' %}">Logout</a>
+        {% else %}
+        <a href="{% url 'base:login' %}" class="login-btn">Login</a>
+        <a href="{% url 'base:signup' %}" class="register-btn">Register</a>
+        {% endif %}
+    </div>
+    <!-- End of Nav Buttons -->
+  </div>
+  <!-- End of Navigation -->

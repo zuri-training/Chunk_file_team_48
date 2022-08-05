@@ -1,0 +1,102 @@
+main {
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+/*---- Hero ----*/
+
+.contact {
+  padding: 42px 100px;
+  color: var(--default-black);
+}
+.hero--info {
+  align-content: center;
+  margin: 44px auto;
+  padding: 50px 0;
+  text-align: center;
+  background-color: var(--title-color);
+}
+.hero--info--title {
+  font-size: var(--fs-large);
+  margin-bottom: 16px;
+}
+.contact--hero--description {
+  font-size: var(--fs-small);
+  color: var(--default-black);
+  margin-bottom: 16px;
+}
+
+/* -----Contact content------ */
+.contact--content {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  margin-bottom: 527px;
+}
+
+.contact--content > img {
+  width: 585.56px;
+  height: 614px;
+}
+
+/* ------Form--------- */
+.contact--form {
+  background-color: #ffff;
+  margin-left: 48px;
+  align-content: center;
+  padding: 87px 139px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 1px 5px 10px 0px #00000033;
+}
+
+.form--title > h3 {
+  font-weight: var(--fw-big);
+  font-size: var(--fs-small);
+  margin: 42px 0 10px;
+}
+
+.form--title > input {
+  width: 344px;
+  height: 64px;
+  border: 1px solid #bcbcbc;
+  border-radius: 8px;
+  padding: 0 25px;
+}
+
+.form--title > input:focus {
+  outline: 2px solid var(--bg-color);
+}
+
+.form--title > input::placeholder {
+  color: #bcbcbc;
+}
+
+.form--title > textarea {
+  width: 344px;
+  height: 191px;
+  border: 1px solid #bcbcbc;
+  border-radius: 8px;
+  padding: 20px 25px;
+  font-family: var(--ff);
+}
+
+.form--title > textarea:focus {
+  outline: 2px solid var(--bg-color);
+}
+
+.form--title > textarea::after {
+  color: #0b0b0b;
+}
+
+/* -----Contact Form Button----- */
+.contact--form--btn {
+  width: 268px;
+  height: 64px;
+  border: none;
+  border-radius: 8px;
+  background: #ffc056;
+  box-shadow: 5px 10px 20px rgba(255, 192, 86, 0.2);
+  font-weight: var(--fw-big);
+  margin: 42px;
+}
