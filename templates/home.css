@@ -5,11 +5,10 @@
   align-items: center;
   background-color: var(--bg-2-color);
   padding: 100px 83px 229px 110px;
-
-  /* 1440px Screen Size */
-  /* max-width: 1440px;
-  margin: 0 auto; */
 }
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .home--hero {
     display: block;
@@ -17,6 +16,7 @@
     padding: 20px;
   }
 }
+
 .home--hero--introduction > h1 {
   font-size: var(--fs-large);
   font-weight: var(--fw-large);
@@ -32,7 +32,9 @@
   color: var(--home-hero-2-color);
   width: 640px;
 }
-
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .home--hero--introduction {
     margin-bottom: 64px;
@@ -52,7 +54,6 @@
   }
 }
 
-
 .chunk--btn {
   margin-top: 112px;
   background-color: #ffc056;
@@ -68,7 +69,9 @@
 .chunk--btn:hover {
   cursor: pointer;
 }
-
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .chunk--btn {
     width: 180px;
@@ -77,11 +80,14 @@
     margin-top: 36px;
   }
 }
+
 .home--hero--img {
   width: 597px;
   height: 597px;
 }
-
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .home--hero--img {
     width: 260px;
@@ -94,12 +100,10 @@
   padding: 87px 185px;
   text-align: center;
   background-color: var(--home-hero-2-color);
-
-  /* 1440px Screen Size */
-  /* max-width: 1440px;
-  margin: 0 auto; */
 }
-
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .home--chunk--description {
     padding: 20px;
@@ -110,8 +114,6 @@
   justify-content: space-around;
   align-items: center;
 }
-
-
 .home--chunk--title {
   margin-bottom: 51.5px;
   color: var(--bg-color);
@@ -119,7 +121,9 @@
   font-size: var(--fs-large);
   line-height: 65px;
 }
-
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .home--chunk--title {
     font-size: var(--fs-medium);
@@ -139,7 +143,9 @@
 .home--chunk--arrow {
   height: 20px;
 }
-
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .home--chunk--steps > img {
     width: 20px;
@@ -156,23 +162,15 @@
 /* About Section */
 .home--about {
   padding: 66px 100px 100px 100px;
-
-  /* 1440px Screen Size */
-  /* max-width: 1440px;
-  margin: 0 auto; */
 }
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .home--about {
     padding: 20px;
     margin-top: 30px;
   }
-}
-.home--about--description--flex {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto auto;
-  grid-gap: 144px;
-  margin-top: 88px;
 }
 .home--about--description {
   align-items: center;
@@ -182,7 +180,16 @@
   box-shadow: 0px 0px 64px 32px rgba(0, 0, 0, 0.04);
   border-radius: 20px;
 }
-
+.home--about--description--flex {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  grid-gap: 144px;
+  margin-top: 88px;
+}
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .home--about--description--flex {
     display: block;
@@ -193,6 +200,7 @@
     width: 100%;
   }
 }
+
 .home---about--description--intro {
   display: flex;
   justify-content: space-between;
@@ -202,7 +210,9 @@
 .home---about--description--intro > h2 {
   color: var(--bg-color);
 }
-
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .home---about--description--intro {
     width: fit-content;
@@ -242,7 +252,9 @@
   margin-bottom: 32px;
   line-height: 36px;
 }
-
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .home--about--title {
     font-size: var(--fs-medium);
@@ -257,6 +269,7 @@
     margin-bottom: 12px;
   }
 }
+
 /* Split Section */
 .split {
   padding: 100px 125px 66px 100px;
@@ -271,6 +284,9 @@
 .split--title > span {
   color: var(--bg-color);
 }
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .split {
     padding: 20px;
@@ -317,14 +333,15 @@
   width: 540px;
   height: 430px;
   margin-left: 0;
-  /* margin-right: 55px; */
   padding: 0;
 }
 .split__flex:nth-child(3) > article {
   /* padding-left: 180px; */
   /* width: 810px; */
 }
-
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .split__flex {
     display: block;
@@ -360,15 +377,20 @@
   }
 
 }
+
 /* Instructions */
 .instruction {
   padding: 117px 26px;
 }
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .instruction {
     padding: 20px;
   }
 }
+
 .instruction--title,
 .instruction--text {
   text-align: center;
@@ -387,7 +409,9 @@
   line-height: 45px;
   margin: 0 auto;
 }
-
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .instruction--title {
     font-size: var(--fs-medium);
@@ -437,6 +461,9 @@
   width: 1026px;
   margin-bottom: 34px;
 }
+      /* ===========
+      Media Query
+      =========== */
 @media screen and (max-width: 1024px) {
   .instruction--steps {
     padding: 0 15px;
@@ -465,16 +492,13 @@
     width: 100%;
   }
 }
+
 /* Testimonials */
 .testimonials {
   padding: 72px 224px 115px 224px;
   background-color: #ffeac7;
   display: grid;
   place-items: center;
-
-  /* 1440px Screen Size */
-  /* max-width: 1440px;
-  margin: 0 auto; */
 }
 .testimonials--title {
   font-size: var(--fs-large);
@@ -489,7 +513,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: red; */
   width: 993px;
   padding: 58px 64px 69px 56px;
   background-color: var(--bg-color);
@@ -522,5 +545,3 @@
 .testimonials--role {
   font-size: var(--fw-small);
 }
-
-/* About to work on media queries */
