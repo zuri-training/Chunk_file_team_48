@@ -1,69 +1,126 @@
 .dashboard--splitted--files--info {
-    margin: 40px 0;
-    display: flex;
-    justify-content: space-between;
-    font-size: var(--fs-small);
-  }
-  .dashboard--splitted--files--info--left > p:nth-child(1) {
-      margin-bottom: 20px;
-  }
-  .dashboard--splitted--files--notice {
-      margin-bottom: 40px;
-      font-size: var(--fs-small);
-      color: var(--bg-color);
-      font-weight: var(--fw-large);
-  }
-  .dashboard--splitted--files--view {
-    overflow-y: scroll;
-    padding-right: 20px;
-    height: 295px;
-    font-size: var(--fs-small);
-  }
-  .dashboard--splitted--files--box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid var(--home-hero-2-color);
-    padding: 6px 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  .dashboard--splitted--files--name > img,
-  .dashboard--splitted--files--download > img {
-    width: 25px;
-    margin-right: 10px;
-  }
-  .dashboard--splitted--files--name,
-  .dashboard--splitted--files--download {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: fit-content;
-  }
-  .dashboard--splitted--files--download > button {
-      border: none;
-      background-color: transparent;
-      color: var(--bg-color);
-      font-family: var(--ff);
-      font-size: var(--fs-small);
-  }
-  .dashboard--splitted--files--download > button:hover {
-      cursor: pointer;
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-small);
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard--splitted--files--info {
+    margin: 0 0 30px 0;
+    display: block;
   }
 
-  /* Scrollbar Styling */
-  .dashboard--splitted--files--view::-webkit-scrollbar {
-    width: 15px; /* width of the entire scrollbar */
+  .dashboard--splitted--files--info--left {
+    margin-bottom: 10px;
   }
-  
-  .dashboard--splitted--files--view::-webkit-scrollbar-track {
-    /* color of the tracking area */
-    /* background: var(--home-hero-2-color);  */
+}
+
+.dashboard--splitted--files--info--left > p:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard--splitted--files--info--right {
+    margin-top: 30px;
   }
-  
-  .dashboard--splitted--files--view::-webkit-scrollbar-thumb {
-    background-color: blue; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-    border: 3px solid orange; /* creates padding around scroll thumb */
+}
+.dashboard--splitted--files--notice {
+  margin-bottom: 40px;
+  font-size: var(--fs-small);
+  color: var(--bg-color);
+  font-weight: var(--fw-large);
+}
+.dashboard--splitted--files--view {
+  overflow-y: scroll;
+  padding-right: 20px;
+  height: 295px;
+  font-size: var(--fs-small);
+}
+
+/* Media Query */
+@media screen and (max-width: 1024px) {
+  .dashboard--splitted--files--view {
+    overflow-y: visible;
+    padding: 0;
+    font-size: 12px;
   }
-  
+}
+
+.dashboard--splitted--files--box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--home-hero-2-color);
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.dashboard--splitted--files--name > img,
+.dashboard--splitted--files--download > img {
+  width: 25px;
+  margin-right: 10px;
+}
+.dashboard--splitted--files--name,
+.dashboard--splitted--files--download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+}
+.dashboard--splitted--files--name > p {
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dashboard--splitted--files--download > button {
+  border: none;
+  background-color: transparent;
+  color: var(--bg-color);
+  font-family: var(--ff);
+  font-size: var(--fs-small);
+}
+.dashboard--splitted--files--download > button:hover {
+  cursor: pointer;
+}
+
+/* Media Query */
+@media screen and (max-width: 1024px) {
+  .dashboard--splitted--files--name {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .dashboard--splitted--files--name > img {
+    width: 20px;
+  }
+  .dashboard--splitted--files--name > p {
+    width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* resize: horizontal; */
+  }
+  .dashboard--splitted--files--download > img {
+    display: none;
+  }
+  .dashboard--splitted--files--download > button {
+    font-size: 12px;
+  }
+}
+
+/* Scrollbar Styling */
+.dashboard--splitted--files--view::-webkit-scrollbar {
+  width: 15px; /* width of the entire scrollbar */
+}
+
+.dashboard--splitted--files--view::-webkit-scrollbar-track {
+  /* color of the tracking area */
+  /* background: var(--home-hero-2-color);  */
+}
+
+.dashboard--splitted--files--view::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
+}
