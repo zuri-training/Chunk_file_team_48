@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<main class="sign-up-background">
+    <div class="signup--container">
+        <h3 class="top--content">Chunk</h3>
+        <div>
+                    <!-- {% for message in messages %}
+                    <p class="text-center">{{message}}</p>
+                    {% endfor %} -->
+            <div class="bottom--content">
+                <form method="POST" class="signup--form" enctype="multipart/form-data">
+                    {% csrf_token %}
+
+                    <label class="signup--form-label">Number of Rows:</label>
+                    <input class="signup--form-label" required type="number" name="chunk_no" placeholder="Number of rows" />
+
+                    <label class="signup--form-label">Name the file:</label>
+                    <input class="signup--form-label"  type="text" name="file_name" placeholder="Name Of Output File (leave blank to use default name)" />
+                    <input type="file" name="doc">
+                    <div>
+                        <input type="checkbox" name="saved">
+                        <p class="flex-1">Click to save splited files</p>
+                    </div>
+                    <br>
+                    <input type="submit" class="sign--up-btn" value="Chunk" />
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock content %}

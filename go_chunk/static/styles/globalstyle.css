@@ -45,3 +45,13 @@ main {
   min-width: 1024px;
   margin: 0 auto;
 }
+
+.message_error{
+  background: red;
+  color: white;
+}
+
+.message_success{
+  background: rgb(136, 255, 0);
+  color: black;
+}

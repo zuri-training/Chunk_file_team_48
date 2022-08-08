@@ -26,6 +26,9 @@
   width: 640px;
 }
 .chunk--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 112px;
   background-color: #ffc056;
   width: 268px;
