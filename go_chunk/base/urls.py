@@ -8,6 +8,7 @@ urlpatterns = [
     path('login/', views.loginPage, name="login"),
     path('signup/', views.signupPage, name="signup"),
     path('logout/', views.logoutUser, name="logout"),
+    path('chunk/', views.chunk_file, name="chunk"),
     path('about/', views.about, name="about"),
     path('new-file/<pk>', views.new_file, name='new_file'),
     path('documentation/', views.documentation, name="documentation"),

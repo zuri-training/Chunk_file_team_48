@@ -1,21 +1,28 @@
 {% extends 'main.html' %}
 
 {% block content %}
-    <div>
-        <form method="POST" action="">
-            {% csrf_token %}
-
-            <label>Username:</label>
-            <input type="text" name="username" placeholder="Enter Username" />
-
-            <label>Password:</label>
-            <input type="password" name="password" placeholder="Enter Password" />
-        
-            <input type="submit" value="Login" />
-        </form>
-
-        <p><span>haven't signed up yet?</span><a href="{% url 'base:signup' %}">Sign Up</a></p>
-        
+<main class="sign-up-background">
+    <div class="signup--container">
+        <h3 class="top--content">Login to access your files</h3>
+        <div>
+                <div class="bottom--content">
+                    <form method="POST" action="" class="signup--form">
+                        {% csrf_token %}
+                
+                        <label class="signup--form-label">Username:</label>
+                        <input class="signup--form-label" type="text" name="username" placeholder="Enter Username" />
+                
+                        <label class="signup--form-label">Password:</label>
+                        <input class="signup--form-label" type="password" name="password" placeholder="Enter Password" />
+                
+                        <input type="submit" class="sign--up-btn" value="Login" />
+                    </form>
+                
+                    <p class="after--text"><span>haven't signed up yet?</span><a class="intext--links" href="{% url 'base:signup' %}">Sign Up</a></p>
+                
+                </div>
+        </div>
     </div>
+</main>
 
 {% endblock content %}
