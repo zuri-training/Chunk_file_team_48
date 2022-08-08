@@ -6,415 +6,413 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chunk File Project</title>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chunk File Project</title>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Chunk File Project</title>
 
-    <!-- Global Stylesheets -->
-    <link rel="stylesheet" href="../static/globalstyle.css" />
-    <link rel="stylesheet" href="../static/header.css" />
-    <link rel="stylesheet" href="../static/footer.css" />
-    <link rel="stylesheet" href="../static/faq.css" />
-    <link rel="stylesheet" href="./home.css" />
-  </head>
+      <!-- Global Stylesheets -->
+      <link rel="stylesheet" href="../static/globalstyle.css" />
+      <link rel="stylesheet" href="../static/header.css" />
+      <link rel="stylesheet" href="../static/footer.css" />
+      <link rel="stylesheet" href="../static/faq.css" />
+      <link rel="stylesheet" href="./home.css" />
+    </head>
 
-  <body>
-    <main>
-      <!-- Navigation -->
-      <div class="nav">
-        <!-- Logo -->
-        <div>
-          <img class="logo" src="../images/Frame 1028.png" alt="" />
+    <body>
+      <main>
+        <!-- Navigation -->
+        <div class="nav">
+          <!-- Logo -->
+          <div>
+            <img class="logo" src="../images/Frame 1028.png" alt="" />
+          </div>
+          <!-- NavLinks-->
+          <div class="nav-links">
+            <ul>
+              <li><a href="../templates/home.html">Home</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="../templates/contact.html">Contact</a></li>
+              <li><a href="../templates/about.html">About Us</a></li>
+              <li><a href="#faq">FAQs</a></li>
+            </ul>
+          </div>
+          <!-- End of NavLinks -->
+          <!-- Nav Buttons -->
+          <div>
+            <a href="../templates/signin.html"><button class="login-btn">Log in</button></a>
+            <a href="../templates/signup.html"><button class="register-btn">Register</button></a>
+          </div>
+          <!-- End of Nav Buttons -->
         </div>
-        <!-- NavLinks-->
-        <div class="nav-links">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </div>
-        <!-- End of NavLinks -->
-        <!-- Nav Buttons -->
-        <div>
-          <button class="login-btn">Log in</button>
-          <button class="register-btn">Register</button>
-        </div>
-        <!-- End of Nav Buttons -->
-      </div>
-      <!-- End of Navigation -->
+        <!-- End of Navigation -->
 
-      <!-- Hero Container-->
-      <section class="home--hero">
-        <div class="home--hero--introduction">
-          <h1>
-            Split your data-files in the fastest and most secure way; at no
-            cost!
+        <!-- Hero Container-->
+        <section class="home--hero">
+          <div class="home--hero--introduction">
+            <h1>
+              Split your data-files in the fastest and most secure way; at no
+              cost!
+            </h1>
+            <p>
+              Upload large data files, Split it quickly and Download your
+              chunked
+              files or Save it for later.
+            </p>
+            <p>All for FREE!!!</p>
+            <a href="../templates/dasboard-split.html"><button
+                class="chunk--btn">CHUNK FILES</button></a>
+          </div>
+          <img src="../images/hero-img.png" alt="" class="home--hero--img" />
+        </section>
+        <!-- End of Hero Container -->
+
+        <!-- Chunk Steps -->
+        <section class="home--chunk--description">
+          <h1 class="home--chunk--title">
+            Chunk your Data-files in three easy steps!
           </h1>
-          <p>
-            Upload large data files, Split it quickly and Download your chunked
-            files or Save it for later.
-          </p>
-          <p>All for FREE!!!</p>
-          <button class="chunk--btn">CHUNK FILES</button>
-        </div>
-        <img src="../images/hero-img.png" alt="" class="home--hero--img" />
-      </section>
-      <!-- End of Hero Container -->
-
-      <!-- Chunk Steps -->
-      <section class="home--chunk--description">
-        <h1 class="home--chunk--title">
-          Chunk your Data-files in three easy steps!
-        </h1>
-        <div class="home--chunk--steps__flex">
-          <div class="home--chunk--steps">
-            <img src="../images/edit.png" alt="" />
-            <h3>Sign Up</h3>
-          </div>
-          <img class="home--chunk--arrow" src="../images/Line 23.png" alt="" />
-          <div class="home--chunk--steps">
-            <img src="../images/upload.png" alt="" />
-            <h3>Upload file</h3>
-          </div>
-          <img class="home--chunk--arrow" src="../images/Line 23.png" alt="" />
-          <div class="home--chunk--steps">
-            <img src="../images/logout.png" alt="" />
-            <h3>Ready to Go</h3>
-          </div>
-        </div>
-      </section>
-      <!-- End of Chunk Steps -->
-
-      <!-- About Section -->
-      <section class="home--about">
-        <h1 class="home--about--title">
-          About <span>CSV/JSON</span> Data Formats
-        </h1>
-        <div class="home--about--description--flex">
-          <div class="home--about--description">
-            <div class="home---about--description--intro">
-              <img class="home--about--icon" src="../images/Group-1.png"
-                alt="csv-icon" />
-              <h2>CSV</h2>
+          <div class="home--chunk--steps__flex">
+            <div class="home--chunk--steps">
+              <img src="../images/edit.png" alt="" />
+              <h3>Sign Up</h3>
             </div>
-            <article class="home--about--text">
-              <p>
-                A CSV file is a comma-separated values file commonly used by
-                spreadsheet programs such as Microsoft Excel or OpenOffice Calc.
-                It contains plain text data sets separated by commas, with each
-                new line in the CSV file representing a new database row and each
-                database row consisting of one or more fields separated by a
-                comma.
-              </p>
-              <p>Many data reporting tools output to CSV format.</p>
-            </article>
-          </div>
-          <div class="home--about--description">
-            <div class="home---about--description--intro">
-              <img class="home--about--icon" src="../images/Group-1.png"
-                alt="csv-icon" />
-              <h2>JSON</h2>
+            <img class="home--chunk--arrow" src="../images/Line 23.png" alt=""
+              />
+            <div class="home--chunk--steps">
+              <img src="../images/upload.png" alt="" />
+              <h3>Upload file</h3>
             </div>
-            <article class="home--about--text">
-              <p>
-                A JSON file is a file that stores simple data structures and
-                objects in JavaScript Object Notation (JSON) format, which is a
-                standard data interchange format. It is primarily used for
-                transmitting data between a web application and a server. JSON
-                files are lightweight, text-based, human-readable, and can be
-                edited using a text editor.
-              </p>
-              <p>From APIs to configuration files, JSON is now everywhere.</p>
-            </article>
+            <img class="home--chunk--arrow" src="../images/Line 23.png" alt=""
+              />
+            <div class="home--chunk--steps">
+              <img src="../images/logout.png" alt="" />
+              <h3>Ready to Go</h3>
+            </div>
           </div>
-        </div>
-      </section>
-      <!-- End of About Section -->
+        </section>
+        <!-- End of Chunk Steps -->
 
-      <!-- Split Section  -->
-      <section class="split">
-        <!-- Split box -->
-        <h1 class="split--title">What We <span>Deliver</span></h1>
-        <div class="split__flex">
-          <article>
-            <h2 class="split__flex--heading">SPLIT LARGE CSV OR JSON FILES</h2>
-            <p class="split__flex--text">
-              Are you having problems splitting your large CSV or JSON files?
-              Upload your file on <span>Go-Chunk</span>, split and download in
-              minutes.
-            </p>
-          </article>
-          <img class="split--img" src="../images/SPLIT ILLUSTRATION.png" alt=""
-            />
-        </div>
-        <!-- End of Split box-->
-        <!-- Split box -->
-        <div class="split__flex">
-          <article>
-            <h2 class="split__flex--heading">SAVE NOW AND DOWNLOAD LATER</h2>
-            <p class="split__flex--text">
-              You can always manage your downloads on
-              <span>Go-Chunk</span>. Select your own date and time and download
-              whenever you are ready.
-            </p>
-          </article>
-          <img class="split--img" src="../images/Group 301.png" alt=""
-            />
-        </div>
-        <!-- End of Split box-->
-        <!-- Split box -->
-        <div class="split__flex">
-          <article>
-            <h2 class="split__flex--heading">GUARANTEED SECURITY</h2>
-            <p class="split__flex--text">
-              With <span>Go-Chunk</span>, your privacy and security remains
-              guaranteed. No one has access to your files.
-            </p>
-          </article>
-          <img class="split--img" src="../images/Group 213.png" alt="" />
-        </div>
-        <!-- End of Split box-->
-      </section>
-      <!-- End of Split Section -->
+        <!-- About Section -->
+        <section class="home--about">
+          <h1 class="home--about--title">
+            About <span>CSV/JSON</span> Data Formats
+          </h1>
+          <div class="home--about--description--flex">
+            <div class="home--about--description">
+              <div class="home---about--description--intro">
+                <img class="home--about--icon" src="../images/Group-1.png"
+                  alt="csv-icon" />
+                <h2>CSV</h2>
+              </div>
+              <article class="home--about--text">
+                <p>
+                  A CSV file is a comma-separated values file commonly used by
+                  spreadsheet programs such as Microsoft Excel or OpenOffice
+                  Calc.
+                  It contains plain text data sets separated by commas, with
+                  each
+                  new line in the CSV file representing a new database row and
+                  each
+                  database row consisting of one or more fields separated by a
+                  comma.
+                </p>
+                <p>Many data reporting tools output to CSV format.</p>
+              </article>
+            </div>
+            <div class="home--about--description">
+              <div class="home---about--description--intro">
+                <img class="home--about--icon" src="../images/Group-1.png"
+                  alt="csv-icon" />
+                <h2>JSON</h2>
+              </div>
+              <article class="home--about--text">
+                <p>
+                  A JSON file is a file that stores simple data structures and
+                  objects in JavaScript Object Notation (JSON) format, which is
+                  a
+                  standard data interchange format. It is primarily used for
+                  transmitting data between a web application and a server. JSON
+                  files are lightweight, text-based, human-readable, and can be
+                  edited using a text editor.
+                </p>
+                <p>From APIs to configuration files, JSON is now everywhere.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- End of About Section -->
 
-      <!-- Instructions -->
-      <section class="instruction">
-        <h1 class="instruction--title">
-          Start splitting files <span>in no time!</span>
-        </h1>
-        <p class="instruction--text">
-          You don’t have to wait hours or days to get your files splitted. With
-          Go-Chunk, you can do that in <span>minutes.</span>
-        </p>
-        <p class="instruction--text">How? The steps below are a quick guide.</p>
-        <!-- Instruction Step -->
-        <div class="instruction--steps">
-          <div class="instruction--steps__flex">
+        <!-- Split Section  -->
+        <section class="split">
+          <!-- Split box -->
+          <div class="split__flex">
             <article>
-              <h3>STEP 1: Register/Log In</h3>
-              <p>
-                To get started, tap the “Register” button to get started on your
-                free account or Log in to continue.
+              <h2 class="split__flex--heading">SPLIT LARGE CSV OR JSON FILES</h2>
+              <p class="split__flex--text">
+                Are you having problems splitting your large CSV or JSON files?
+                Upload your file on <span>Go-Chunk</span>, split and download in
+                minutes.
               </p>
             </article>
-            <img src="../images/🦆 icon _login_.png" alt="login-icon" />
-          </div>
-          <div class="instruction--steps--underline"></div>
-        </div>
-        <!-- End of Instruction Step -->
-        <!-- Instruction Step -->
-        <div class="instruction--steps">
-          <div class="instruction--steps__flex">
-            <article>
-              <h3>STEP 2: Select and Upload your files</h3>
-              <p>
-                Select your files and upload it or drag and drop into the
-                ‘Upload File’ box to begin.
-              </p>
-            </article>
-            <img src="../images/🦆 icon _file earmark arrow up_.png"
-              alt="login-icon" />
-          </div>
-          <div class="instruction--steps--underline"></div>
-        </div>
-        <!-- End of Instruction Step -->
-        <!-- Instruction Step -->
-        <div class="instruction--steps">
-          <div class="instruction--steps__flex">
-            <article>
-              <h3>STEP 3: Choose chunk number and Split</h3>
-              <p>
-                Choose the number of chunks you want your file to be splitted
-                into, and tap on ‘Split File’ button.
-              </p>
-            </article>
-            <img src="../images/🦆 icon _file group line_.png" alt="login-icon"
+            <img class="split--img" src="../images/SPLIT ILLUSTRATION.png"
+              alt=""
               />
           </div>
-          <div class="instruction--steps--underline"></div>
-        </div>
-        <!-- End of Instruction Step -->
-        <!-- Instruction Step -->
-        <div class="instruction--steps">
-          <div class="instruction--steps__flex">
+          <!-- End of Split box-->
+          <!-- Split box -->
+          <div class="split__flex">
             <article>
-              <h3>STEP 4: After splitting, Save your file</h3>
-              <p>
-                Once your file has been splitted, you can Save it by tapping the
-                ‘Save File’ button.
+              <h2 class="split__flex--heading">SAVE NOW AND DOWNLOAD LATER</h2>
+              <p class="split__flex--text">
+                You can always manage your downloads on
+                <span>Go-Chunk</span>. Select your own date and time and
+                download
+                whenever you are ready.
               </p>
             </article>
-            <img src="../images/🦆 icon _file done_.png" alt="login-icon" />
+            <img class="split--img" src="../images/Group 301.png" alt=""
+              />
           </div>
-          <div class="instruction--steps--underline"></div>
-        </div>
-        <!-- End of Instruction Step -->
-        <!-- Instruction Step -->
-        <div class="instruction--steps">
-          <div class="instruction--steps__flex">
+          <!-- End of Split box-->
+          <!-- Split box -->
+          <div class="split__flex">
             <article>
-              <h3>STEP 5: Click Download, to download your files</h3>
-              <p>You can always come back to download your files later.</p>
+              <h2 class="split__flex--heading">GUARANTEED SECURITY</h2>
+              <p class="split__flex--text">
+                With <span>Go-Chunk</span>, your privacy and security remains
+                guaranteed. No one has access to your files.
+              </p>
             </article>
-            <img src="../images/🦆 icon _file earmark arrow down_.png"
-              alt="login-icon" />
+            <img class="split--img" src="../images/Group 213.png" alt="" />
           </div>
-          <div class="instruction--steps--underline"></div>
-        </div>
-        <!-- End of Instruction Step -->
-      </section>
-      <!-- End of Instructions -->
+          <!-- End of Split box-->
+        </section>
+        <!-- End of Split Section -->
 
-      <!-- Testimonials -->
-      <section class="testimonials">
-        <h2 class="testimonials--title">Testimonials</h2>
-        <p class="testimonials--introduction">What our users have to say</p>
-        <div class="testimonials__flex">
-          <img class="testifier--img" src="../images/Ellipse 44.png"
-            alt="user-img" />
-          <article>
-            <p class="testimonials--text">
-              Go-Chunk does a good job by chunking large data files into bits in
-              the fatest and secure way. The interface is well designed and
-              seamless.
-            </p>
-            <p class="testimonials--name">Muhammed Salem</p>
-            <p class="testimonials--role">Data Analyst</p>
-          </article>
-        </div>
-      </section>
-      <!-- End of Testimonials -->
-
-      <!-- Beginning of FAQs -->
-      <!-- <section class="faq-section">
-        <div id="page">
-          <div class="hero-text">
-            <h1 class="mb">Frequently Asked<span id="question">Questions</span>
-            </h1>
-            <h3 class="mb">Need some clarity?</h3>
-            <p class="intro-text">Below are some questions we often get and we
-              have made your experience easier by
-              answering them in a clear and precise way. If you can't find your
-              question here, kindly<span
-                id="question">Contact Us</span>
-            </p>
-          </div>
-          <div>
-
-            <div id="question-box-1" class="question-box row">
-              <div class="asked-questions">Can i split more than 5 files at a
-                time?</div>
-              <div id="add-sign-1" class="add-sign">
-                <span>+</span>
-              </div>
-
-            </div>
-            <div id="answer-box-1" class="answer-box display-none">
-              <div class="row border-blue border-top-radius question-box-2">
-                <div class="asked-questions-2">
-                  <p>Can i split more than 5 files at a time?</p>
-                </div>
-                <div id="minus-sign-1" class="minus-sign row">
-                  <span class="minus">-</span>
-                </div>
-
-              </div>
-              <div class="border-blue border-bottom-radius question-box-2 row">
+        <!-- Instructions -->
+        <section class="instruction">
+          <h1 class="instruction--title">
+            Start splitting files <span>in no time!</span>
+          </h1>
+          <p class="instruction--text">
+            You don’t have to wait hours or days to get your files splitted.
+            <br>
+            With
+            Go-Chunk, you can do that in <span>minutes.</span>
+          </p>
+          <p class="instruction--text">How? The steps below are a quick guide.</p>
+          <!-- Instruction Step -->
+          <div class="instruction--steps">
+            <div class="instruction--steps__flex">
+              <article>
+                <h3>STEP 1: Register/Log In</h3>
                 <p>
-                  GO-Chunk allows you to split just one file at a time.</p>
-              </div>
-
+                  To get started, tap the “Register” button to get started on
+                  your
+                  free account or Log in to continue.
+                </p>
+              </article>
+              <img src="../images/🦆 icon _login_.png" alt="login-icon" />
             </div>
-
-            <div id="question-box-2" class="question-box row">
-              <div class="asked-questions">How can I avoid having errors while
-                splitting?</div>
-              <div id="add-sign-2" class="add-sign">
-                <span>+</span>
-              </div>
-
+            <div class="instruction--steps--underline"></div>
+          </div>
+          <!-- End of Instruction Step -->
+          <!-- Instruction Step -->
+          <div class="instruction--steps">
+            <div class="instruction--steps__flex">
+              <article>
+                <h3>STEP 2: Select and Upload your files</h3>
+                <p>
+                  Select your files and upload it or drag and drop into the
+                  ‘Upload File’ box to begin.
+                </p>
+              </article>
+              <img src="../images/🦆 icon _file earmark arrow up_.png"
+                alt="login-icon" />
             </div>
-            <div id="answer-box-2" class="answer-box display-none">
-              <div class="row border-blue border-top-radius question-box-2">
-                <div class="asked-questions-2">
-                  <p>How can I avoid having errors while splitting?</p>
-                </div>
-                <div id="minus-sign-2" class="minus-sign row">
-                  <span class="minus">-</span>
-                </div>
+            <div class="instruction--steps--underline"></div>
+          </div>
+          <!-- End of Instruction Step -->
+          <!-- Instruction Step -->
+          <div class="instruction--steps">
+            <div class="instruction--steps__flex">
+              <article>
+                <h3>STEP 3: Choose chunk number and Split</h3>
+                <p>
+                  Choose the number of chunks you want your file to be splitted
+                  into, and tap on ‘Split File’ button.
+                </p>
+              </article>
+              <img src="../images/🦆 icon _file group line_.png"
+                alt="login-icon"
+                />
+            </div>
+            <div class="instruction--steps--underline"></div>
+          </div>
+          <!-- End of Instruction Step -->
+          <!-- Instruction Step -->
+          <div class="instruction--steps">
+            <div class="instruction--steps__flex">
+              <article>
+                <h3>STEP 4: After splitting, Save your file</h3>
+                <p>
+                  Once your file has been splitted, you can Save it by tapping
+                  the
+                  ‘Save File’ button.
+                </p>
+              </article>
+              <img src="../images/🦆 icon _file done_.png" alt="login-icon" />
+            </div>
+            <div class="instruction--steps--underline"></div>
+          </div>
+          <!-- End of Instruction Step -->
+          <!-- Instruction Step -->
+          <div class="instruction--steps">
+            <div class="instruction--steps__flex">
+              <article>
+                <h3>STEP 5: Click Download, to download your files</h3>
+                <p>You can always come back to download your files later.</p>
+              </article>
+              <img src="../images/🦆 icon _file earmark arrow down_.png"
+                alt="login-icon" />
+            </div>
+            <div class="instruction--steps--underline"></div>
+          </div>
+          <!-- End of Instruction Step -->
+        </section>
+        <!-- End of Instructions -->
 
+        <!-- Testimonials -->
+        <section class="testimonials">
+          <h2 class="testimonials--title">Testimonials</h2>
+          <p class="testimonials--introduction">What our users have to say</p>
+          <div class="testimonials__flex">
+            <img class="testifier--img" src="../images/Ellipse 44.png"
+              alt="user-img" />
+            <article>
+              <p class="testimonials--text">
+                Go-Chunk does a good job by chunking large data files into bits
+                in
+                the fatest and secure way. The interface is well designed and
+                seamless.
+              </p>
+              <p class="testimonials--name">Muhammed Salem</p>
+              <p class="testimonials--role">Data Analyst</p>
+            </article>
+          </div>
+        </section>
+        <!-- End of Testimonials -->
+
+        <!-- --------Beginning of FAQs---------------- -->
+
+        <section class="faq" id="faq">
+          <div class="faq-header-text">
+            <h1>Frequently Asked<span id="faq-link">
+                Questions</span>
+            </h1>
+            <h3>Need some clarity?</h3>
+            <p>Below are some questions we
+              often get and we
+              have made your experience easier by
+              answering them in a clear and precise way. <br> If
+              you can't find your
+              question here, kindly <a href="../templates/contact.html"
+                id="faq-link">Contact
+                Us</a>
+            </p>
+          </div>
+          <!-- ------------Beginning of first box------------ -->
+          <div class="question-box-container">
+            <div id="question-box-1" class="question-box">
+              <p class="asked-questions">Can i split more
+                than 5 files at a
+                time?</p>
+
+              <button id="add-sign-1">+</button>
+            </div>
+            <div id="answer-box-1" class="answer-box">
+              <div class="answer-question-box">
+                <p>Can i split more than 5 files at a
+                  time?</p>
+                <button id="minus-sign-1">-</button>
               </div>
-              <div class="border-blue border-bottom-radius question-box-2 row">
+
+              <div class="answer-box-answer">
+                <p>
+                  GO-Chunk allows you to split just one
+                  file at a time.
+                </p>
+              </div>
+            </div>
+            <!-- -----End of first box------- -->
+            <!-- ---------Beginning of Second box-------------- -->
+            <div id="question-box-2" class="question-box">
+              <p class="asked-questions">How can I avoid having errors while
+                splitting?</p>
+
+              <button id="add-sign-2">+</button>
+            </div>
+            <div id="answer-box-2" class="answer-box">
+              <div class="answer-question-box">
+                <p>How can I avoid having errors while splitting?</p>
+                <button id="minus-sign-2">-</button>
+              </div>
+
+              <div class="answer-box-answer">
                 <p>
                   To avoid errors while splitting, make sure you select the
                   right format.
                 </p>
               </div>
-
             </div>
-            <div id="question-box-3" class="question-box row">
-              <div class="asked-questions">How safe are my files in case I lost
-                my gadgets?</div>
-              <div id="add-sign-3" class="add-sign">
-                <span>+</span>
+            <!-- ---------End of Second box-------------- -->
+            <!-- ---------Beginning of third box-------------- -->
+            <div id="question-box-3" class="question-box">
+              <p class="asked-questions">How safe are my files in case I lost my
+                gadgets?</p>
+
+              <button id="add-sign-3">+</button>
+            </div>
+            <div id="answer-box-3" class="answer-box">
+              <div class="answer-question-box">
+                <p>How safe are my files in case I lost my gadgets?</p>
+                <button id="minus-sign-3">-</button>
               </div>
 
-            </div>
-            <div id="answer-box-3" class="answer-box display-none">
-              <div class="row border-blue border-top-radius question-box-2">
-                <div class="asked-questions-2">
-                  <p>How safe are my files in case I lost my gadgets?</p>
-                </div>
-                <div id="minus-sign-3" class="minus-sign row">
-                  <span class="minus">-</span>
-                </div>
-
-              </div>
-              <div class="border-blue border-bottom-radius question-box-2 row">
+              <div class="answer-box-answer">
                 <p>
                   Be rest assured that your files are safe with us and can be
                   collected without missing any data any time.
                 </p>
               </div>
-
             </div>
-            <div id="question-box-4" class="question-box row">
-              <div class="asked-questions">Will I be charged if I want to chunk
-                into many numbers?</div>
-              <div id="add-sign-4" class="add-sign">
-                <span>+</span>
-              </div>
-
+            <!-- ---------End of third box-------------- -->
+            <!-- ---------Beginning of Fourth box-------------- -->
+            <div id="question-box-4" class="question-box">
+              <p class="asked-questions">Will I be charged if I want to chunk
+                into many numbers?</p>
+              <button id="add-sign-4">+</button>
             </div>
-            <div id="answer-box-4" class="answer-box display-none">
-              <div class="row border-blue border-top-radius question-box-2">
-                <div class="asked-questions-2">
+            <div id="answer-box-4" class="answer-box">
+              <div class="answer-question-box">
+                <div class="answer-question">
                   <p>Will I be charged if I want to chunk into many numbers?</p>
                 </div>
-                <div id="minus-sign-4" class="minus-sign row">
-                  <span class="minus">-</span>
-                </div>
-
+                <button id="minus-sign-4">-</button>
               </div>
-              <div class="border-blue border-bottom-radius question-box-2 row
-                mb">
+
+              <div class="answer-box-answer">
                 <p>
                   GO-Chunk is absolutely FREE! We want you to freely do your
-                  chunking because your data are important to
-                  us.</p>
+                  chunking because your data are important to us.</p>
               </div>
-
+              <!-- ---------End of Fourth box-------------- -->
             </div>
           </div>
-        </section> -->
-
-        <!-- End of FAQ   -->
-
+        </section>
+        <!-- ----End of FAQ--------- -->
 
         <!-- Footer -->
         <footer class="footer--container">
@@ -451,9 +449,11 @@
               <h3 class="footer--middle--links--title">Company</h3>
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
-                <a href="#" class="footer--middle--link">Home</a>
-                <a href="#" class="footer--middle--link">About Us</a>
-                <a href="#" class="footer--middle--link">Contact Us</a>
+                <a href="../templates/home.html" class="footer--middle--link">Home</a>
+                <a href="../templates/about.html" class="footer--middle--link">About
+                  Us</a>
+                <a href="../templates/contact.html"
+                  class="footer--middle--link">Contact Us</a>
                 <a href="#" class="footer--middle--link">Feedback</a>
               </div>
             </div>
@@ -462,8 +462,10 @@
               <h3 class="footer--middle--links--title">Splitter</h3>
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
-                <a href="#" class="footer--middle--link">Split CSV file</a>
-                <a href="#" class="footer--middle--link">Split JSON file</a>
+                <a href="../templates/dasboard-split.html"
+                  class="footer--middle--link">Split CSV file</a>
+                <a href="../templates/dasboard-split.html"
+                  class="footer--middle--link">Split JSON file</a>
               </div>
             </div>
 
@@ -472,7 +474,7 @@
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
                 <a href="#" class="footer--middle--link">Documentation</a>
-                <a href="#" class="footer--middle--link">FAQs</a>
+                <a href="../templates/faq.html" class="footer--middle--link">FAQs</a>
               </div>
             </div>
 
@@ -480,8 +482,10 @@
               <h3 class="footer--middle--links--title">Account</h3>
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
-                <a href="#" class="footer--middle--link">Profile</a>
-                <a href="#" class="footer--middle--link">Settings</a>
+                <a href="../templates/dashboard-settings.html"
+                  class="footer--middle--link">Profile</a>
+                <a href="../templates/dashboard-settings.html"
+                  class="footer--middle--link">Settings</a>
               </div>
             </div>
           </div>
@@ -492,8 +496,10 @@
               Copyright 2022. All Rights Reserved.
             </h4>
             <div class="footer--bottom--links">
-              <a href="#" class="footer--bottom--link">Privacy Policy</a>
-              <a href="#" class="footer--bottom--link">Terms and Conditions</a>
+              <a href="../templates/privacy.html" class="footer--bottom--link">Privacy
+                Policy</a>
+              <a href="../templates/t&c.html" class="footer--bottom--link">Terms
+                and Conditions</a>
             </div>
           </div>
           <!-- End of Bottom of Footer -->
