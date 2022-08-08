@@ -1,4 +1,5 @@
-# -Chunk_file_team_48-team
+# Go-Chunk
+
 A platform that accepts CSV or JSON large files, and breaks them into smaller bits - must be the right format.
 
 # About Us
