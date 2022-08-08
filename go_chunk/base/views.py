@@ -143,7 +143,7 @@ def chunk_file(request):
             saved = request.POST['saved']
         except MultiValueDictKeyError:
             saved = False
-            messages.error(request, "You didn't save the splited files. !5 minutes from now it will be deleted")
+            messages.error(request, "You didn't save the splited files. 15 minutes from now it will be deleted")
 
         if not os.path.exists(folder_path):
             os.mkdir(f'{dir_path}/media')
@@ -171,7 +171,7 @@ def chunk_file(request):
 
 
 
-@login_required(login_url='/signin/')
+@login_required(login_url='/login/')
 def files_view(request):
     user=request.user 
     files = ChunkedFile.objects.all()

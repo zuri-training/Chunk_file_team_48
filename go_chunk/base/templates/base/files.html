@@ -3,8 +3,12 @@
 {% block content %}
 <h1>Your File</h1>
     {% for file in files %}
-    
-        <p>download <a href="{{file.file.url}}" download="">{{file.file}}</a></p>
+        {% if "temp/" in file.file.url %}
+            <p>download <a href="{{file.file.url}}" download="">{{file.file | cut:'temp/'}}</a></p>
+        {% endif %}
+        {% if "media/" in file.file.url %}
+            <p>download <a href="{{file.file.url}}" download="">{{file.file | cut:'media/'}}</a></p>
+        {% endif %}
     
     {% endfor %}
 </main>
