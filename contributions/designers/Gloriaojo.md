@@ -1,4 +1,4 @@
-ISSUES ASSIGNED TO ME
+ISSUES ASSIGNED TO ME AND RESOLVED
 
 https://github.com/zuri-training/Chunk_file_team_48/issues/56
 https://github.com/zuri-training/Chunk_file_team_48/issues/53
