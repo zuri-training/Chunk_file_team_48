@@ -2,6 +2,15 @@
 
 A platform that accepts CSV or JSON large files, and breaks them into smaller bits - must be the right format.
 
+# Table of Contents
+- About US
+- How to Use
+  - To Run Locally
+- Tech Stack
+- Documentation
+- Authors
+
+
 # About Us
 Go-Chunk is a non-profit, open-source project launched in 2022 by Zuri Team powered by Ingressive for Good APIs. Having worked with data scientists and analysts all over the world, Go-Chunk aims to offer solutions to the stress of going through so many processes to break down data files and also the loss of files on any device.
 
@@ -58,6 +67,13 @@ Tech Stack
 
         * HTML
         * CSS BOOTSTRAP
-        * jAVASCRIPT
+        * JAVASCRIPT
         * PYTHON(Django) ​ ​
+        
+# Documentation
+Here is the link to our Documentation
 
+# Author
+
+# Acknowledgments
+The completion of this project could not have been possible without the assistance of Zuri and Ingressive4Good. We would like to also express our deep appreciation and indebtedness to our project supervisor and Zuri mentors for their endless support, kindness, and understanding during the project duration. Special thanks to all team members who played their role well in making this project come to life.
