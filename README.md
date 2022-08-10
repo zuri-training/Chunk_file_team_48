@@ -66,7 +66,7 @@ Tech Stack
  Our site was built using the following tools:
 
         * HTML
-        * CSS BOOTSTRAP
+        * CSS
         * JAVASCRIPT
         * PYTHON(Django) ​ ​
         
