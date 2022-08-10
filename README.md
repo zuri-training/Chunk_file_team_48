@@ -3,7 +3,7 @@
 A platform that accepts CSV or JSON large files, and breaks them into smaller bits - must be the right format.
 
 # Table of Contents
-- About US
+- About Us
 - How to Use
 - To Run Locally
 - Tech Stack
