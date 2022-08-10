@@ -4,27 +4,33 @@ A platform that accepts CSV or JSON large files, and breaks them into smaller bi
 
 
 
-# Table of Contents
-- About Us
-- How to Use
-- To Run Locally
-- Tech Stack
-- Documentation
-- Our Team
-- Authors
-- Acknowledgments
+## Table of Contents
+- [Overview](#overview)  
+ -[Features](#features) 
+ -[Screenshot](#screenshot) 
+ -[Link](#link) 
+-[Development](#development) 
+ -[Built with](#built-with) 
+  -[Product design](#product-design)
+  -[Frontend development](#frontend-development)
+  -[Backend development](#backend-development)
+ -[Documentation ](#documentation)
+ -[What we learned](#what-we-learned) 
+ -[Continued development](#continued-development)
+ -[Useful resources](#useful-resources)
+-[Meet our team](#meet-our-team)
+-[Author](#author) 
+-[Acknowledgments](#acknowledgements) 
+
 
 
 # About Us
 Go-Chunk is a non-profit, open-source project launched in 2022 by Zuri Team powered by Ingressive for Good APIs. Having worked with data scientists and analysts all over the world, Go-Chunk aims to offer solutions to the stress of going through so many processes to break down data files and also the loss of files on any device.
 
-# How to Use
+- How to Use
+- To Run Locally
 
-    * Signup/Login on our website
-    * Upload your file
-    * Specify Number of chunks
-    * Click on the split button
-    * The file will be chunked and saved as .zip and, ready for download
+
 
 # To run locally
 
