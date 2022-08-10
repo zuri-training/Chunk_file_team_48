@@ -1,6 +1,6 @@
 # Go-Chunk
 
-A platform that accepts CSV or JSON large files, and breaks them into smaller bits - must be the right format.
+A platform that accepts CSV or JSON large files, and breaks them into smaller bits called Chunks - must be the right format.
 
 # Table of Contents
 - About Us
