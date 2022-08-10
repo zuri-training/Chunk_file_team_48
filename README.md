@@ -66,12 +66,12 @@ Tech Stack
  Our site was built using the following tools:
 
         * HTML
-        * CSS 
+        * CSS BOOTSTRAP
         * JAVASCRIPT
         * PYTHON(Django) ​ ​
         
 # Documentation
-Here is the link to our Documentation
+Here is the link to our [Documentation](https://docs.google.com/document/d/1kr2OITN5x1Qk9msqu2vurgJEsORGdqHtZe24EeHFHmU/edit)
 
 # Author
 
