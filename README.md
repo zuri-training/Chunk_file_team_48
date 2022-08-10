@@ -5,7 +5,7 @@ A platform that accepts CSV or JSON large files, and breaks them into smaller bi
 # Table of Contents
 - About US
 - How to Use
-  - To Run Locally
+- To Run Locally
 - Tech Stack
 - Documentation
 - Authors
