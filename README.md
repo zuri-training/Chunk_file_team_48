@@ -1,6 +1,8 @@
 # Go-Chunk
 
-A platform that accepts CSV or JSON large files, and breaks them into smaller bits called Chunks - must be the right format.
+A platform that accepts CSV or JSON large files, and breaks them into smaller bits called Chunks - must be the right format. These chunks are converted into Zip for download and also made available to save for later download. On Go-chunk your data is secured and protected from security breach and also files are splitted in the fastest way possible.
+
+
 
 # Table of Contents
 - About Us
