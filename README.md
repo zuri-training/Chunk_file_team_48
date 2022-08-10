@@ -75,7 +75,7 @@ Tech Stack
 # Documentation
 Here is the link to our [Documentation](https://docs.google.com/document/d/1kr2OITN5x1Qk9msqu2vurgJEsORGdqHtZe24EeHFHmU/edit)
 
-#Our Team
+# Our Team
 Meet our Team here
 
 # Author
