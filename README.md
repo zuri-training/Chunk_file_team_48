@@ -8,7 +8,9 @@ A platform that accepts CSV or JSON large files, and breaks them into smaller bi
 - To Run Locally
 - Tech Stack
 - Documentation
+- Our Team
 - Authors
+- Acknowledgments
 
 
 # About Us
@@ -72,6 +74,9 @@ Tech Stack
         
 # Documentation
 Here is the link to our [Documentation](https://docs.google.com/document/d/1kr2OITN5x1Qk9msqu2vurgJEsORGdqHtZe24EeHFHmU/edit)
+
+#Our Team
+Meet our Team here
 
 # Author
 Chinecherem Nduka [{@ChinechNduka}](https://github.com/ChinechNduka)
