@@ -21,14 +21,16 @@
 
             <!-- ----Signin container----- -->
             <div class="signin--container">
-                <h3 class="signin--top--content">Login to Go-Chunk</h3>
+                <div class="signin--top--content">
+                    <h1>Login to Go-Chunk</h1>
+                </div>
 
                 <!-- ---- Signin form content---- -->
 
                 <div class="signin--bottom--content">
                     <h3 class="signin--bottom--content--title">Welcome Back!</h3>
                     <p class="signin--bottom-content--title-description">
-                        Log in to your account to continue...
+                        Kindly Log in to continue...
                     </p>
                     <form action="" class="signin--bottom--content--form">
                         <label class="signin--bottom--content--form--label">Email</label>
@@ -47,21 +49,31 @@
                             id=""
                             placeholder="Minimun of 8 characters"
                             />
-                        <label for=""
-                            class="signin--form--label-remember-me">
-                            <input
-                                type="checkbox"
-                                name=""
-                                id=""
-                                class="signin--form--label-checkbox"
-                                />Remember me
-                        </label>
+                        <div class="remember-password">
+                            <label for=""
+                                class="signin--form--label-remember-me">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id=""
+                                    class="signin--form--label-checkbox"
+                                    />Remember me
+                            </label>
+                            <div>
+                                <a href="">Forgot password?</a>
+                            </div>
+                        </div>
+
+
                         <button class="signin--btn">Sign in</button>
-                        <p class="signin-button--below--text">
-                            Don't have an account?
-                            <a href="../templates/signup.html"
-                                class="signin--intext--links">Sign Up</a>
-                        </p>
+                        <div class="last-text">
+                            <p class="signin-button--below--text">
+                                Don't have an account?
+                                <a href="../templates/signup.html"
+                                    class="signin--intext--links">Sign Up</a>
+                            </p>
+                        </div>
+
                     </form>
                 </div>
 

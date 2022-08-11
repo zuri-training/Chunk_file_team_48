@@ -1,8 +1,19 @@
-.dashboard--setings {
+.dashboard--settings {
     padding: 80px 0 150px 0;
+}
+@media screen and (max-width: 1024px) {
+    .dashboard--settings {
+        padding: 0;
+        padding-bottom: 48px;
+    }
 }
 .dashboard--settings--form {
     max-width: 700px;
+}
+@media screen and (max-width: 1024px) {
+    .dashboard--settings--form {
+        margin: 0 auto;
+    }
 }
 .dashboard--settings--information > h1 {
     margin-bottom: 32px;
@@ -12,6 +23,11 @@
 }
 .dashboard--settings--information > h3 {
     margin-bottom: 41px;
+}
+@media screen and (max-width: 1024px) {
+    .dashboard--settings--information {
+        text-align: center;
+    } 
 }
 .dashboard--settings--information--photo {
     border: none;
@@ -27,6 +43,15 @@
     position: absolute;
     bottom: 20px;
     left: 115px;
+}
+@media screen and (max-width: 1024px) {
+    .dashboard--settings--information--photo {
+        width: 100%;
+    }
+    .dashboard--settings--information--photo > img:nth-child(2) {
+        left: 420px;
+        display: none;
+    }
 }
 .form--field {
     display: flex;

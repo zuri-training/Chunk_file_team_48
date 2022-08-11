@@ -1,55 +1,66 @@
 .dashboard--saved--header {
-    margin: 80px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .dashboard--saved--header img {
-    width: 30px;
-    margin-right: 20px;
+  width: 30px;
+  margin-right: 20px;
 }
-.dashboard--saved--share ,
+.dashboard--saved--share,
 .dashboard--saved--delete {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
 }
 
 #dashboard--saved--table {
-    margin-top: 40px;
-    width: 100%;
+  margin-top: 40px;
+  width: 100%;
 }
 #table--title > th {
-    padding-bottom: 40px;
-    text-align: left;
+  padding-bottom: 40px;
+  text-align: left;
 }
 .table--items {
-    margin-bottom: 210px;
+  margin-bottom: 210px;
 }
 .table--items > td:nth-child(1) {
-    height: 100px;
+  height: 100px;
 }
 .table--items > td {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 .table--items img {
-    width: 20px;
+  width: 20px;
 }
 .table--items--file {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
 }
 .table--items--file > img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
+
 button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-family: var(--ff);
-    font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--ff);
+  font-size: 16px;
+}
+
+.checkbox {
+  margin: 0;
+  width: 24px;
+  height: 16px;
+}
+
+.table--items--file span {
+  margin-left: 10px;
 }
