@@ -26,6 +26,28 @@ main {
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 1024px) {
+  .contact {
+    padding: 28px 24px;
+    color: var(--default-black);
+  }
+  .contact--hero--info {
+    margin: 44px auto;
+    padding: 0;
+  }
+  .contact--hero--info--title {
+    font-size: 20px;
+    color: var(--bg-color);
+    margin-bottom: 16px;
+  }
+  .contact--hero--description {
+    font-size: 12px;
+    color: var(--default-black);
+    padding: 5px 23px;
+    margin-bottom: 16px;
+  }
+}
+
 /* -----Contact content------ */
 .contact--content {
   display: flex;
@@ -39,7 +61,21 @@ main {
   width: 585.56px;
   height: 614px;
 }
+@media screen and (max-width: 1024px) {
+  .contact--content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    margin-bottom: 16px;
+  }
 
+  .contact--content > img {
+    width: 280px;
+    height: 296px;
+    margin-bottom: 42px;
+  }
+}
 /* ------Form--------- */
 .contact--form {
   background-color: #ffff;
@@ -100,4 +136,58 @@ main {
   box-shadow: 5px 10px 20px rgba(255, 192, 86, 0.2);
   font-weight: var(--fw-big);
   margin: 42px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact--form {
+    margin: 0;
+    align-content: center;
+    padding: 20px 38px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 5px 10px 0px #00000033;
+  }
+
+  .form--title > h3 {
+    font-weight: var(--fw-big);
+    font-size: 12px;
+    margin: 16px 0 5px;
+  }
+
+  .form--title > input {
+    width: 235px;
+    height: 30.62px;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+    padding: 0 10px;
+  }
+  .form--title > textarea {
+    width: 235px;
+    height: 191px;
+    border: 1px solid #bcbcbc;
+    border-radius: 8px;
+    padding: 20px 25px;
+    font-family: var(--ff);
+  }
+  .form--title > textarea:focus {
+    outline: 2px solid var(--bg-color);
+  }
+  .form--title > textarea:focus {
+    outline: 2px solid var(--bg-color);
+  }
+  .form--title > textarea::after {
+    color: #0b0b0b;
+  }
+
+  /* -----Contact Form Button----- */
+  .contact--form--btn {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px 35px;
+  }
 }

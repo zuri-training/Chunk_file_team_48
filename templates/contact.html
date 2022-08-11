@@ -1,192 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
 
-    <!-- Global Stylesheets -->
-    <link rel="stylesheet" href="../static/globalstyle.css" />
-    <link rel="stylesheet" href="../static/header.css" />
-    <link rel="stylesheet" href="../static/footer.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chunk File Project</title>
 
-    <!-- Pages Stylesheets -->
-    <link rel="stylesheet" href="./contact.css" />
-  </head>
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0" />
+            <title>Chunk File Project</title>
 
-  <body>
-    <main>
-      <!-- Navigation -->
-      <div class="nav">
-        <!-- Logo -->
-        <div>
-          <a href="../templates/home.html"><img class="logo"
-              src="../images/Frame 1028.png" alt=""
-              /></a>
-        </div>
-        <!-- NavLinks-->
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </div>
-        <!-- End of NavLinks -->
-        <!-- Nav Buttons -->
-        
-        <div>
-          <a href="./signin.html"> <button class="login-btn">Log in</button></a>
-          <a href="./signup.html"> <button class="register-btn">Register</button></a>
-        </div>
-        <!-- End of Nav Buttons -->
-      </div>
-      <!-- End of Navigation -->
+            <!-- Global Stylesheets -->
+            <link rel="stylesheet" href="../static/globalstyle.css" />
+            <link rel="stylesheet" href="../static/header.css" />
+            <link rel="stylesheet" href="../static/footer.css" />
+            <link rel="stylesheet" href="../static/faq.css" />
+            <link rel="stylesheet" href="./home.css" />
+            <link rel="stylesheet" href="./privacy.css">
+            <link rel="stylesheet" href="./t&c.css">
+            <link rel="stylesheet" href="./about.css">
+            <link rel="stylesheet" href="./contact.css">
+        </head>
 
-      <!-- Hero Info -->
-      <div class="contact--hero--info">
-        <h1 class="contact--hero--info--title">Contact Us</h1>
-        <p class="contact--hero--description">
-          Have an enquiry or feedback for us? Fill out the form to <br />
-          reach out and contact our team
-        </p>
-      </div>
-      <!-- End of Hero Section -->
+        <body>
+            <main>
+                <!-- Navigation -->
+                <nav>
+                    <div class="nav--logo--toggle">
+                        <img class="logo" src="../images/Frame 1028.png" alt=""
+                            />
+                        <button type="submit">
+                            <img src="../images/bars.svg" alt=""
+                                class="nav--toggle-btn">
+                        </button>
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="./home.html">Home</a></li>
+                            <li><a href="./documentation_intro.html">Documentation</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="#faq">FAQs</a></li>
+                        </ul>
+                        <div class="nav--buttons">
+                            <a href=""><button class="login-btn">Log in</button></a>
+                            <a href=""><button class="register-btn">Register</button></a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End of Navigation -->
 
-      <!-- Beginning of Section -->
-      <section class="contact">
-        <div class="contact--content">
-          <img src="../images/Group 247.png" alt="" />
 
-          <!-- Beginning of Form -->
-          <form class="contact--form" action="">
-            <div class="form--title">
-              <h3>Full name</h3>
-              <input
-                type="text"
-                name="FullName"
-                id=""
-                placeholder="Doe team 48"
-                />
-            </div>
-            <div class="form--title">
-              <h3>Email address</h3>
-              <input type="email" id="" placeholder="doeteam@gmail.com" />
-            </div>
-            <div class="form--title">
-              <h3>Message</h3>
-              <textarea
-                name=""
-                id=""
-                cols=""
-                rows=""
-                placeholder="Write a message"></textarea>
-            </div>
-            <button class="contact--form--btn">Send message</button>
-          </form>
-          <!-- End of Form -->
-        </div>
-      </section>
-      <!-- --------End of section------- -->
-      <!-- Footer -->
-      <footer class="footer--container">
-        <!-- Top of Footer -->
-        <div class="footer--top">
-          <img
-            class="footer--top--logo"
-            src="../images/LogoFooter.png"
-            alt=""
-            />
-          <div class="footer--top--icons">
-            <a href="" class="footer--top--social">
-              <img
-                src="../images/entypo-social_linkedin-with-circle.png"
-                alt="linkedin-icon"
-                class="footer--social--icon"
-                />
-            </a>
-            <a href="" class="footer--top--social">
-              <img
-                src="../images/ant-design_twitter-circle-filled.png"
-                alt="twitter-icon"
-                class="footer--social--icon"
-                />
-            </a>
-            <a href="" class="footer--top--social">
-              <img
-                src="../images/entypo-social_facebook-with-circle.png"
-                alt="facebook-icon"
-                class="footer--social--icon"
-                />
-            </a>
-            <a href="" class="footer--top--social">
-              <img
-                src="../images/entypo-social_youtube-with-circle.png"
-                alt="youtube-icon"
-                class="footer--social--icon"
-                />
-            </a>
-          </div>
-        </div>
-        <!-- End of Top of Footer -->
-        <!-- Middle of Footer -->
-        <div class="footer--middle">
-          <div class="footer--middle--links">
-            <h3 class="footer--middle--links--title">Company</h3>
-            <div class="underline"></div>
-            <div class="footer--middle--link__grid">
-              <a href="#" class="footer--middle--link">Home</a>
-              <a href="#" class="footer--middle--link">About Us</a>
-              <a href="#" class="footer--middle--link">Contact Us</a>
-              <a href="#" class="footer--middle--link">Feedback</a>
-            </div>
-          </div>
+                <!-- Hero Info -->
+                <div class="contact--hero--info">
+                    <h1 class="contact--hero--info--title">Contact Us</h1>
+                    <p class="contact--hero--description">
+                        Have an enquiry or feedback for us? Fill out the form to
+                        reach out and contact our team
+                    </p>
+                </div>
+                <!-- End of Hero Section -->
 
-          <div class="footer--middle--links">
-            <h3 class="footer--middle--links--title">Splitter</h3>
-            <div class="underline"></div>
-            <div class="footer--middle--link__grid">
-              <a href="#" class="footer--middle--link">Split CSV file</a>
-              <a href="#" class="footer--middle--link">Split JSON file</a>
-            </div>
-          </div>
+                <!-- Beginning of Section -->
+                <section class="contact">
+                    <div class="contact--content">
+                        <img src="../images/Group 247.png" alt="" />
 
-          <div class="footer--middle--links">
-            <h3 class="footer--middle--links--title">Resources</h3>
-            <div class="underline"></div>
-            <div class="footer--middle--link__grid">
-              <a href="#" class="footer--middle--link">Documentation</a>
-              <a href="#" class="footer--middle--link">FAQs</a>
-            </div>
-          </div>
+                        <!-- Beginning of Form -->
+                        <form class="contact--form" action="">
+                            <div class="form--title">
+                                <h3>Full name</h3>
+                                <input
+                                    type="text"
+                                    name="FullName"
+                                    id=""
+                                    placeholder="Doe team 48"
+                                    />
+                            </div>
+                            <div class="form--title">
+                                <h3>Email address</h3>
+                                <input type="email" id=""
+                                    placeholder="doeteam@gmail.com" />
+                            </div>
+                            <div class="form--title">
+                                <h3>Message</h3>
+                                <textarea
+                                    name=""
+                                    id=""
+                                    cols=""
+                                    rows=""
+                                    placeholder="Write a message"></textarea>
+                            </div>
+                            <button class="contact--form--btn">Send message</button>
+                        </form>
+                        <!-- End of Form -->
+                    </div>
+                </section>
+                <!-- --------End of section------- -->
 
-          <div class="footer--middle--links">
-            <h3 class="footer--middle--links--title">Account</h3>
-            <div class="underline"></div>
-            <div class="footer--middle--link__grid">
-              <a href="#" class="footer--middle--link">Profile</a>
-              <a href="#" class="footer--middle--link">Settings</a>
-            </div>
-          </div>
-        </div>
-        <!-- End of Middle of Footer -->
-        <!-- Bottom of Footer -->
-        <div class="footer--bottom">
-          <h4 class="footer--bottom--copyright">
-            Copyright 2022. All Rights Reserved.
-          </h4>
-          <div class="footer--bottom--links">
-            <a href="./privacy.html" class="footer--bottom--link">Privacy Policy</a>
-            <a href="./t&c.html" class="footer--bottom--link">Terms and Conditions</a>
-          </div>
-        </div>
-        <!-- End of Bottom of Footer -->
-      </footer>
-    </main>
-    <script src="./contact.js"></script>
-  </body>
-</html>
+
+                <!-- Footer -->
+                <footer class="footer--container">
+                    <!-- Top of Footer -->
+                    <div class="footer--top">
+                        <img class="footer--top--logo"
+                            src="../images/LogoFooter.png" alt=""
+                            />
+                        <div class="footer--top--icons">
+                            <a href="" class="footer--top--social">
+                                <img
+                                    src="../images/entypo-social_linkedin-with-circle.png"
+                                    alt="linkedin-icon"
+                                    class="footer--social--icon" />
+                            </a>
+                            <a href="" class="footer--top--social">
+                                <img
+                                    src="../images/ant-design_twitter-circle-filled.png"
+                                    alt="twitter-icon"
+                                    class="footer--social--icon" />
+                            </a>
+                            <a href="" class="footer--top--social">
+                                <img
+                                    src="../images/entypo-social_facebook-with-circle.png"
+                                    alt="facebook-icon"
+                                    class="footer--social--icon" />
+                            </a>
+                            <a href="" class="footer--top--social">
+                                <img
+                                    src="../images/entypo-social_youtube-with-circle.png"
+                                    alt="youtube-icon"
+                                    class="footer--social--icon" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End of Top of Footer -->
+                    <!-- Middle of Footer -->
+                    <div class="footer--middle">
+                        <div class="footer--middle--links">
+                            <h3 class="footer--middle--links--title">Company
+                                <img
+                                    src="../images/angle-down.svg"
+                                    alt="arrow"
+                                    class="arrow--mobile"></h3>
+                            <div class="underline"></div>
+                            <div class="footer--middle--link__grid">
+                                <a href="#" class="footer--middle--link">Home</a>
+                                <a href="#" class="footer--middle--link">About
+                                    Us</a>
+                                <a href="#" class="footer--middle--link">Contact
+                                    Us</a>
+                                <a href="#" class="footer--middle--link">Feedback</a>
+                            </div>
+                        </div>
+
+                        <div class="footer--middle--links">
+                            <h3 class="footer--middle--links--title">Splitter
+                                <img
+                                    src="../images/angle-down.svg"
+                                    alt="arrow"
+                                    class="arrow--mobile"></h3>
+                            <div class="underline"></div>
+                            <div class="footer--middle--link__grid">
+                                <a href="#" class="footer--middle--link">Split
+                                    CSV file</a>
+                                <a href="#" class="footer--middle--link">Split
+                                    JSON file</a>
+                            </div>
+                        </div>
+
+                        <div class="footer--middle--links">
+                            <h3 class="footer--middle--links--title">Resources
+                                <img
+                                    src="../images/angle-down.svg"
+                                    alt="arrow"
+                                    class="arrow--mobile"></h3>
+                            <div class="underline"></div>
+                            <div class="footer--middle--link__grid">
+                                <a href="#" class="footer--middle--link">Documentation</a>
+                                <a href="#" class="footer--middle--link">FAQs</a>
+                            </div>
+                        </div>
+
+                        <div class="footer--middle--links">
+                            <h3 class="footer--middle--links--title">Account
+                                <img
+                                    src="../images/angle-down.svg"
+                                    alt="arrow"
+                                    class="arrow--mobile"></h3>
+                            <div class="underline"></div>
+                            <div class="footer--middle--link__grid">
+                                <a href="#" class="footer--middle--link">Profile</a>
+                                <a href="#" class="footer--middle--link">Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Middle of Footer -->
+                    <!-- Bottom of Footer -->
+                    <div class="footer--bottom">
+                        <h4 class="footer--bottom--copyright">
+                            Copyright 2022. All Rights Reserved.
+                        </h4>
+                        <div class="footer--bottom--links">
+                            <a href="#" class="footer--bottom--link">Privacy
+                                Policy</a>
+                            <a href="#" class="footer--bottom--link">Terms
+                                and
+                                Conditions</a>
+                        </div>
+                    </div>
+                    <!-- End of Bottom of Footer -->
+                </footer>
+                <!-- End of Footer -->
+
+            </main>
+            <script src="./faq.js"></script>
+            <script src="./footer.js"></script>
+            <script src="./header.js"></script>
+        </body>
+
+    </html>

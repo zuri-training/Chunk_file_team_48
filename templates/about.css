@@ -28,6 +28,24 @@ main {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 24px 24px;
+  }
+  .hero--info {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .about--hero--info--title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .about--hero--description {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
+
 /* -----Contact Form Button----- */
 .about--contact--form--btn {
   width: 268px;
@@ -40,6 +58,16 @@ main {
   font-weight: var(--fw-big);
   margin: 108px 0 200px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .about--contact--form--btn {
+    width: 160px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
 }
 
 /*----Contents----*/
