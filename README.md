@@ -8,7 +8,7 @@ A platform that accepts CSV or JSON large files, and breaks them into smaller bi
 
 *[Overview](#overview)
 *[Features](#features)
-*[Resources].(#resources)
+*[Resources](#resources)
 *[Development](#development)
 *[Built with](#built-with)
 *[Product design](#product-design)
