@@ -7,47 +7,48 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
-# from django.contrib.auth.forms import UserCreationForm
-from zipfile import  ZipFile
+from zipfile import  ZipFile, ZIP_DEFLATED
 import pandas as pd
 import os
-from datetime import datetime, timedelta
+# from datetime import datetime, timedelta
 from .models import ChunkedFile
 # Create your views here.
 
 
-dir_path = os.path.dirname(os.path.realpath('src'))
+dir_path = os.path.dirname(os.path.realpath('go_chunk'))
 folder_path = os.path.join(dir_path,'media')
 temp_folder_path = os.path.join(dir_path,'temp')
-date = datetime.now().strftime("%Y_%m_%d,%I-%M-%S,%p")
-
+# date = datetime.now().strftime("%Y_%m_%d,%I-%M-%S,%p")
+print(folder_path)
 def storingFile(saved, user, ouput_name, file, chunk_size,batch_no):
                 if saved == 'on':
-                    db_file_path = f'media/{user}-{ouput_name}-{date}.zip'
-                    zip_file_path = f'media/{user}-{ouput_name}-{date}.zip'
+                    db_file_path = f'media/{user}-{ouput_name}.zip'
+                    zip_file_path = f'media/{user}-{ouput_name}.zip'
                     for chunk in pd.read_csv(file, chunksize=chunk_size, encoding='Windows-1252'):
                         with ZipFile(zip_file_path, 'a') as zip_file:
                             file_name = f"{ouput_name}-" + str(batch_no) + ".csv"
-                            zip_file.write(file_name,chunk.to_csv(file_name, index=False) ,compress_type=zipfile.ZIP_DEFLATED)
+                            zip_file.write(file_name,chunk.to_csv(file_name, index=False) ,compress_type=ZIP_DEFLATED)
                         os.remove(file_name)
                         batch_no += 1
-                    csv_obj = ChunkedFile.objects.create(user=user, file=db_file_path, expire_at=0)
+                    csv_obj = ChunkedFile.objects.create(user=user, file=db_file_path)
                     csv_obj.save()
 
                 if saved == False:
-                    temp_zip_file_path = f'temp/{user}-{ouput_name}-{date}.zip'
-                    temp_db_file_path = f'temp/{user}-{ouput_name}-{date}.zip'
+                    temp_zip_file_path = f'temp/{user}-{ouput_name}.zip'
+                    temp_db_file_path = f'temp/{user}-{ouput_name}.zip'
                     for chunk in pd.read_csv(file, chunksize=chunk_size, encoding='Windows-1252'):
                         with ZipFile(temp_zip_file_path, 'a') as zip_file:
                             file_name = f"{ouput_name}-" + str(batch_no) + ".csv"
-                            zip_file.write(file_name,chunk.to_csv(file_name, index=False) ,compress_type=zipfile.ZIP_DEFLATED)
+                            zip_file.write(file_name,chunk.to_csv(file_name, index=False) ,compress_type=ZIP_DEFLATED)
                         os.remove(file_name)
                         batch_no += 1
-                    csv_obj = ChunkedFile.objects.create(user=user, file=temp_db_file_path, expire_at=datetime.now() + timedelta(minutes = 1))
+                    csv_obj = ChunkedFile.objects.create(user=user, file=temp_db_file_path)
                     csv_obj.save()
 
 
 def home(request):
+    
+    print(folder_path)
     return render(request, 'base/home.html')
 
 def about(request):
@@ -127,9 +128,7 @@ def logoutUser(request):
     return redirect('/')
 
 
-
-
-@login_required(login_url='/login')
+@login_required(login_url='/login/')
 def chunk_file(request):
     if request.method == "POST":
         file = request.FILES.get('doc')
@@ -138,13 +137,13 @@ def chunk_file(request):
         user = request.user
         if chunk_size == '' or file == None:
             messages.error(request, 'fields cannot be blank!')
-            return redirect('/chunk')
+            return redirect('/chunk/')
 
         try:
             saved = request.POST['saved']
         except MultiValueDictKeyError:
             saved = False
-            messages.error(request, "You didn't save the splited files. !5 minutes from now it will be deleted")
+            messages.error(request, "You didn't save the splited files. 15 minutes from now it will be deleted")
 
         if not os.path.exists(folder_path):
             os.mkdir(f'{dir_path}/media')
@@ -163,7 +162,7 @@ def chunk_file(request):
             
 
             messages.info(request, 'file has been split successfully')
-            return render(request, '/chunk')
+            return redirect('/chunk/')
         else:
             messages.error(request, 'invalid file format')
     return render(request, 'base/chunk.html')
@@ -172,13 +171,14 @@ def chunk_file(request):
 
 
 
-@login_required(login_url='/signin')
-def new_file(request, pk):
+@login_required(login_url='/login/')
+def files_view(request):
     user=request.user 
-    file = ChunkedFile.objects.filter(user=user, file_id=pk)
-    if file.exists():
-        file = ChunkedFile.objects.get(user=user, file_id=pk) 
-        return render(request, 'new.html', {'file':file})
+    files = ChunkedFile.objects.all()
+
+    if files.exists():
+        files = ChunkedFile.objects.filter(user=user)
+        return render(request, 'base/files.html', {'files':files})
         
     messages.error(request, 'file not found')
-    return render(request, 'new.html')
+    return render(request, 'base/files.html')

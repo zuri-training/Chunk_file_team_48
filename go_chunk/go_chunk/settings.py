@@ -16,7 +16,7 @@ from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR= Path(__file__).resolve().parent.parent
-print(BASE_DIR)
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -82,6 +82,24 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+
+    # This is for the live db on mogodb atlas
+    # 'default': {
+    #      'ENGINE': 'djongo',
+    #      'CLIENT': {
+    #        "name": 'Chunk',
+    #        "host": 'mongodb://Pablo:woboYxeACHqV3zTP@cluster0-shard-00-00.7hoph.mongodb.net:27017,cluster0-shard-00-01.7hoph.mongodb.net:27017,cluster0-shard-00-02.7hoph.mongodb.net:27017/?ssl=true&replicaSet=atlas-tznrjm-shard-0&authSource=admin&retryWrites=true&w=majority',
+    #        "username": 'Pablo',
+    #        "password": 'woboYxeACHqV3zTP',
+    #        "authMechanism": "SCRAM-SHA-1",
+    #     }
+    #  }
+
+    #  This is for the local mongodb on your system
+    # 'default': {
+    #      'ENGINE': 'djongo',
+    #        "NAME": 'chunk',
+    #  }
 }
 
 
