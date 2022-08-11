@@ -24,6 +24,11 @@
   width: 100%;
   top: 0;
 }
+@media screen and (max-width: 1439px) {
+  .dashboard--nav {
+    padding: 20px;
+  }
+}
 /* Nav Toggle */
 .dashboard--nav--toggle {
   display: flex;
@@ -54,15 +59,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 180px;
+  /* width: 180px; */
+  width: fit-content;
 }
-.dashboard--nav--user--bell {
+/* .dashboard--nav--user--bell {
   width: 33px;
-}
+} */
 .dashboard--nav--user--img {
   width: 46px;
   border-radius: 50%;
   border: solid 3px var(--home-hero-2-color);
+}
+@media screen and (max-width: 1439px) {
+  .dashboard--nav--toggle {
+    width: fit-content;
+  }
+  .dashboard--nav--toggle--logo {
+    width: 120px;
+    margin-left: 10px;
+  }
+  .dashboard--nav--toggle--icon {
+    width: 20px;
+  }
+  .dashboard--nav--user--img {
+    width: 30px;
+  }
 }
 
 /* Sidebar */
@@ -74,6 +95,7 @@
   width: fit-content;
   height: 100%;
   top: 106px;
+  z-index: 1000;
 }
 .dashboard--sidebar--underline {
   height: 2px;
@@ -81,8 +103,6 @@
   margin-top: 60px;
 }
 
-/* .dashboard--sidebar--links__center{
-} */
 .dashboard--sidebar--links {
   margin: 32px 32px 32px 76px;
   display: flex;
@@ -114,6 +134,11 @@
   align-items: center;
   height: 100%;
   padding: 0 60px 0 350px;
+}
+@media screen and (max-width: 1439px) {
+  .dashboard--main {
+    padding: 20px;
+  }
 }
 .dashboard--main--function {
   width: 100%;
@@ -178,11 +203,8 @@
   width: 15px; /* width of the entire scrollbar */
 }
 
-/* .dashboard--splitted--files--view::-webkit-scrollbar-track {
-  /* color of the tracking area */
-/* background: var(--home-hero-2-color);  */
-*/ .dashboard--splitted--files--view::-webkit-scrollbar-thumb {
-  background-color: blue; /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-  border: 3px solid orange; /* creates padding around scroll thumb */
+.dashboard--splitted--files--view::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
 }

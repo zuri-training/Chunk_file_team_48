@@ -5,10 +5,6 @@
   align-items: center;
   background-color: var(--bg-2-color);
   padding: 100px 83px 229px 110px;
-
-  /* 1440px Screen Size */
-  /* max-width: 1440px;
-  margin: 0 auto; */
 }
 .home--hero--introduction > h1 {
   font-size: var(--fs-large);
@@ -239,11 +235,8 @@
   background-color: #ffeac7;
   display: grid;
   place-items: center;
-
-  /* 1440px Screen Size */
-  /* max-width: 1440px;
-  margin: 0 auto; */
 }
+
 .testimonials--title {
   font-size: var(--fs-large);
   font-weight: var(--fw-large);
@@ -290,3 +283,4 @@
 .testimonials--role {
   font-size: var(--fw-small);
 }
+

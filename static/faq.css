@@ -1,3 +1,6 @@
+/* About to work on media queries */
+
+/* ------FAQ styles---------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,14 +14,20 @@
 
 .faq-header-text h1 {
   margin-bottom: 15px;
+  font-size: var(--fs-large);
 }
 
 .faq-header-text h3 {
+  font-size: var(--fs-medium);
   margin-bottom: 15px;
 }
 
 .faq-header-text p {
   margin-bottom: 35px;
+}
+
+#faq-link {
+  color: var(--bg-color);
 }
 
 .question-box-container {
@@ -54,10 +63,6 @@
   margin-top: 20px;
   border-radius: 8px;
   background-color: #2e53d2;
-  /* -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px; */
 }
 
 .asked-questions {
@@ -100,32 +105,64 @@
 }
 
 .answer-box button {
-  padding: 0;
-  margin: 0;
+  padding: -50px;
+  padding-top: -2rem;
   color: #2e53d2;
   background-color: #ffff;
   font-size: 20px;
   border: 2px solid #2e53d2;
   cursor: pointer;
-  line-height: 0;
   height: 24px;
   width: 24px;
   border-radius: 50%;
-
-  align-content: center;
-  text-align: center;
-  justify-content: center;
 }
 
 .answer-box-answer {
   width: 834px;
   border: 2px solid #2e53d2;
+  margin-top: -2px;
   border-radius: 0 0 8px 8px;
   height: fit-content;
   margin-top: -1;
 }
-
 .answer-box-answer p {
   text-align: left;
   padding: 20px;
 }
+
+/* ===========
+Media Query
+=========== */
+@media screen and (max-width: 1439px) {
+  .faq {
+    padding: 20px;
+    margin: 0;
+    max-width: 100vw;
+  }
+  .faq-header-text > h1 {
+    font-size: var(--fs-medium);
+  }
+  .faq-header-text > h3 {
+    font-size: var(--fs-small);
+  }
+  .faq-header-text > p {
+    font-size: smaller;
+  }
+  .answer-box, .answer-box-answer, .answer-question-box, .question-box {
+    width: 100%;
+    font-size: smaller;
+    text-align: left;
+    /* padding: 10px; */
+  }
+  .asked-questions {
+    font-size: smaller;
+  }
+  .asked-questions {
+    font-weight: 600;
+    font-size: smaller;
+    line-height: 12px;
+    color: #ffffff;
+    width: 80%;
+  }
+}
+

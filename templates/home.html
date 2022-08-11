@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,29 +24,27 @@
     <body>
       <main>
         <!-- Navigation -->
-        <div class="nav">
-          <!-- Logo -->
-          <div>
+        <nav>
+          <div class="nav--logo--toggle">
             <img class="logo" src="../images/Frame 1028.png" alt="" />
+            <button type="submit">
+              <img src="../images/bars.svg" alt="" class="nav--toggle-btn">
+            </button>
           </div>
-          <!-- NavLinks-->
           <div class="nav-links">
             <ul>
-              <li><a href="../templates/home.html">Home</a></li>
-              <li><a href="#">Documentation</a></li>
-              <li><a href="../templates/contact.html">Contact</a></li>
-              <li><a href="../templates/about.html">About Us</a></li>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="./documentation_intro.html">Documentation</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./about.html">About Us</a></li>
               <li><a href="#faq">FAQs</a></li>
             </ul>
+            <div class="nav--buttons">
+              <a href="./signin.html"><button class="login-btn">Log in</button></a>
+              <a href="./signup.html"><button class="register-btn">Register</button></a>
+            </div>
           </div>
-          <!-- End of NavLinks -->
-          <!-- Nav Buttons -->
-          <div>
-            <a href="../templates/signin.html"><button class="login-btn">Log in</button></a>
-            <a href="../templates/signup.html"><button class="register-btn">Register</button></a>
-          </div>
-          <!-- End of Nav Buttons -->
-        </div>
+        </nav>
         <!-- End of Navigation -->
 
         <!-- Hero Container-->
@@ -61,8 +60,7 @@
               files or Save it for later.
             </p>
             <p>All for FREE!!!</p>
-            <a href="../templates/dasboard-split.html"><button
-                class="chunk--btn">CHUNK FILES</button></a>
+            <a href=""><button class="chunk--btn">CHUNK FILES</button></a>
           </div>
           <img src="../images/hero-img.png" alt="" class="home--hero--img" />
         </section>
@@ -146,6 +144,7 @@
 
         <!-- Split Section  -->
         <section class="split">
+          <h1 class="split--title">What We <span>Deliver</span></h1>
           <!-- Split box -->
           <div class="split__flex">
             <article>
@@ -157,8 +156,7 @@
               </p>
             </article>
             <img class="split--img" src="../images/SPLIT ILLUSTRATION.png"
-              alt=""
-              />
+              alt="" />
           </div>
           <!-- End of Split box-->
           <!-- Split box -->
@@ -172,8 +170,7 @@
                 whenever you are ready.
               </p>
             </article>
-            <img class="split--img" src="../images/Group 301.png" alt=""
-              />
+            <img class="split--img" src="../images/Group 301.png" alt="" />
           </div>
           <!-- End of Split box-->
           <!-- Split box -->
@@ -198,7 +195,6 @@
           </h1>
           <p class="instruction--text">
             You don’t have to wait hours or days to get your files splitted.
-            <br>
             With
             Go-Chunk, you can do that in <span>minutes.</span>
           </p>
@@ -246,8 +242,7 @@
                 </p>
               </article>
               <img src="../images/🦆 icon _file group line_.png"
-                alt="login-icon"
-                />
+                alt="login-icon" />
             </div>
             <div class="instruction--steps--underline"></div>
           </div>
@@ -306,7 +301,6 @@
         <!-- End of Testimonials -->
 
         <!-- --------Beginning of FAQs---------------- -->
-
         <section class="faq" id="faq">
           <div class="faq-header-text">
             <h1>Frequently Asked<span id="faq-link">
@@ -446,46 +440,48 @@
           <!-- Middle of Footer -->
           <div class="footer--middle">
             <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Company</h3>
+              <h3 class="footer--middle--links--title">Company <img
+                  src="../images/angle-down.svg" alt="arrow"
+                  class="arrow--mobile"></h3>
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
-                <a href="../templates/home.html" class="footer--middle--link">Home</a>
-                <a href="../templates/about.html" class="footer--middle--link">About
-                  Us</a>
-                <a href="../templates/contact.html"
-                  class="footer--middle--link">Contact Us</a>
+                <a href="#" class="footer--middle--link">Home</a>
+                <a href="#" class="footer--middle--link">About Us</a>
+                <a href="#" class="footer--middle--link">Contact Us</a>
                 <a href="#" class="footer--middle--link">Feedback</a>
               </div>
             </div>
 
             <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Splitter</h3>
+              <h3 class="footer--middle--links--title">Splitter <img
+                  src="../images/angle-down.svg" alt="arrow"
+                  class="arrow--mobile"></h3>
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
-                <a href="../templates/dasboard-split.html"
-                  class="footer--middle--link">Split CSV file</a>
-                <a href="../templates/dasboard-split.html"
-                  class="footer--middle--link">Split JSON file</a>
+                <a href="#" class="footer--middle--link">Split CSV file</a>
+                <a href="#" class="footer--middle--link">Split JSON file</a>
               </div>
             </div>
 
             <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Resources</h3>
+              <h3 class="footer--middle--links--title">Resources <img
+                  src="../images/angle-down.svg" alt="arrow"
+                  class="arrow--mobile"></h3>
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
                 <a href="#" class="footer--middle--link">Documentation</a>
-                <a href="../templates/faq.html" class="footer--middle--link">FAQs</a>
+                <a href="#" class="footer--middle--link">FAQs</a>
               </div>
             </div>
 
             <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Account</h3>
+              <h3 class="footer--middle--links--title">Account <img
+                  src="../images/angle-down.svg" alt="arrow"
+                  class="arrow--mobile"></h3>
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
-                <a href="../templates/dashboard-settings.html"
-                  class="footer--middle--link">Profile</a>
-                <a href="../templates/dashboard-settings.html"
-                  class="footer--middle--link">Settings</a>
+                <a href="#" class="footer--middle--link">Profile</a>
+                <a href="#" class="footer--middle--link">Settings</a>
               </div>
             </div>
           </div>
@@ -496,17 +492,18 @@
               Copyright 2022. All Rights Reserved.
             </h4>
             <div class="footer--bottom--links">
-              <a href="../templates/privacy.html" class="footer--bottom--link">Privacy
-                Policy</a>
-              <a href="../templates/t&c.html" class="footer--bottom--link">Terms
-                and Conditions</a>
+              <a href="#" class="footer--bottom--link">Privacy Policy</a>
+              <a href="#" class="footer--bottom--link">Terms and Conditions</a>
             </div>
           </div>
           <!-- End of Bottom of Footer -->
         </footer>
         <!-- End of Footer -->
+
       </main>
       <script src="./faq.js"></script>
+      <script src="./footer.js"></script>
+      <script src="./header.js"></script>
     </body>
 
   </html>

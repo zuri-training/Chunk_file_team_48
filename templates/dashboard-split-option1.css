@@ -16,7 +16,6 @@ MEDIA Query
     margin-top: 150px;
     margin-left: 0;
     align-items: center;
-    text-align: center;
     margin-bottom: 42px;
   }
 }
@@ -65,7 +64,7 @@ MEDIA Query
 
 .dashboard--component--container {
   width: 400px;
-  height: 400px;
+  height: 450px;
   border: 1px solid #9a9a9a;
   border-radius: 4px;
   margin-left: 114px;
@@ -80,6 +79,7 @@ MEDIA Query
     height: 212px; */
     width: 100%;
     margin: auto;
+    margin-bottom: 40px;
     padding: 45px 5%;
     align-self: center;
   }
@@ -90,7 +90,7 @@ MEDIA Query
   width: 350px;
   height: 215px;
   border: dashed 2px #9a9a9a;
-  margin: 52px 25px 0 25px;
+  margin: 52px 25px 40px 25px;
   border-radius: 4px;
 }
 
@@ -103,7 +103,7 @@ MEDIA Query
     height: 113.9px; */
     width: 100%;
     margin: 0 0 35px 0;
-    padding-top: 65px;
+    padding-top: 5%;
   }
 }
 
@@ -160,7 +160,7 @@ MEDIA Query
   font-weight: 700;
   border: none;
   border-radius: 4px;
-  margin: 40px 97px 34px;
+  margin: 40px 215px 34px;
 }
 
 /* ===================
@@ -175,24 +175,116 @@ MEDIA Query
   }
 }
 
-/* -------Upload options---------- */
-.dashboard--upload-options {
-  display: inline-block;
-}
-
-.dashboard--upload-options-icons {
-  width: 24px;
-  margin-left: 24px;
-  vertical-align: middle;
-}
-
-.dashboard--upload-options-text {
+.split-number-input {
+  display: flex;
   font-size: 14px;
-  margin-left: 8px;
+  align-content: center;
   vertical-align: middle;
+  margin-left: 40px;
+  margin-bottom: 25px;
 }
 
-.browse--link {
-  cursor: pointer;
-  text-decoration: none;
+.split-number-input p {
+  font-size: 13px;
+}
+.split-number-input > input {
+  width: 162px;
+  height: 36px;
+  margin-left: 16px;
+  justify-content: center;
+  align-content: center;
+  vertical-align: middle;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #787878;
+  border-radius: 4px;
+}
+
+.split-number-input > input:focus {
+  outline: 1px solid blue;
+}
+
+.fa-solid {
+  color: var(--bg-2-color);
+}
+
+.fa-xmark {
+  margin-left: 286px;
+  margin-top: 24px;
+  color: var(--bg-color);
+}
+
+.fa-file-lines {
+  margin: 31px 166.13px 18px;
+}
+
+.dashboard-upload-outline-text {
+  font-size: 16px;
+  font-family: var(--ff-2);
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-bottom: 7px;
+  margin-left: 62.13px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .split-number-input {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+
+  .split-number-input p {
+    font-size: 10px;
+  }
+  .split-number-input > input {
+    /* width: 162px;
+    height: 36px; */
+    width: 100%;
+    margin-left: 16px;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #787878;
+    border-radius: 4px;
+  }
+
+  .split-number-input > input:focus {
+    outline: 1px solid blue;
+  }
+
+  .fa-solid {
+    color: var(--bg-2-color);
+  }
+
+  .fa-xmark {
+    color: var(--bg-color);
+    margin: 0;
+    margin-left: 90%;
+    margin-bottom: 50px;
+  }
+
+  .fa-file-lines {
+    margin: 12 0 12px 0;
+  }
+
+  .dashboard-upload-outline-text {
+    font-size: 12px;
+    font-family: var(--ff-2);
+    color: #4f4f4f;
+    font-weight: 400;
+    margin-bottom: 7px;
+    margin-left: 0;
+  }
+  .split-number-input {
+    font-size: 10px;
+    text-align: left;
+  }
+  .inside-outline {
+    text-align: center;
+  }
 }

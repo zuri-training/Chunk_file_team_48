@@ -1,200 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
 
-    <!-- Global Stylesheets -->
-    <link rel="stylesheet" href="../static/globalstyle.css" />
-    <link rel="stylesheet" href="../static/header.css" />
-    <link rel="stylesheet" href="../static/footer.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chunk File Project</title>
 
-    <!-- Pages Stylesheets -->
-    <link rel="stylesheet" href="./about.css" />
-  </head>
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0" />
+            <title>Chunk File Project</title>
 
-  <body>
-    <main>
-      <!-- Navigation -->
-      <div class="nav">
-        <!-- Logo -->
-        <div>
-          <a href="#"><img class="logo" src="../images/Frame 1028.png" alt=""
-              /></a>
-        </div>
-        <!-- NavLinks-->
-        <div class="nav-links">
-          <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="../templates/about.html">About Us</a></li>
-            <li><a href="../templates/faq.html">FAQs</a></li>
-          </ul>
-        </div>
-        <!-- End of NavLinks -->
-        <!-- Nav Buttons -->
+            <!-- Global Stylesheets -->
+            <link rel="stylesheet" href="../static/globalstyle.css" />
+            <link rel="stylesheet" href="../static/header.css" />
+            <link rel="stylesheet" href="../static/footer.css" />
+            <link rel="stylesheet" href="../static/faq.css" />
+            <link rel="stylesheet" href="./home.css" />
+            <link rel="stylesheet" href="./privacy.css">
+            <link rel="stylesheet" href="./t&c.css">
+            <link rel="stylesheet" href="./about.css">
+        </head>
 
-        <div>
-          <a href="./signin.html"> <button class="login-btn">Log in</button></a>
-          <a href="./signup.html"> <button class="register-btn">Register</button></a>
-        </div>
-        <!-- End of Nav Buttons -->
-      </div>
-      <!-- End of Navigation -->
+        <body>
+            <main>
+                <!-- Navigation -->
+                <nav>
+                    <div class="nav--logo--toggle">
+                        <img class="logo" src="../images/Frame 1028.png" alt=""
+                            />
+                        <button type="submit">
+                            <img src="../images/bars.svg" alt=""
+                                class="nav--toggle-btn">
+                        </button>
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="./home.html">Home</a></li>
+                            <li><a href="./documentation_intro.html">Documentation</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="#faq">FAQs</a></li>
+                        </ul>
+                        <div class="nav--buttons">
+                            <a href=""><button class="login-btn">Log in</button></a>
+                            <a href=""><button class="register-btn">Register</button></a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End of Navigation -->
 
-      <!-- Hero Container-->
-      <section class="about">
-        <!-- Hero Info -->
-        <div class="about--hero--info">
-          <h1 class="about--hero--info--title">About Us</h1>
-        </div>
-        <p class="about--hero--description">
-          Go-Chunk is a non-profit, open-source project launched in 2022 by Zuri
-          Team powered by Ingressive for Good APIs. Having worked with data
-          scientists and analysts all over the world, Go-Chunk aims to offer
-          solutions to the stress of going through so many processes to break
-          down data files and also the loss of files on any device.
-        </p>
 
-        <!-- End of Hero Information -->
+                <!-- Hero Container-->
+                <section class="about">
+                    <!-- Hero Info -->
+                    <div class="about--hero--info">
+                        <h1 class="about--hero--info--title">About Us</h1>
+                    </div>
+                    <p class="about--hero--description">
+                        Go-Chunk is a non-profit, open-source project launched
+                        in 2022 by Zuri
+                        Team powered by Ingressive for Good APIs. Having worked
+                        with data
+                        scientists and analysts all over the world, Go-Chunk
+                        aims to offer
+                        solutions to the stress of going through so many
+                        processes to break
+                        down data files and also the loss of files on any
+                        device.
+                    </p>
 
-        <!-- Our Mission -->
-        <section class="about--content--container">
-          <!-- Content -->
-          <article class="about--content">
-            <h1 class="about--content--title">Our Mission</h1>
-            <p class="about--content--text">
-              Our mission is to offer a platform to users that work with
-              enormous data files, such as data analysts, data scientists,
-              developers, and others, where they can split those files into a
-              certain number of sections to make their files easier to work
-              with.
-            </p>
-            <p class="about--content--text">
-              Go-Chunk provides guaranteed security by protecting our users
-              privacy. All actions directly related to the project are covered
-              by the
-              <a class="intext--links" href="./privacy.html">Go-Chunk privacy
-                policy.</a>
-              This is to ensure users can freely perform tasks on the project
-              with safety and assured security. Check out our
-              <a class="intext--links" href="./T&C.html">Terms and Conditions</a>
-              to know our legal propositions.
-            </p>
-            <p class="about--content--text">
-              We also provide our users with the options to download or save
-              their files in their desired formats. Users can always come back
-              to download their files within a certain time frame. Click on our
-              <a class="intext--links" href="./T&C.html">terms and Conditions</a>,
-              for more details.
-            </p>
+                    <!-- End of Hero Information -->
 
-            <button class="about--contact--form--btn">Send message</button>
-          </article>
-        </section>
-      </section>
+                    <!-- Our Mission -->
+                    <section class="about--content--container">
+                        <!-- Content -->
+                        <article class="about--content">
+                            <h1 class="about--content--title">Our Mission</h1>
+                            <p class="about--content--text">
+                                Our mission is to offer a platform to users that
+                                work with
+                                enormous data files, such as data analysts, data
+                                scientists,
+                                developers, and others, where they can split
+                                those files into a
+                                certain number of sections to make their files
+                                easier to work
+                                with.
+                            </p>
+                            <p class="about--content--text">
+                                Go-Chunk provides guaranteed security by
+                                protecting our users
+                                privacy. All actions directly related to the
+                                project are covered
+                                by the
+                                <a class="intext--links" href="./privacy.html">Go-Chunk
+                                    privacy
+                                    policy.</a>
+                                This is to ensure users can freely perform tasks
+                                on the project
+                                with safety and assured security. Check out our
+                                <a class="intext--links" href="./T&C.html">Terms
+                                    and Conditions</a>
+                                to know our legal propositions.
+                            </p>
+                            <p class="about--content--text">
+                                We also provide our users with the options to
+                                download or save
+                                their files in their desired formats. Users can
+                                always come back
+                                to download their files within a certain time
+                                frame. Click on our
+                                <a class="intext--links" href="./T&C.html">terms
+                                    and Conditions</a>,
+                                for more details.
+                            </p>
 
-      <!-- End of Form -->
+                            <button class="about--contact--form--btn">Send
+                                message</button>
+                        </article>
+                    </section>
+                </section>
 
-      <!-- Footer -->
-      <footer class="footer--container">
-        <!-- Top of Footer -->
-        <div class="footer--top">
-          <img
-            class="footer--top--logo"
-            src="../images/LogoFooter.png"
-            alt=""
-            />
-          <div class="footer--top--icons">
-            <a href="" class="footer--top--social">
-              <img
-                src="../images/entypo-social_linkedin-with-circle.png"
-                alt="linkedin-icon"
-                class="footer--social--icon"
-                />
-            </a>
-            <a href="#" class="footer--top--social">
-              <img
-                src="../images/ant-design_twitter-circle-filled.png"
-                alt="twitter-icon"
-                class="footer--social--icon"
-                />
-            </a>
-            <a href="#" class="footer--top--social">
-              <img
-                src="../images/entypo-social_facebook-with-circle.png"
-                alt="facebook-icon"
-                class="footer--social--icon"
-                />
-            </a>
-            <a href="#" class="footer--top--social">
-              <img
-                src="../images/entypo-social_youtube-with-circle.png"
-                alt="youtube-icon"
-                class="footer--social--icon"
-                />
-            </a>
-          </div>
-        </div>
-        <!-- End of Top of Footer -->
-        <!-- Middle of Footer -->
-        <div class="footer--middle">
-          <div class="footer--middle--links">
-            <h3 class="footer--middle--links--title">Company</h3>
-            <div class="underline"></div>
-            <div class="footer--middle--link__grid">
-              <a href="#" class="footer--middle--link">Home</a>
-              <a href="#" class="footer--middle--link">About Us</a>
-              <a href="#" class="footer--middle--link">Contact Us</a>
-              <a href="#" class="footer--middle--link">Feedback</a>
-            </div>
-          </div>
+                <!-- End of Form -->
 
-          <div class="footer--middle--links">
-            <h3 class="footer--middle--links--title">Splitter</h3>
-            <div class="underline"></div>
-            <div class="footer--middle--link__grid">
-              <a href="#" class="footer--middle--link">Split CSV file</a>
-              <a href="#" class="footer--middle--link">Split JSON file</a>
-            </div>
-          </div>
 
-          <div class="footer--middle--links">
-            <h3 class="footer--middle--links--title">Resources</h3>
-            <div class="underline"></div>
-            <div class="footer--middle--link__grid">
-              <a href="#" class="footer--middle--link">Documentation</a>
-              <a href="#" class="footer--middle--link">FAQs</a>
-            </div>
-          </div>
+                <!-- Footer -->
+                <footer class="footer--container">
+                    <!-- Top of Footer -->
+                    <div class="footer--top">
+                        <img class="footer--top--logo"
+                            src="../images/LogoFooter.png" alt=""
+                            />
+                        <div class="footer--top--icons">
+                            <a href="" class="footer--top--social">
+                                <img
+                                    src="../images/entypo-social_linkedin-with-circle.png"
+                                    alt="linkedin-icon"
+                                    class="footer--social--icon" />
+                            </a>
+                            <a href="" class="footer--top--social">
+                                <img
+                                    src="../images/ant-design_twitter-circle-filled.png"
+                                    alt="twitter-icon"
+                                    class="footer--social--icon" />
+                            </a>
+                            <a href="" class="footer--top--social">
+                                <img
+                                    src="../images/entypo-social_facebook-with-circle.png"
+                                    alt="facebook-icon"
+                                    class="footer--social--icon" />
+                            </a>
+                            <a href="" class="footer--top--social">
+                                <img
+                                    src="../images/entypo-social_youtube-with-circle.png"
+                                    alt="youtube-icon"
+                                    class="footer--social--icon" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End of Top of Footer -->
+                    <!-- Middle of Footer -->
+                    <div class="footer--middle">
+                        <div class="footer--middle--links">
+                            <h3 class="footer--middle--links--title">Company
+                                <img
+                                    src="../images/angle-down.svg"
+                                    alt="arrow"
+                                    class="arrow--mobile"></h3>
+                            <div class="underline"></div>
+                            <div class="footer--middle--link__grid">
+                                <a href="#" class="footer--middle--link">Home</a>
+                                <a href="#" class="footer--middle--link">About
+                                    Us</a>
+                                <a href="#" class="footer--middle--link">Contact
+                                    Us</a>
+                                <a href="#" class="footer--middle--link">Feedback</a>
+                            </div>
+                        </div>
 
-          <div class="footer--middle--links">
-            <h3 class="footer--middle--links--title">Account</h3>
-            <div class="underline"></div>
-            <div class="footer--middle--link__grid">
-              <a href="#" class="footer--middle--link">Profile</a>
-              <a href="#" class="footer--middle--link">Settings</a>
-            </div>
-          </div>
-        </div>
-        <!-- End of Middle of Footer -->
-        <!-- Bottom of Footer -->
-        <div class="footer--bottom">
-          <h4 class="footer--bottom--copyright">
-            Copyright 2022. All Rights Reserved.
-          </h4>
-          <div class="footer--bottom--links">
-            <a href="./privacy.html" class="footer--bottom--link">Privacy Policy</a>
-            <a href="./t&c.html" class="footer--bottom--link">Terms and
-              Conditions</a>
-          </div>
-        </div>
-        <!-- End of Bottom of Footer -->
-      </footer>
-    </main>
-    <script src="./about.js"></script>
-  </body>
-</html>
+                        <div class="footer--middle--links">
+                            <h3 class="footer--middle--links--title">Splitter
+                                <img
+                                    src="../images/angle-down.svg"
+                                    alt="arrow"
+                                    class="arrow--mobile"></h3>
+                            <div class="underline"></div>
+                            <div class="footer--middle--link__grid">
+                                <a href="#" class="footer--middle--link">Split
+                                    CSV file</a>
+                                <a href="#" class="footer--middle--link">Split
+                                    JSON file</a>
+                            </div>
+                        </div>
+
+                        <div class="footer--middle--links">
+                            <h3 class="footer--middle--links--title">Resources
+                                <img
+                                    src="../images/angle-down.svg"
+                                    alt="arrow"
+                                    class="arrow--mobile"></h3>
+                            <div class="underline"></div>
+                            <div class="footer--middle--link__grid">
+                                <a href="#" class="footer--middle--link">Documentation</a>
+                                <a href="#" class="footer--middle--link">FAQs</a>
+                            </div>
+                        </div>
+
+                        <div class="footer--middle--links">
+                            <h3 class="footer--middle--links--title">Account
+                                <img
+                                    src="../images/angle-down.svg"
+                                    alt="arrow"
+                                    class="arrow--mobile"></h3>
+                            <div class="underline"></div>
+                            <div class="footer--middle--link__grid">
+                                <a href="#" class="footer--middle--link">Profile</a>
+                                <a href="#" class="footer--middle--link">Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Middle of Footer -->
+                    <!-- Bottom of Footer -->
+                    <div class="footer--bottom">
+                        <h4 class="footer--bottom--copyright">
+                            Copyright 2022. All Rights Reserved.
+                        </h4>
+                        <div class="footer--bottom--links">
+                            <a href="#" class="footer--bottom--link">Privacy
+                                Policy</a>
+                            <a href="#" class="footer--bottom--link">Terms
+                                and
+                                Conditions</a>
+                        </div>
+                    </div>
+                    <!-- End of Bottom of Footer -->
+                </footer>
+                <!-- End of Footer -->
+
+            </main>
+            <script src="./faq.js"></script>
+            <script src="./footer.js"></script>
+            <script src="./header.js"></script>
+        </body>
+
+    </html>

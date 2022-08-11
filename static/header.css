@@ -1,4 +1,4 @@
-.nav {
+nav {
   background-color: #fff;
   display: flex;
   padding: 0% 5%;
@@ -6,16 +6,15 @@
   align-items: center;
   box-shadow: 0 0 20px 0px #00000033;
   padding: 15px 100px;
-
-  /* 1440px Screen Size */
-    /* max-width: 1440px;
-    margin: 0 auto;  */
 }
-
+.nav-links {
+  width: 100%;
+  display: flex;
+}
 .nav-links ul {
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   text-align: right;
 }
@@ -55,11 +54,11 @@
   width: 132px;
   padding: 10px 12px;
   background-color: #fff;
-  color: #0f1c46;
+  color: #1b1b1b;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  border: 2px solid #2645af;
+  border: 2px solid #ffc056;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -68,12 +67,71 @@
   width: 132px;
   padding: 10px 12px;
   margin-left: 5px;
-  background-color: #2645af;
-  color: #e4e6f1;
+  background-color: var(--btn-color);
+  color: #1b1b1b;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  border: 2px solid #2645af;
+  border: 2px solid #ffc056;
   border-radius: 4px;
   cursor: pointer;
+}
+.nav--logo--toggle button {
+  display: none;
+}
+
+/* ===========
+Media Query
+=========== */
+@media screen and (max-width: 1439px) {
+  nav {
+    max-width: 100vw;
+    padding: 0;
+  }
+  .nav--logo--toggle {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+  }
+  .nav--logo--toggle button {
+    display: block;
+    background: none;
+    border: none;
+  }
+  .nav--toggle-btn {
+    width: 30px;
+    cursor: pointer;
+  }
+  .nav-links {
+    position: absolute;
+    top: 98px;
+    align-self: auto;
+    background-color: red;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0px #00000033;
+    display: none;
+    width: fit-content;
+    border-bottom-right-radius: 5px;
+  }
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .nav-links ul li {
+    margin: 10px 0;
+  }
+  .nav--buttons {
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+.show {
+  display: block;
 }

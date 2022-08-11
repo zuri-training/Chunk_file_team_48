@@ -25,27 +25,32 @@ body {
   height: 120px;
   text-align: center;
   align-content: center;
-  color: white;
   padding: 32px 0;
-  font-size: var(--fs-big);
+
   background: #2e53d2;
   border-radius: 20px;
 }
 
+.signin--top--content h1 {
+  font-size: var(--fs-big);
+  color: #fff;
+}
+
 .signin--bottom--content {
+  text-align: center;
   padding: 12px 92px;
 }
 
 .signin--bottom--content--title {
   font-family: var(--ff);
-  font-size: var(--fs-medium);
+  font-size: 24px;
   color: var(--bg-color);
   padding-bottom: 10px;
 }
 
 .signin--bottom-content--title-description {
   font-family: var(--ff);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: var(--fw-big);
   color: #575757;
   margin-bottom: 42px;
@@ -68,18 +73,28 @@ body {
 .signin--form--label-checkbox {
   width: 24px;
   margin-right: 5px;
-  align-content: center;
   vertical-align: middle;
 }
 
 .signin--form--label-remember-me {
-  font-size: var(--fs-small);
+  font-size: 12px;
   font-family: var(--ff);
   font-weight: var(--fw-small);
   color: var(--form-title);
-  margin-top: 10px;
 }
 
+.remember-password {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember-password a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #2e53d2;
+}
 .singin--form--input {
   width: 400px;
   height: 52px;
@@ -87,7 +102,7 @@ body {
   font-size: var(--fs-small);
   border: 1px solid #9a9a9a;
   border-radius: 8px;
-  padding: 0 10px;
+  padding: 0 15px;
   margin-bottom: 15px;
 }
 
@@ -121,4 +136,83 @@ body {
   font-family: var(--ff);
   font-weight: var(--fw-small);
   margin-top: 15px;
+}
+.signin-button--below--text {
+  font-size: 16px;
+  color: #575757;
+}
+.signin-button--below--text a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.last-text {
+  text-align: center;
+}
+
+/* ======MEDIA QUERY OF SIGN IN PAGE================ */
+
+@media screen and (max-width: 1024px) {
+  .signin--container {
+    width: 360px;
+    height: 600px;
+  }
+  .signin--top--content {
+    width: 100%;
+    height: 68px;
+    font-size: 20px;
+    padding: 20px 0;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+  }
+  .signin--top--content h1 {
+    font-size: 20px;
+  }
+  .singin--form--input {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  .signin--bottom--content {
+    align-items: center;
+    text-align: center;
+    padding: 12px 60px;
+  }
+  .signin--btn {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  .signin--bottom--content--title {
+    font-size: 20px;
+  }
+  .signin--bottom-content--title-description {
+    font-size: 14px;
+  }
+  .signin--bottom--content--form {
+    padding-left: 0;
+  }
+  .signin--bottom--content--form--label {
+    font-size: 12px;
+  }
+  .signin-button--below--text {
+    font-size: 12px;
+    color: #575757;
+  }
+  .signin-button--below--text a {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .last-text {
+    text-align: center;
+  }
+  .remember-password a {
+    font-size: 12px;
+  }
+  .remember-password {
+    width: 100%;
+  }
 }
