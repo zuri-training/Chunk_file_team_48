@@ -38,8 +38,8 @@ With Go-chunk, you can have access to a personal dashboard to split files
 
 # Resources
 - [Figma](#Figma)
-- [Live Link](#Live Link)
-- [Database Schema](#Database Schema)
+- [Live Link](#Live-Link)
+- [Database Schema](#Database-Schema)
 - [Presentation](#Presentation)
 
 
