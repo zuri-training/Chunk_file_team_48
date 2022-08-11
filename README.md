@@ -1,7 +1,5 @@
 ![Images](/images/Overview.png)
 
-([http://url/to/img.png](https://github.com/zuri-training/Chunk_file_team_48/blob/main/images/Overview.png?)
-
 # Table of Contents
 
 - [Overview](#Overview)
