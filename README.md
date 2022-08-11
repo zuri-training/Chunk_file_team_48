@@ -4,10 +4,10 @@
 - [Features](#features)
 - [Resources](#resources)
 - [Development](#development)
-- [Built with](#built-with)
-- [Product design](#product-design)
-- [Frontend development](#frontend-development)
-- [Backend development](#backend-development)
+- [Built with](#Built With)
+- [Product design](#Product Design)
+ - [Frontend development](#frontend-development)
+ - [Backend development](#backend-development)
 - [Documentation](#documentation)
 - [What we learned](#what-we-learned) 
 - [Continued development](#continued-development)
@@ -35,6 +35,18 @@ With Go-chunk, you can have access to a personal dashboard to split files
 - You are able to work in your own language, we support multiple languages; English,french,spanish
 - You can give us feedback on your chunking experience so we can know how to serve you better.
 
+# Resources
+
+# Development
+
+# Built With
+
+ Our site was built using the following tools:
+
+        * HTML
+        * CSS
+        * JAVASCRIPT
+        * PYTHON(Django) ​ ​
 
 - How to Use
 
@@ -77,15 +89,7 @@ With Go-chunk, you can have access to a personal dashboard to split files
 
 ``` python manage.py runserver ``` 
 
-# Tech Stack
-Tech Stack
 
- Our site was built using the following tools:
-
-        * HTML
-        * CSS
-        * JAVASCRIPT
-        * PYTHON(Django) ​ ​
         
 # Documentation
 Here is the link to our [Documentation](https://docs.google.com/document/d/1kr2OITN5x1Qk9msqu2vurgJEsORGdqHtZe24EeHFHmU/edit)
