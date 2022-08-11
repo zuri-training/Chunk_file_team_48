@@ -33,8 +33,15 @@ With Go-chunk, you can have access to a personal dashboard to split files
 - Customize your file attributes according to your need ; file name,size,number,date and status
 - You are able to work in your own language, we support multiple languages; English,french,spanish
 - You can give us feedback on your chunking experience so we can know how to serve you better.
+- You can have access to dark mode and light mode features for a better Chunking experience
+
 
 # Resources
+- [Figma](#Figma)
+- [Live Link](#Live Link)
+- [Database Schema](#Database Schema)
+- [Presentation](#Presentation)
+
 
 # Development
 
