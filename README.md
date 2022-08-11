@@ -94,7 +94,7 @@ With Go-chunk, you can have access to a personal dashboard to split files
 Here is the link to our [Documentation](https://docs.google.com/document/d/1kr2OITN5x1Qk9msqu2vurgJEsORGdqHtZe24EeHFHmU/edit)
 
 # Our Team
-Meet our Team [here[(https://github.com/zuri-training/Chunk_file_team_48/graphs/contributors)
+Meet our Team [here](https://github.com/zuri-training/Chunk_file_team_48/graphs/contributors)
 
 # Author
 Chinecherem Nduka [{@ChinechNduka}](https://github.com/ChinechNduka)
