@@ -1,12 +1,6 @@
-# Go-Chunk
+# Table of Contents
 
-A platform that accepts CSV or JSON large files, and breaks them into smaller bits called Chunks - must be the right format. These chunks are converted into Zip for download and also made available to save for later download. On Go-chunk your data is secured and protected from security breach and also files are splitted in the fastest way possible.
-
-
-
-## Table of Contents
-
-- [Overview](#overview)
+- [Overview](#Overview)
 - [Features](#features)
 - [Resources](#resources)
 - [Development](#development)
@@ -22,14 +16,27 @@ A platform that accepts CSV or JSON large files, and breaks them into smaller bi
 - [Author](#Author) 
 - [Acknowledgments](#Acknowledgements) 
 
+# Overview
+
+Go-chunk is a free and reliable file splitter that allows you to split your large CSV or JSON files into smaller bits called CHUNKS. These chunks are converted into Zip for download and also made available to save for later download. On Go-chunk your data is secured and protected from security breach and also files are splitted in the fastest way possible.
 
 
-# About Us
-Go-Chunk is a non-profit, open-source project launched in 2022 by Zuri Team powered by Ingressive for Good APIs. Having worked with data scientists and analysts all over the world, Go-Chunk aims to offer solutions to the stress of going through so many processes to break down data files and also the loss of files on any device.
+# Features
+
+With Go-chunk, you can have access to a personal dashboard to split files
+
+- Two splitting options are made available ; split into a set of same sized chunks or split into a number of rows.
+- You may enter your preferred size per file or the number you want your file to be splitted into.
+- You can choose to download each chunked files one by one incase of tested splitting
+- You can save your chunked files on your dashboard and download anytime
+- We store your file properties like dates and file attributes.
+- Split very large files; The minimum file size accepted to split is 2mb
+- Customize your file attributes according to your need ; file name,size,number,date and status
+- You are able to work in your own language, we support multiple languages; English,french,spanish
+- You can give us feedback on your chunking experience so we can know how to serve you better.
+
 
 - How to Use
-- To Run Locally
-
 
 
 # To run locally
