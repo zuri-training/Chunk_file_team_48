@@ -18,7 +18,7 @@ A platform that accepts CSV or JSON large files, and breaks them into smaller bi
 *[What we learned](#what-we-learned) 
 *[Continued development](#continued-development)
 *[Useful resources](#useful-resources)
-*[Meet our team](#OurTeam)
+*[Meet our team](#Our Team)
 *[Author](#Author) 
 *[Acknowledgments](#Acknowledgements) 
 
@@ -89,5 +89,5 @@ Meet our Team here
 # Author
 Chinecherem Nduka [{@ChinechNduka}](https://github.com/ChinechNduka)
 
-# Acknowledgments
+# Acknowledgements
 The completion of this project could not have been possible without the assistance of Zuri and Ingressive4Good. We would like to also express our deep appreciation and indebtedness to our project supervisor and Zuri mentors for their endless support, kindness, and understanding during the project duration. Special thanks to all team members who played their role well in making this project come to life.
