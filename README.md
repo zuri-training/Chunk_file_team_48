@@ -62,38 +62,30 @@ With Go-chunk, you can have access to a personal dashboard to split files
 # To run locally
 
 ## Clone the project
-
 ``` git clone https://github.com/zuri-training/Chunk_file_team_48.git ```
 
 ## Go to the project directory
-
 ``` cd Chunk_file_team_48 ```
 
 ## Create a Virtual Environment
-
 ``` python -m venv venv ```
 
 ## Activate Virtual Environment
-
 ``` venv\scripts\activate ```
 
 ## Install Dependencies
-
 ``` pip install -r requirements.txt ```
 
 ## Make migrations
-
 ``` python manage.py makemigrations ```
 
 ## Migrate the database
 ``` python manage.py migrate ```
 
 ## Create superuser ```
-
 ``` python manage.py createsuperuser ```
 
 ## Finally, Start The Server.
-
 ``` python manage.py runserver ``` 
 
 
