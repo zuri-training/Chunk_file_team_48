@@ -1,4 +1,4 @@
-<img src="[/Chunk_file_team_48/blob/main/images/Overview.png](http://url/to/img.png](https://github.com/zuri-training/Chunk_file_team_48/blob/main/images/Overview.png)" alt="Go Chunk" title="Go Chunk">
+![Images](/images/Overview.png)
 
 ([http://url/to/img.png](https://github.com/zuri-training/Chunk_file_team_48/blob/main/images/Overview.png?)
 
