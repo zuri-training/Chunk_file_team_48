@@ -1,4 +1,4 @@
-![Go-Chunk]([http://url/to/img.png](https://github.com/zuri-training/Chunk_file_team_48/blob/main/images/Overview.png))
+![Go-Chunk]([http://url/to/img.png](https://github.com/zuri-training/Chunk_file_team_48/blob/main/images/Overview.png])
 
 # Table of Contents
 
