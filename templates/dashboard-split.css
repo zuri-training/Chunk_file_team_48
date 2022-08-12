@@ -196,3 +196,35 @@ MEDIA Query
   cursor: pointer;
   text-decoration: none;
 }
+
+.dasboard-upload-outline--over {
+  border-style: 2px solid;
+}
+
+/* #drop-zone__input {
+  display: block;
+} */
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.drop-zone__thumb input {
+  color: blue;
+}
+
+/* .drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 12px;
+  text-align: center;
+  display: none;
+} */
