@@ -19,12 +19,11 @@
 
 .faq-header-text h3 {
   font-size: var(--fs-medium);
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .faq-header-text p {
-  margin-bottom: 40px;
-  font-size: var(--fs-small);
+  margin-bottom: 35px;
 }
 
 #faq-link {
@@ -149,10 +148,7 @@ Media Query
   .faq-header-text > p {
     font-size: smaller;
   }
-  .answer-box,
-  .answer-box-answer,
-  .answer-question-box,
-  .question-box {
+  .answer-box, .answer-box-answer, .answer-question-box, .question-box {
     width: 100%;
     font-size: smaller;
     text-align: left;
@@ -169,3 +165,4 @@ Media Query
     width: 80%;
   }
 }
+

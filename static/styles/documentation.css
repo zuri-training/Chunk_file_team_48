@@ -1,19 +1,9 @@
-<<<<<<< HEAD:static/documentation.css
-=======
-body {
-  background-color: white !important;
-}
->>>>>>> 58932cd13a6e68f395167f60d8bfdc6a3791ded7:go_chunk/static/styles/documentation.css
 .nav {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD:static/documentation.css
   box-shadow: 0 0 20px 0px #00000033;
-=======
-  box-shadow: 0px 0px 5px 0px #00000033;
->>>>>>> 58932cd13a6e68f395167f60d8bfdc6a3791ded7:go_chunk/static/styles/documentation.css
   padding: 15px 100px;
   overflow: hidden;
 
@@ -120,17 +110,10 @@ body {
   .search {
     width: 24px;
   }
-<<<<<<< HEAD:static/documentation.css
   .login-btn,
   .register-btn {
     display: none;
   }
-=======
-  /* .login-btn,
-  .register-btn {
-    display: none;
-  } */
->>>>>>> 58932cd13a6e68f395167f60d8bfdc6a3791ded7:go_chunk/static/styles/documentation.css
   .nav .icon {
     display: block;
   }

@@ -106,8 +106,7 @@ Media Query
   }
   .nav-links {
     position: absolute;
-    z-index: 999;
-    top: 74px;
+    top: 98px;
     align-self: auto;
     background-color: red;
     padding: 20px;

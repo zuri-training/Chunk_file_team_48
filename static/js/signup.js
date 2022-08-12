@@ -10,6 +10,7 @@ registerBtn.addEventListener("mouseout", () => {
 });
 registerBtn.addEventListener("click", () => {
   registerBtn.style.backgroundColor = "#5170D9";
+  
 });
 
 signupBtn.addEventListener("mouseover", () => {

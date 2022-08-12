@@ -21,7 +21,6 @@ if (addSign1) {
     answerBox1.style.display = "block";
   });
 }
-
 if (minusSign1) {
   minusSign1.addEventListener("click", () => {
     questionBox1.style.display = "block";
@@ -29,14 +28,12 @@ if (minusSign1) {
     answerBox1.style.display = "none";
   });
 }
-
 if (addSign2) {
   addSign2.addEventListener("click", () => {
     questionBox2.style.display = "none";
     answerBox2.style.display = "block";
   });
 }
-
 if (minusSign2) {
   minusSign2.addEventListener("click", () => {
     questionBox2.style.display = "block";
@@ -44,14 +41,12 @@ if (minusSign2) {
     answerBox2.style.display = "none";
   });
 }
-
 if (addSign3) {
   addSign3.addEventListener("click", () => {
     questionBox3.style.display = "none";
     answerBox3.style.display = "block";
   });
 }
-
 if (minusSign3) {
   minusSign3.addEventListener("click", () => {
     questionBox3.style.display = "block";
@@ -59,7 +54,6 @@ if (minusSign3) {
     answerBox3.style.display = "none";
   });
 }
-
 if (addSign4) {
   addSign4.addEventListener("click", () => {
     questionBox4.style.display = "none";
@@ -74,3 +68,14 @@ if (minusSign4) {
     answerBox4.style.display = "none";
   });
 }
+
+
+
+
+
+
+
+
+
+
+
