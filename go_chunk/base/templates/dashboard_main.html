@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Dashboard</title>
+
+    <!-- Global Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/globalstyle.css' %}">
+
+    <link rel="stylesheet" href="{% static 'styles/dashboard.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/dashboard-split-option.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/dashboard-saved-files.css' %}">
+    <script src="https://kit.fontawesome.com/0fb08dbc74.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <main class="dashboard--container">
+        {% include 'dashboard_nav.html' %}
+
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <div class="container-fluid p-0">
+                <div class="alert show {{ message.tags }} alert-dismissible" role="alert">
+                    <button class="close">
+                        <span aria-hidden="True">&times;</span>
+                    </button>
+                    {{ message }}
+                </div>
+            </div>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% block content %}
+
+        {% endblock content %}
+
+
+    </main>
+
+
+
+    <script>
+
+        let alerts = document.querySelectorAll('.alert')
+        let closes = document.querySelectorAll('.close')
+        closes.forEach(closed => {
+            closed.addEventListener('click', function () {
+                alerts.forEach(alerted => {
+                    alerted.classList.replace('show', 'hide')
+                })
+            })
+        });
+
+    </script>
+    <script src=" {% static 'js/dashboard.js' %}"></script>
+</body>
+<style>
+    .alert {
+        color: white;
+        max-width: 400px;
+        margin: auto;
+        padding: 1rem 1rem;
+        border-radius: .84rem;
+        margin-top: .8rem;
+    }
+
+    .alert-danger {
+        background-color: rgb(230, 105, 105);
+    }
+
+    .alert-success {
+        background-color: rgb(112, 231, 108);
+    }
+
+    .show {
+        animation: show_slide 1s ease forwards;
+    }
+
+    @keyframes show_slide {
+        0% {
+            transform: translateX(100%);
+        }
+
+        40% {
+            transform: translateX(-10%);
+        }
+
+        80% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-10px);
+        }
+    }
+
+    .hide {
+        animation: hide_slide 1s ease forwards;
+    }
+
+    @keyframes hide_slide {
+        0% {
+            transform: translateY(-10px);
+        }
+
+        40% {
+            transform: translateY(0%);
+        }
+
+        80% {
+            transform: translateX(-10%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+</style>
+
+</html>

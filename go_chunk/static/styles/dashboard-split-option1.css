@@ -1,0 +1,290 @@
+/* ------Major container------ */
+.dashboard--component {
+  width: 620px;
+  margin-top: 200px;
+  margin-left: 456px;
+  margin-bottom: 42px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .dashboard--component {
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 150px;
+    margin-left: 0;
+    align-items: center;
+    margin-bottom: 42px;
+  }
+}
+
+.header-text h1 {
+  font-family: var(--ff);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--bg-color);
+  margin-top: 0;
+  padding-left: 241px;
+  margin-bottom: 40px;
+}
+
+.header-text p {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 114px;
+  padding-right: 113px;
+  margin-bottom: 24px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .header-text {
+    text-align: center;
+    align-content: center;
+    padding: 0 20px;
+  }
+
+  .header-text h1 {
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 16px;
+  }
+  .header-text p {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+    margin-bottom: 42px;
+  }
+}
+
+.dashboard--component--container {
+  width: 400px;
+  height: 450px;
+  border: 1px solid #9a9a9a;
+  border-radius: 4px;
+  margin-left: 114px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .dashboard--component--container {
+    /* width: 212px;
+    height: 212px; */
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 45px 5%;
+    align-self: center;
+  }
+}
+
+/* -----Area where drag and drop happens------- */
+.dasboard-upload-outline {
+  width: 350px;
+  height: 215px;
+  border: dashed 2px #9a9a9a;
+  margin: 52px 25px 40px 25px;
+  border-radius: 4px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .dasboard-upload-outline {
+    /* width: 185.5px;
+    height: 113.9px; */
+    width: 100%;
+    margin: 0 0 35px 0;
+    padding-top: 5%;
+  }
+}
+
+.dashboard-upload-icon {
+  margin: 49.48px 157.57px 22.88px 157.56px;
+  width: 40px;
+}
+
+.dashboard-upload-outline-text {
+  font-size: 16px;
+  font-family: var(--ff-2);
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-left: 54px;
+}
+
+.dashboard-upload-outline-text-small {
+  font-size: 12px;
+  font-weight: 600;
+  color: #787878;
+  margin-left: 147px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .dashboard-upload-icon {
+    width: 24px;
+    margin: 0;
+  }
+  .dashboard-upload-outline-text {
+    font-size: 12px;
+    margin: 0;
+  }
+  .dashboard-upload-outline-text-small {
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+.browse--link {
+  color: var(--bg-color);
+  text-decoration: none;
+}
+
+/* -----Button------ */
+.dashboard-btn {
+  width: 206px;
+  height: 60px;
+  background-color: #ffc056;
+  color: #1b1b1b;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  margin: 40px 215px 34px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .dashboard-btn {
+    /* width: 160px;
+    height: 40px; */
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.split-number-input {
+  display: flex;
+  font-size: 14px;
+  align-content: center;
+  vertical-align: middle;
+  margin-left: 40px;
+  margin-bottom: 25px;
+}
+
+.split-number-input p {
+  font-size: 13px;
+}
+.split-number-input > input {
+  width: 162px;
+  height: 36px;
+  margin-left: 16px;
+  justify-content: center;
+  align-content: center;
+  vertical-align: middle;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #787878;
+  border-radius: 4px;
+}
+
+.split-number-input > input:focus {
+  outline: 1px solid blue;
+}
+
+.fa-solid {
+  color: var(--bg-2-color);
+}
+
+.fa-xmark {
+  margin-left: 286px;
+  margin-top: 24px;
+  color: var(--bg-color);
+}
+
+.fa-file-lines {
+  margin: 31px 166.13px 18px;
+}
+
+.dashboard-upload-outline-text {
+  font-size: 16px;
+  font-family: var(--ff-2);
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-bottom: 7px;
+  margin-left: 62.13px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .split-number-input {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+
+  .split-number-input p {
+    font-size: 10px;
+  }
+  .split-number-input > input {
+    /* width: 162px;
+    height: 36px; */
+    width: 100%;
+    margin-left: 16px;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #787878;
+    border-radius: 4px;
+  }
+
+  .split-number-input > input:focus {
+    outline: 1px solid blue;
+  }
+
+  .fa-solid {
+    color: var(--bg-2-color);
+  }
+
+  .fa-xmark {
+    color: var(--bg-color);
+    margin: 0;
+    margin-left: 90%;
+    margin-bottom: 50px;
+  }
+
+  .fa-file-lines {
+    margin: 12 0 12px 0;
+  }
+
+  .dashboard-upload-outline-text {
+    font-size: 12px;
+    font-family: var(--ff-2);
+    color: #4f4f4f;
+    font-weight: 400;
+    margin-bottom: 7px;
+    margin-left: 0;
+  }
+  .split-number-input {
+    font-size: 10px;
+    text-align: left;
+  }
+  .inside-outline {
+    text-align: center;
+  }
+}
