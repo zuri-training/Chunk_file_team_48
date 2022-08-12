@@ -1,0 +1,233 @@
+/* ------Major container------ */
+.dashboard--component {
+  width: 620px;
+  margin-top: 200px;
+  margin-left: 456px;
+  margin-bottom: 42px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .dashboard--component {
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 150px;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+}
+
+.header-text h1 {
+  font-family: var(--ff);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--bg-color);
+  margin-top: 0;
+  padding-left: 241px;
+  margin-bottom: 40px;
+}
+
+.header-text p {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 114px;
+  padding-right: 113px;
+  margin-bottom: 24px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .header-text {
+    text-align: center;
+    align-content: center;
+    padding: 0 20px;
+  }
+
+  .header-text h1 {
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 16px;
+  }
+  .header-text p {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+    margin-bottom: 42px;
+  }
+}
+
+.dashboard--component--container {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #9a9a9a;
+  border-radius: 4px;
+  margin-left: 114px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .dashboard--component--container {
+    /* width: 212px;
+    height: 212px; */
+    width: 100%;
+    margin: auto;
+    padding: 45px 5%;
+    align-self: center;
+  }
+}
+
+/* -----Area where drag and drop happens------- */
+.dasboard-upload-outline {
+  width: 350px;
+  height: 215px;
+  border: dashed 2px #9a9a9a;
+  margin: 52px 25px 0 25px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.drag-label{
+  width: 200px;
+}
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .dasboard-upload-outline {
+    /* width: 185.5px;
+    height: 113.9px; */
+    width: 100%;
+    margin: 0 0 35px 0;
+    padding-top: 65px;
+  }
+}
+
+.dashboard-upload-icon {
+  margin: 49.48px 157.57px 22.88px 157.56px;
+  width: 40px;
+}
+
+.dashboard-upload-outline-text {
+  font-size: 16px;
+  font-family: var(--ff-2);
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-left: 54px;
+}
+
+.dashboard-upload-outline-text-small {
+  font-size: 12px;
+  font-weight: 600;
+  color: #787878;
+  margin-left: 147px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .dashboard-upload-icon {
+    width: 24px;
+    margin: 0;
+  }
+  .dashboard-upload-outline-text {
+    font-size: 12px;
+    margin: 0;
+  }
+  .dashboard-upload-outline-text-small {
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+.browse--link {
+  color: var(--bg-color);
+  text-decoration: none;
+}
+
+/* -----Button------ */
+.dashboard-btn {
+  width: 206px;
+  height: 60px;
+  background-color: #ffc056;
+  color: #1b1b1b;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  margin: 40px 97px 34px;
+}
+
+/* ===================
+MEDIA Query
+================== */
+@media screen and (max-width: 1024px) {
+  .dashboard-btn {
+    /* width: 160px;
+    height: 40px; */
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* -------Upload options---------- */
+.dashboard--upload-options {
+  display: inline-block;
+}
+
+.dashboard--upload-options-icons {
+  width: 24px;
+  margin-left: 24px;
+  vertical-align: middle;
+}
+
+.dashboard--upload-options-text {
+  font-size: 14px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.browse--link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dasboard-upload-outline--over {
+  border-style: 2px solid;
+}
+
+/* #drop-zone__input {
+  display: block;
+} */
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.drop-zone__thumb input {
+  color: blue;
+}
+
+/* .drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 12px;
+  text-align: center;
+  display: none;
+} */

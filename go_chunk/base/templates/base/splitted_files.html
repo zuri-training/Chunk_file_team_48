@@ -1,0 +1,73 @@
+{% extends "dashboard_main.html" %} {% load static %} {% block content %}
+<div class="dashboard--main">
+  <div class="dashboard--main--function">
+    <section class="dashboard--saved-container">
+      <div class="dashboard--saved--header">
+        <button type="submit" class="dashboard--saved--share">
+          <img src="{% static 'images/sms.png' %}" alt="share to email icon" />
+          Share to Email
+        </button>
+        <button type="submit" class="dashboard--saved--delete">
+          <img src="{% static 'images/trash.png' %}" alt="delete icon" />
+          Delete
+        </button>
+      </div>
+
+      <table id="dashboard--saved--table">
+        <tr id="table--title">
+          <th>File Name</th>
+          <!-- <th>Size</th> -->
+          <!-- <th>Split Sizes</th> -->
+          <!-- <th>Numbers</th> -->
+          <th>Date Saved</th>
+          <th>Status</th>
+        </tr>
+        {% for file in files %} 
+        {% if "temp/" in file.file.url %}
+        <tr class="table--items">
+          <td class="table--items--file">
+            <input type="checkbox" name="checkbox" class="checkbox" />
+            <!-- <img src="../images/Group 293.png" alt="green tick"> -->
+            <span>{{file.file | cut:'temp/'}}</span>
+          </td>
+          <!-- <td>100mb</td>
+                    <td>10</td>
+                    <td>10</td> -->
+          <td>
+            <p>{{file.upload_time | date:"D d M Y"}} {{ file.upload_time | time:"P" }}</p>
+          </td>
+          <td>Chunked</td>
+          <td>
+            <a href="{{file.file.url}}" download="">
+              <img src="{% static 'images/arrow-down.png' %}" alt=""
+            /></a>
+          </td>
+        </tr>
+        {% endif %} 
+        {% if "media/" in file.file.url %}
+        <tr class="table--items">
+          <td class="table--items--file">
+            <input type="checkbox" name="checkbox" class="checkbox" />
+            <!-- <img src="../images/Group 293.png" alt="green tick"> -->
+            <span>{{file.file | cut:'media/'}}</span>
+          </td>
+          <!-- <td>100mb</td>
+                                                    <td>10</td>
+                                                    <td>10</td> -->
+          <td>
+            <p>{{file.upload_time | date:"D d M Y"}} {{ file.upload_time | time:"P" }}</p>
+          </td>
+          <td>Chunked</td>
+          <td>
+            <a href="{{file.file.url}}" download="">
+              <img src="{% static 'images/arrow-down.png' %}" alt=""
+            /></a>
+          </td>
+        </tr>
+        {% endif %} 
+        {% endfor %}
+      </table>
+    </section>
+  </div>
+</div>
+{% endblock content %}
