@@ -10,6 +10,6 @@ from django.utils import timezone
 class ChunkedFile(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     file_id = models.UUIDField(default=uuid.uuid4, primary_key=True)
-    upload_time = models.DateTimeField(default=timezone.datetime.now())
+    upload_time = models.DateTimeField(default=timezone.now(), auto_created=True, auto_now=True)
     saved = models.BooleanField(default=False)
     file = models.FileField(upload_to=f'files')
