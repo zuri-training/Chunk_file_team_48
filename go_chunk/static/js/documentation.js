@@ -12,7 +12,6 @@ if (menuIcon) {
   menuIcon.addEventListener("click", () => {
     menuItems.style.display = "block";
   });
-
 }
 if (closeIcon) {
   closeIcon.addEventListener("click", () => {
@@ -25,9 +24,9 @@ if (closeIcon) {
 
 
 for (let i = 0; i < dropDowns.length; i++) {
-  let arrow = openArrows[i]
-  let dropDown = dropDowns[i]
-  arrow.addEventListener('click', function() {
-    dropDown.classList.toggle('show')
-  })
+  let arrow = openArrows[i];
+  let dropDown = dropDowns[i];
+  arrow.addEventListener("click", function () {
+    dropDown.classList.toggle("show");
+  });
 }
