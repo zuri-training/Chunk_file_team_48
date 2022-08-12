@@ -103,16 +103,23 @@
         </div>
 
         <div class="dashboard--component--container">
-          <div class="dasboard-upload-outline">
+            <div class="dasboard-upload-outline">
+            <span class="drop-zone__prompt"></span>
             <img src="../images/carbon_cloud-upload.png" alt=""
               class="dashboard-upload-icon">
-            <p class="dashboard-upload-outline-text">Drag and drop here
+            <span class="dashboard-upload-outline-text">Drag and drop here
               or <a href="#"
-                class="browse--link">Browse</a>
+                class="browse--link"></a></span>
               <p class="dashboard-upload-outline-text-small">CSV, JSON</p>
+              <div class="drop-zone__thumb" data-label="myFile.csv">
+                <input type="file" name="myFile" id="drop-zone__input">
+              </div>
+              
             </div>
-            <button class="dashboard-btn">Split file</button>
-          </div>
+            <a href="./dashboard-split-option1.html"><button type="submit"
+                class="dashboard-btn">Split file</button></a>
+            </div>
+
         </div>
       </div>
     </div>
