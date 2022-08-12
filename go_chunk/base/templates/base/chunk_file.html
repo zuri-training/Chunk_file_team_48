@@ -1,0 +1,63 @@
+{% extends "dashboard_main.html" %}
+{% load static %}
+<!-- ------Beginning of dashboard main content-------------- -->
+
+{% block content %}
+<div class="dashboard--main">
+    <form method="POST" class="signup--form" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="dashboard--component-container">
+            <h1 class="dasboard-split-option">Split Options</h1>
+            <p class="dasboard-upload-file-description">Set the
+                split options by indicating the details needed.</p>
+            <div class="dashboard--component--container">
+                <div class="dasboard-upload-outline">
+                    <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
+                    <br>
+                    <i class="fa-solid fa-file-lines"></i>
+                    <p class="dashboard-upload-outline-text">Data_team48_zuri
+                        .csv</p>
+                </div>
+                <!-- <div class="split-number-input"> <label for="">Enter size per file<br>
+                        <p>(minimum of 2096mb)</p>
+                    </label>
+                    <input type="text" placeholder="e.g. 20mb">
+                </div> -->
+                <div class="split-number-input">
+                    <label>Name the file:</label>
+                    <input type="text" name="file_name"
+                        placeholder="Name Of Output File (leave blank to use default name)" />
+                </div>
+
+                <div class="split-number-input"> <label>Enter number of row<br>per file</label>
+                    <input required type="number" name="chunk_no" placeholder="e.g 1,2,3,4...">
+                </div>
+                <div class="split-number-input">
+                    <input type="checkbox" name="saved">
+                    <p>Click to save splited files</p>
+                </div>
+
+
+            </div>
+            <button type="submit" class="dashboard-btn">Split file</button> <br>
+        </div>
+    </form>
+</div>
+{% endblock content %}
+
+<!-- <form method="POST" class="signup--form" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <label class="signup--form-label">Name the file:</label>
+    <input class="signup--form-label" type="text" name="file_name"
+        placeholder="Name Of Output File (leave blank to use default name)" />
+    <input type="file" name="doc">
+    <div>
+        <input type="checkbox" name="saved">
+        <p>Click to save splited files</p>
+    </div>
+    <br>
+    <input type="submit" class="sign--up-btn" value="Chunk" />
+
+    <a href="">view saved files</a>
+</form> -->

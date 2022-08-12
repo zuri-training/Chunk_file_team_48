@@ -54,6 +54,8 @@ def home(request):
 def about(request):
     return render(request, 'base/about.html')
 
+
+
 def documentation(request):
     return render(request, 'base/documentation_intro.html')
 
@@ -73,7 +75,7 @@ def t_c(request):
 def loginPage(request):
     
     if request.user.is_authenticated:
-        return redirect('/')
+        return redirect('/dashboard/')
 
     if request.method == "POST":
         username = request.POST.get('username').lower()
@@ -88,7 +90,7 @@ def loginPage(request):
 
         if user is not None:
             login(request, user)
-            return redirect('/')
+            return redirect('/dashboard/')
         else:
             messages.error(request, 'Username or Password does not exist')
 
@@ -137,7 +139,7 @@ def chunk_file(request):
         user = request.user
         if chunk_size == '' or file == None:
             messages.error(request, 'fields cannot be blank!')
-            return redirect('/chunk/')
+            return redirect('/dashboard/chunk_file/')
 
         try:
             saved = request.POST['saved']
@@ -162,23 +164,24 @@ def chunk_file(request):
             
 
             messages.success(request, 'file has been split successfully')
-            return redirect('/chunk/')
+            return redirect('/dashboard/chunk_file/')
         else:
             messages.error(request, 'invalid file format')
-    return render(request, 'base/chunk.html')
+    return render(request, 'base/chunk_file.html')
     
-    
-
+@login_required(login_url='/login/')   
+def dashboard(request):
+    return render(request, 'base/chunk_file.html')
 
 
 @login_required(login_url='/login/')
-def files_view(request):
+def splitted_files(request):
     user=request.user 
     files = ChunkedFile.objects.all()
 
     if files.exists():
         files = ChunkedFile.objects.filter(user=user)
-        return render(request, 'base/files.html', {'files':files})
+        return render(request, 'base/splitted_files.html', {'files':files})
         
     messages.error(request, 'file not found')
-    return render(request, 'base/files.html')
+    return render(request, 'base/splitted_files.html')

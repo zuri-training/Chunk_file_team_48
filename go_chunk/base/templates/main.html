@@ -39,9 +39,9 @@
     {% include 'navbar.html' %}
 
     {% if messages %}
-    <ul class="messages">
+    <ul class="messages absolute">
       {% for message in messages %}
-      <div class="container-fluid p-0">
+      <div class=" p-0">
         <div class="alert show {{ message.tags }} alert-dismissible" role="alert">
           <button class="close">
             <span aria-hidden="True">&times;</span>
@@ -87,6 +87,13 @@
     padding: 1rem 1rem;
     border-radius: .84rem;
     margin-top: .8rem;
+  }
+
+  .absolute{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 999;
   }
 
   .alert-danger {
