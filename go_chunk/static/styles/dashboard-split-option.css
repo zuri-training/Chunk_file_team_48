@@ -29,7 +29,7 @@
   border: 1px solid #9a9a9a;
   border-radius: 4px;
   margin: 25px 0 25px;
-  padding: 1.5rem .8rem;
+  padding: 1.5rem 0.8rem;
 }
 
 /* -----Area where drag and drop happens------- */
@@ -65,7 +65,7 @@
   margin-bottom: 7px;
 }
 
-.xmark{
+.xmark {
   position: relative;
 }
 .xmark i {
@@ -95,7 +95,7 @@
   width: 162px;
   height: 36px;
   margin-left: 16px;
-  padding: .7rem;
+  padding: 0.7rem;
   /* justify-content: center;
   align-content: center;
   vertical-align: middle; */
