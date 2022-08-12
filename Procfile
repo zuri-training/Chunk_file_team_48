@@ -1,1 +1,1 @@
-web: gunicorn chunks.wsgi:application --log-file - 
+web: gunicorn go_chunk.wsgi:application --log-file -
