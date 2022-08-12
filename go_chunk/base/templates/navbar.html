@@ -1,0 +1,26 @@
+{% load static %}
+<nav>
+  <div class="nav--logo--toggle">
+    <img class="logo" src="{% static 'images/Frame 1028.png' %}" alt="" />
+    <button type="submit">
+      <img src="{% static 'images/bars.svg' %}" alt="" class="nav--toggle-btn">
+    </button>
+  </div>
+  <div class="nav-links">
+    <ul>
+      <li><a href="{% url 'base:home' %}">Home</a></li>
+      <li><a href="{% url 'base:documentation' %}">Documentation</a></li>
+      <li><a href="{% url 'base:contact' %}">Contact</a></li>
+      <li><a href="{% url 'base:about' %}">About Us</a></li>
+      <li><a href="{% url 'base:faq' %}">FAQs</a></li>
+    </ul>
+    <div class="nav--buttons">
+      {% if request.user.is_authenticated %}
+      <span>Hello {{user.username}} | </span><a href="{% url 'base:logout' %}">Logout</a>
+      {% else %}
+      <a href="{% url 'base:login' %}"><button class="login-btn">Log in</button></a>
+      <a href="{% url 'base:signup' %}"><button class="register-btn">Register</button></a>
+      {% endif %}
+    </div>
+  </div>
+</nav>

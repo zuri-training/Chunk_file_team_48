@@ -1,0 +1,99 @@
+/* ---------Styles for Dashboard componentt----- */
+
+.dashboard--component {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ------Major container------ */
+.dashboard--component--container {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #9a9a9a;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  margin-left: 110px;
+  margin-bottom: 95px;
+}
+
+/* -----Area where drag and drop happens------- */
+.dasboard-upload-outline {
+  width: 350px;
+  height: 215px;
+  border: dashed 2px #9a9a9a;
+  margin: 52.5px 25px 20px;
+  border-radius: 4px;
+}
+
+.dashboard-upload-icon {
+  margin-top: 50px;
+  width: 40px;
+}
+
+/* -----Button------ */
+.dashboard-btn {
+  width: 350px;
+  height: 60px;
+  background-color: #748ce1;
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 4px;
+}
+
+/* ----Styling of texts------ */
+/* ------Upload file text------ */
+.dasboard-upload-file {
+  font-family: var(--ff);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--bg-color);
+  margin-bottom: 40px;
+}
+
+.dasboard-upload-file-description {
+  width: 393px;
+  font-size: 16px;
+  font-weight: 400;
+
+  margin-bottom: 32px;
+  margin-left: 110px;
+}
+
+.dashboard-upload-outline-text {
+  font-size: 16px;
+  font-family: var(--ff-2);
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+.dashboard-upload-outline-text-small {
+  font-size: 12px;
+  font-weight: 600;
+  color: #787878;
+}
+
+.dashboard-link-text {
+  color: var(--bg-color);
+}
+
+/* -------Upload options---------- */
+.dashboard--upload-options {
+  display: inline-block;
+}
+
+.dashboard--upload-options-icons {
+  width: 40px;
+  margin-left: 24px;
+  vertical-align: middle;
+}
+
+.dashboard--upload-options-text {
+  font-size: var(--fs-small);
+  margin-left: 8px;
+  vertical-align: middle;
+}
