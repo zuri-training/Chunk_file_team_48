@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,31 +24,27 @@
     <body>
       <main>
         <!-- Navigation -->
-        <div class="nav">
-          <!-- Logo -->
-          <div>
-            <a href="../templates/home.html"><img class="logo"
-                src="../images/Frame 1028.png" alt=""
-                /></a>
+        <nav>
+          <div class="nav--logo--toggle">
+            <img class="logo" src="../images/Frame 1028.png" alt="" />
+            <button type="submit">
+              <img src="../images/bars.svg" alt="" class="nav--toggle-btn">
+            </button>
           </div>
-          <!-- NavLinks-->
           <div class="nav-links">
             <ul>
-              <li><a href="../templates/home.html">Home</a></li>
-              <li><a href="#">Documentation</a></li>
-              <li><a href="../templates/contact.html">Contact</a></li>
-              <li><a href="../templates/about.html">About Us</a></li>
-              <li><a href="#">FAQs</a></li>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="./documentation_intro.html">Documentation</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
+            <div class="nav--buttons">
+              <a href="./signin.html"><button class="login-btn">Log in</button></a>
+              <a href="./signup.html"><button class="register-btn">Register</button></a>
+            </div>
           </div>
-          <!-- End of NavLinks -->
-          <!-- Nav Buttons -->
-          <div>
-            <button class="login-btn">Log in</button>
-            <button class="register-btn">Register</button>
-          </div>
-          <!-- End of Nav Buttons -->
-        </div>
+        </nav>
         <!-- End of Navigation -->
 
         <!-- Hero Container-->
@@ -63,8 +60,7 @@
               files or Save it for later.
             </p>
             <p>All for FREE!!!</p>
-            <a href="../templates/dasboard-split.html"><button
-                class="chunk--btn">CHUNK FILES</button></a>
+            <a href=""><button class="chunk--btn">CHUNK FILES</button></a>
           </div>
           <img src="../images/hero-img.png" alt="" class="home--hero--img" />
         </section>
@@ -148,6 +144,7 @@
 
         <!-- Split Section  -->
         <section class="split">
+          <h1 class="split--title">What We <span>Deliver</span></h1>
           <!-- Split box -->
           <div class="split__flex">
             <article>
@@ -159,8 +156,7 @@
               </p>
             </article>
             <img class="split--img" src="../images/SPLIT ILLUSTRATION.png"
-              alt=""
-              />
+              alt="" />
           </div>
           <!-- End of Split box-->
           <!-- Split box -->
@@ -174,8 +170,7 @@
                 whenever you are ready.
               </p>
             </article>
-            <img class="split--img" src="../images/Group 301.png" alt=""
-              />
+            <img class="split--img" src="../images/Group 301.png" alt="" />
           </div>
           <!-- End of Split box-->
           <!-- Split box -->
@@ -247,8 +242,7 @@
                 </p>
               </article>
               <img src="../images/🦆 icon _file group line_.png"
-                alt="login-icon"
-                />
+                alt="login-icon" />
             </div>
             <div class="instruction--steps--underline"></div>
           </div>
@@ -306,130 +300,113 @@
         </section>
         <!-- End of Testimonials -->
 
-        <!-- Beginning of FAQs -->
-        <!-- <section class="faq-section">
-        <div id="page">
-          <div class="hero-text">
-            <h1 class="mb">Frequently Asked<span id="question">Questions</span>
+        <!-- --------Beginning of FAQs---------------- -->
+        <section class="faq" id="faq">
+          <div class="faq-header-text">
+            <h1>Frequently Asked<span id="faq-link">
+                Questions</span>
             </h1>
-            <h3 class="mb">Need some clarity?</h3>
-            <p class="intro-text">Below are some questions we often get and we
+            <h3>Need some clarity?</h3>
+            <p>Below are some questions we
+              often get and we
               have made your experience easier by
-              answering them in a clear and precise way. If you can't find your
-              question here, kindly<span
-                id="question">Contact Us</span>
+              answering them in a clear and precise way. <br> If
+              you can't find your
+              question here, kindly <a href="../templates/contact.html"
+                id="faq-link">Contact
+                Us</a>
             </p>
           </div>
-          <div>
+          <!-- ------------Beginning of first box------------ -->
+          <div class="question-box-container">
+            <div id="question-box-1" class="question-box">
+              <p class="asked-questions">Can i split more
+                than 5 files at a
+                time?</p>
 
-            <div id="question-box-1" class="question-box row">
-              <div class="asked-questions">Can i split more than 5 files at a
-                time?</div>
-              <div id="add-sign-1" class="add-sign">
-                <span>+</span>
-              </div>
-
+              <button id="add-sign-1">+</button>
             </div>
-            <div id="answer-box-1" class="answer-box display-none">
-              <div class="row border-blue border-top-radius question-box-2">
-                <div class="asked-questions-2">
-                  <p>Can i split more than 5 files at a time?</p>
-                </div>
-                <div id="minus-sign-1" class="minus-sign row">
-                  <span class="minus">-</span>
-                </div>
-
+            <div id="answer-box-1" class="answer-box">
+              <div class="answer-question-box">
+                <p>Can i split more than 5 files at a
+                  time?</p>
+                <button id="minus-sign-1">-</button>
               </div>
-              <div class="border-blue border-bottom-radius question-box-2 row">
+
+              <div class="answer-box-answer">
                 <p>
-                  GO-Chunk allows you to split just one file at a time.</p>
+                  GO-Chunk allows you to split just one
+                  file at a time.
+                </p>
               </div>
-
             </div>
+            <!-- -----End of first box------- -->
+            <!-- ---------Beginning of Second box-------------- -->
+            <div id="question-box-2" class="question-box">
+              <p class="asked-questions">How can I avoid having errors while
+                splitting?</p>
 
-            <div id="question-box-2" class="question-box row">
-              <div class="asked-questions">How can I avoid having errors while
-                splitting?</div>
-              <div id="add-sign-2" class="add-sign">
-                <span>+</span>
-              </div>
-
+              <button id="add-sign-2">+</button>
             </div>
-            <div id="answer-box-2" class="answer-box display-none">
-              <div class="row border-blue border-top-radius question-box-2">
-                <div class="asked-questions-2">
-                  <p>How can I avoid having errors while splitting?</p>
-                </div>
-                <div id="minus-sign-2" class="minus-sign row">
-                  <span class="minus">-</span>
-                </div>
-
+            <div id="answer-box-2" class="answer-box">
+              <div class="answer-question-box">
+                <p>How can I avoid having errors while splitting?</p>
+                <button id="minus-sign-2">-</button>
               </div>
-              <div class="border-blue border-bottom-radius question-box-2 row">
+
+              <div class="answer-box-answer">
                 <p>
                   To avoid errors while splitting, make sure you select the
                   right format.
                 </p>
               </div>
-
             </div>
-            <div id="question-box-3" class="question-box row">
-              <div class="asked-questions">How safe are my files in case I lost
-                my gadgets?</div>
-              <div id="add-sign-3" class="add-sign">
-                <span>+</span>
+            <!-- ---------End of Second box-------------- -->
+            <!-- ---------Beginning of third box-------------- -->
+            <div id="question-box-3" class="question-box">
+              <p class="asked-questions">How safe are my files in case I lost my
+                gadgets?</p>
+
+              <button id="add-sign-3">+</button>
+            </div>
+            <div id="answer-box-3" class="answer-box">
+              <div class="answer-question-box">
+                <p>How safe are my files in case I lost my gadgets?</p>
+                <button id="minus-sign-3">-</button>
               </div>
 
-            </div>
-            <div id="answer-box-3" class="answer-box display-none">
-              <div class="row border-blue border-top-radius question-box-2">
-                <div class="asked-questions-2">
-                  <p>How safe are my files in case I lost my gadgets?</p>
-                </div>
-                <div id="minus-sign-3" class="minus-sign row">
-                  <span class="minus">-</span>
-                </div>
-
-              </div>
-              <div class="border-blue border-bottom-radius question-box-2 row">
+              <div class="answer-box-answer">
                 <p>
                   Be rest assured that your files are safe with us and can be
                   collected without missing any data any time.
                 </p>
               </div>
-
             </div>
-            <div id="question-box-4" class="question-box row">
-              <div class="asked-questions">Will I be charged if I want to chunk
-                into many numbers?</div>
-              <div id="add-sign-4" class="add-sign">
-                <span>+</span>
-              </div>
-
+            <!-- ---------End of third box-------------- -->
+            <!-- ---------Beginning of Fourth box-------------- -->
+            <div id="question-box-4" class="question-box">
+              <p class="asked-questions">Will I be charged if I want to chunk
+                into many numbers?</p>
+              <button id="add-sign-4">+</button>
             </div>
-            <div id="answer-box-4" class="answer-box display-none">
-              <div class="row border-blue border-top-radius question-box-2">
-                <div class="asked-questions-2">
+            <div id="answer-box-4" class="answer-box">
+              <div class="answer-question-box">
+                <div class="answer-question">
                   <p>Will I be charged if I want to chunk into many numbers?</p>
                 </div>
-                <div id="minus-sign-4" class="minus-sign row">
-                  <span class="minus">-</span>
-                </div>
-
+                <button id="minus-sign-4">-</button>
               </div>
-              <div class="border-blue border-bottom-radius question-box-2 row
-                mb">
+
+              <div class="answer-box-answer">
                 <p>
                   GO-Chunk is absolutely FREE! We want you to freely do your
-                  chunking because your data are important to
-                  us.</p>
+                  chunking because your data are important to us.</p>
               </div>
-
+              <!-- ---------End of Fourth box-------------- -->
             </div>
           </div>
-        </section> -->
-        <!-- End of FAQ   -->
-
+        </section>
+        <!-- ----End of FAQ--------- -->
 
         <!-- Footer -->
         <footer class="footer--container">
@@ -463,7 +440,9 @@
           <!-- Middle of Footer -->
           <div class="footer--middle">
             <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Company</h3>
+              <h3 class="footer--middle--links--title">Company <img
+                  src="../images/angle-down.svg" alt="arrow"
+                  class="arrow--mobile"></h3>
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
                 <a href="#" class="footer--middle--link">Home</a>
@@ -474,7 +453,9 @@
             </div>
 
             <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Splitter</h3>
+              <h3 class="footer--middle--links--title">Splitter <img
+                  src="../images/angle-down.svg" alt="arrow"
+                  class="arrow--mobile"></h3>
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
                 <a href="#" class="footer--middle--link">Split CSV file</a>
@@ -483,7 +464,9 @@
             </div>
 
             <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Resources</h3>
+              <h3 class="footer--middle--links--title">Resources <img
+                  src="../images/angle-down.svg" alt="arrow"
+                  class="arrow--mobile"></h3>
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
                 <a href="#" class="footer--middle--link">Documentation</a>
@@ -492,7 +475,9 @@
             </div>
 
             <div class="footer--middle--links">
-              <h3 class="footer--middle--links--title">Account</h3>
+              <h3 class="footer--middle--links--title">Account <img
+                  src="../images/angle-down.svg" alt="arrow"
+                  class="arrow--mobile"></h3>
               <div class="underline"></div>
               <div class="footer--middle--link__grid">
                 <a href="#" class="footer--middle--link">Profile</a>
@@ -514,8 +499,11 @@
           <!-- End of Bottom of Footer -->
         </footer>
         <!-- End of Footer -->
+
       </main>
       <script src="./faq.js"></script>
+      <script src="./footer.js"></script>
+      <script src="./header.js"></script>
     </body>
 
   </html>

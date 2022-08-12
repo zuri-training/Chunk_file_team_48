@@ -28,6 +28,10 @@
   font-weight: var(--fw-small);
   font-size: var(--fs-small);
 }
+.privacy--hero--info--policy-mobile {
+  display: none;
+}
+
 .privacy--hero--info--policy > h3:nth-child(1) {
   text-align: right;
 }
@@ -72,4 +76,59 @@
 }
 .privacy--text__up {
   margin-top: 0;
+}
+
+/* ===========MEDIA QUERY================= */
+
+@media screen and (max-width: 1024px) {
+  .privacy {
+    padding: 24px 24px 0 24px;
+    color: black;
+  }
+  .privacy--hero--info {
+    margin-bottom: 0;
+  }
+  .privacy--hero--info--policy {
+    display: none;
+  }
+  .privacy--hero--info--policy-mobile {
+    display: block;
+    font-size: 8px;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  .privacy--hero--info--policy-mobile h3 {
+    margin: 0;
+  }
+  .privacy--hero--info--policy-mobile--date {
+    color: var(--bg-color);
+  }
+  .privacy--hero--info--title {
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+  .privacy--hero--description {
+    font-size: 12px;
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+  .privacy--content {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .privacy--content--title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    margin-top: 16px;
+  }
+  .privacy--content--text {
+    font-size: 16px;
+
+    margin-bottom: 16px;
+  }
+  hr {
+    margin: 0;
+    padding: 0;
+  }
 }
