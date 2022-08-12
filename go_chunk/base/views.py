@@ -55,7 +55,7 @@ def about(request):
     return render(request, 'base/about.html')
 
 def documentation(request):
-    return render(request, 'base/documentation.html')
+    return render(request, 'base/documentation_intro.html')
 
 def contact(request):
     return render(request, 'base/contact.html')
@@ -161,7 +161,7 @@ def chunk_file(request):
             storingFile(saved, user, ouput_name,file, chunk_size,batch_no)
             
 
-            messages.info(request, 'file has been split successfully')
+            messages.success(request, 'file has been split successfully')
             return redirect('/chunk/')
         else:
             messages.error(request, 'invalid file format')
