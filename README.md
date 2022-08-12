@@ -1,77 +1,53 @@
-# Go-Chunk
+![Images](/images/Overview.png)
 
-A platform that accepts CSV or JSON large files, and breaks them into smaller bits called Chunks - must be the right format. These chunks are converted into Zip for download and also made available to save for later download. On Go-chunk your data is secured and protected from security breach and also files are splitted in the fastest way possible.
+# Table of Contents
 
+- [Overview](#Overview)
+- [Features](#Features)
+- [Resources](#Resources)
+- [Development](#Development)
+- [Built with](#Built-With)
+- [Product design](#Product-Design)
+- [Frontend development](#Frontend-Development)
+- [Backend development](#Backend-Development)
+- [Documentation](#Documentation)
+- [What we learned](#What-We-Learned) 
+- [Continued development](#Continued-Development)
+- [Meet our team](#Our-Team)
+- [Author](#Author) 
+- [Acknowledgments](#Acknowledgements) 
 
+# Overview
 
-## Table of Contents
-
-*[Overview](#overview)
-*[Features](#features)
-*[Resources](#resources)
-*[Development](#development)
-*[Built with](#built-with)
-*[Product design](#product-design)
-*[Frontend development](#frontend-development)
-*[Backend development](#backend-development)
-*[Documentation](#documentation)
-*[What we learned](#what-we-learned) 
-*[Continued development](#continued-development)
-*[Useful resources](#useful-resources)
-*[Meet our team](#OurTeam)
-*[Author](#Author) 
-*[Acknowledgments](#Acknowledgements) 
-
+Go-chunk is a free and reliable file splitter that allows you to split your large CSV or JSON files into smaller bits called CHUNKS. These chunks are converted into Zip for download and also made available to save for later download. On Go-chunk your data is secured and protected from security breach and also files are splitted in the fastest way possible.
 
 
-# About Us
-Go-Chunk is a non-profit, open-source project launched in 2022 by Zuri Team powered by Ingressive for Good APIs. Having worked with data scientists and analysts all over the world, Go-Chunk aims to offer solutions to the stress of going through so many processes to break down data files and also the loss of files on any device.
+# Features
 
-- How to Use
-- To Run Locally
+With Go-chunk, you can have access to a personal dashboard to split files
+
+- Two splitting options are made available ; split into a set of same sized chunks or split into a number of rows.
+- You may enter your preferred size per file or the number you want your file to be splitted into.
+- You can choose to download each chunked files one by one incase of tested splitting
+- You can save your chunked files on your dashboard and download anytime
+- We store your file properties like dates and file attributes.
+- Split very large files; The minimum file size accepted to split is 2mb
+- Customize your file attributes according to your need ; file name,size,number,date and status
+- You are able to work in your own language, we support multiple languages; English,french,spanish
+- You can give us feedback on your chunking experience so we can know how to serve you better.
+- You can have access to dark mode and light mode features for a better Chunking experience
 
 
+# Resources
+- [Figma](#Figma)
+- [Live Link](#Live-Link)
+- [Database Schema](#Database-Schema)
+- [Presentation](#Presentation)
 
-# To run locally
 
-## Clone the project
+# Development
 
-``` git clone https://github.com/zuri-training/Chunk_file_team_48.git ```
-
-## Go to the project directory
-
-``` cd Chunk_file_team_48 ```
-
-## Create a Virtual Environment
-
-``` python -m venv venv ```
-
-## Activate Virtual Environment
-
-``` venv\scripts\activate ```
-
-## Install Dependencies
-
-``` pip install -r requirements.txt ```
-
-## make migrations
-
-``` python manage.py makemigrations ```
-
-## Migrate the database
-
-``` python manage.py migrate ```
-
-## create superuser ```
-
-``` python manage.py createsuperuser ```
-
-## Finally, Start The Server.
-
-``` python manage.py runserver ``` 
-
-# Tech Stack
-Tech Stack
+# Built With
 
  Our site was built using the following tools:
 
@@ -79,12 +55,46 @@ Tech Stack
         * CSS
         * JAVASCRIPT
         * PYTHON(Django) ​ ​
+
+- How to Use
+
+
+# To run locally
+
+## Clone the project
+``` git clone https://github.com/zuri-training/Chunk_file_team_48.git ```
+
+## Go to the project directory
+``` cd Chunk_file_team_48 ```
+
+## Create a Virtual Environment
+``` python -m venv venv ```
+
+## Activate Virtual Environment
+``` venv\scripts\activate ```
+
+## Install Dependencies
+``` pip install -r requirements.txt ```
+
+## Make migrations
+``` python manage.py makemigrations ```
+
+## Migrate the database
+``` python manage.py migrate ```
+
+## Create superuser ```
+``` python manage.py createsuperuser ```
+
+## Finally, Start The Server.
+``` python manage.py runserver ``` 
+
+
         
 # Documentation
 Here is the link to our [Documentation](https://docs.google.com/document/d/1kr2OITN5x1Qk9msqu2vurgJEsORGdqHtZe24EeHFHmU/edit)
 
 # Our Team
-Meet our Team here
+Meet our Team [here](https://github.com/zuri-training/Chunk_file_team_48/graphs/contributors)
 
 # Author
 Chinecherem Nduka [{@ChinechNduka}](https://github.com/ChinechNduka)
