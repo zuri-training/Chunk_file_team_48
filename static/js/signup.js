@@ -5,6 +5,7 @@ const signupBtn = document.querySelector(".signup--btn");
 registerBtn.addEventListener("mouseover", () => {
   registerBtn.style.backgroundColor = "#1F378C";
 });
+
 registerBtn.addEventListener("mouseout", () => {
   registerBtn.style.backgroundColor = "#2645AF";
 });

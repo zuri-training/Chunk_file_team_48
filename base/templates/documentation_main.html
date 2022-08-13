@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+
+    <!-- Global Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/globalstyle.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/header.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/footer.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/documentation.css' %}">
+
+    <!-- Pages Stylesheets -->
+    <script src="https://kit.fontawesome.com/0fb08dbc74.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <main>
+        <!-- Navigation -->
+        <div class="nav" id="myNav">
+            <!-- Logo -->
+            <div class="mobile-nav">
+                <div class="menu-logo"> <a href="javascript:void(0);" class="icon" id="menu-icon">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <a href="{% url 'base:home' %}"><img src="{% static 'images/Frame 1028.png' %}" alt="" class="logo">
+                </div>
+
+                <img src="{% static 'images/search-interface-symbol.png' %}" alt="search" class="search">
+            </div></a>
+            <div class="logo-desktop"><a href="{% url 'base:home' %}"><img src="{% static 'images/Frame 1028.png' %}"
+                        alt="" class="logo"></a>
+            </div>
+
+            <div class="documentation--middle--content">
+                <img src="{% static 'images/Vector.svg' %}" alt="Github" class="github-icon">
+                <!-- Search bar-->
+                <div class="search-bar">
+                    <img src="{% static 'images/search-interface-symbol.png' %}" alt="search">
+                    <input type="search" name="" id="" class="search-input" placeholder="Search documentation">
+
+                </div>
+            </div>
+            <!-- End of NavLinks -->
+            <!-- Nav Buttons -->
+            <div class="nav--buttons doc">
+                {% if request.user.is_authenticated %}
+                <span>Hello {{user.username}} | </span><a href="{% url 'base:logout' %}">Logout</a>
+                {% else %}
+                <a href="{% url 'base:login' %}"><button class="login-btn">Log in</button></a>
+                <a href="{% url 'base:signup' %}"><button class="register-btn">Register</button></a>
+                {% endif %}
+            </div>
+            <!-- End of Nav Buttons -->
+
+        </div>
+        <!-- ------End of navigation---------- -->
+        <div class="main-container">
+            <!-- Side nav -->
+            <div class="side-nav">
+                <h1 class="big-black-header">Documentation</h1>
+                <ul>
+                    <div class="intro-dropdown">
+                        <li><a href="{% url 'base:documentation_intro' %}">Introduction</a></li><img
+                            src="{% static 'images/down.png' %}" alt="" class="drop-down" id="dropdown-icon-1">
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu-1">
+                        <h3><a href="{% url 'base:documentation_intro' %}#features">Features</a></h3>
+                        <h3><a href="{% url 'base:documentation_intro' %}#getting_started">Getting
+                                Started</a></h3>
+                    </div>
+
+                    <div class="intro-dropdown">
+                        <li><a href="{% url 'base:documentation_getting_started' %}">Getting Started</a></li><img
+                            src="{% static 'images/down.png' %}" alt="" class="drop-down" id="dropdown-icon-2">
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu-2">
+                        <h3><a href="{% url 'base:documentation_getting_started' %}#signin">Sign in to the dashboard</a></h3>
+                        <h3><a href="{% url 'base:documentation_getting_started' %}#chunk_your_file">Chunk
+                                your CSV/JSON files</a></h3>
+                        <h3><a href="{% url 'base:documentation_getting_started' %}#file_format">File Formats</a></h3>
+                        <h3><a href="{% url 'base:documentation_getting_started' %}#manage_account">Manage your user account</a></h3>
+                    </div>
+                    <div class="intro-dropdown">
+                        <li><a href="{% url 'base:documentation_dashboard' %}">Dashboard</a></li><img
+                            src="{% static 'images/down.png' %}" alt="" class="drop-down" id="dropdown-icon-3">
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu-3">
+                        <h3><a href="{% url 'base:documentation_dashboard' %}#uploading">Uploading file</a></h3>
+                        <h3><a href="{% url 'base:documentation_dashboard' %}#chunking">Chunking
+                                Options</a></h3>
+                        <h3><a href="{% url 'base:documentation_dashboard' %}#saving">Saving your file</a></h3>
+                        <h3><a href="{% url 'base:documentation_dashboard' %}#frontend">font-end</a></h3>
+                    </div>
+                    <li><a href="#">Advanced
+                            Installations</a></li>
+                    <li><a href="{% url 'base:splitted_files' %}">Database </a></li>
+                    <li><a href="{% url 'base:faq' %}">Frequently Asked Questions</a></li>
+                    <li><a href="{% url 'base:contact' %}">Contact Us</a></li>
+                    <li><a href="{% url 'base:home' %}">Website</a></li>
+                    <li><a href="{% url 'base:privacy' %}">Privacy Policy</a></li>
+                    <li><a href="{% url 'base:t_c' %}">Terms of Use</a></li>
+                </ul>
+
+
+            </div>
+            <!-- End sinde nav -->
+            {% block content %}
+
+            {% endblock content %}
+
+
+        </div>
+
+        <script src="{% static 'js/documentation.js' %}"></script>
+</body>

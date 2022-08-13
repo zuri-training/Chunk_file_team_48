@@ -110,8 +110,8 @@
   .search {
     width: 24px;
   }
-  .login-btn,
-  .register-btn {
+  .doc .login-btn,
+  .doc .register-btn {
     display: none;
   }
   .nav .icon {

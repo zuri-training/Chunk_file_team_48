@@ -29,6 +29,7 @@
 
 .signup--top--content h3 {
   color: #fff;
+   font-size: var(--fs-big);
 }
 
 .bottom--content {

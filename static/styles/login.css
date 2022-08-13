@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body{
+  background: #899EE6;
+}
+
 .signin--container {
   position: relative;
   margin: 150px auto;

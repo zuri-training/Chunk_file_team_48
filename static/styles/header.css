@@ -105,8 +105,9 @@ Media Query
     cursor: pointer;
   }
   .nav-links {
+    z-index: 999;
     position: absolute;
-    top: 98px;
+    top: 72px;
     align-self: auto;
     background-color: red;
     padding: 20px;

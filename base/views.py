@@ -47,17 +47,22 @@ def storingFile(saved, user, ouput_name, file, chunk_size,batch_no):
 
 
 def home(request):
-    
-    print(folder_path)
     return render(request, 'base/home.html')
 
 def about(request):
     return render(request, 'base/about.html')
 
-
-
-def documentation(request):
+def documentation_intro(request):
     return render(request, 'base/documentation_intro.html')
+
+def documentation_getting_started(request):
+    return render(request, 'base/documentation_getting_started.html')
+
+def documentation_how(request):
+    return render(request, 'base/documentation_how.html')
+
+def documentation_dashboard(request):
+    return render(request, 'base/documentation_dashboard.html')
 
 def contact(request):
     return render(request, 'base/contact.html')
@@ -104,16 +109,16 @@ def signupPage(request):
         password = request.POST['password']
         password2 = request.POST['password2']
         if password != password2:
-            messages.info(request, 'passwords do not match')
+            messages.error(request, 'passwords do not match')
         #  return redirect('/signup')
         elif len(password) < 4:
-            messages.info(request, 'password is too short')
+            messages.error(request, 'password is too short')
         #  return redirect('/signup')
         elif User.objects.filter(username=username).exists():
-            messages.info(request, 'username taken')
+            messages.error(request, 'username taken')
         #  return redirect('/signup')
         elif User.objects.filter(email=email).exists():
-            messages.info(request, 'email already in use. if this is your account, please login')
+            messages.error(request, 'email already in use. if this is your account, please login')
         #  return redirect('/signup')
         else:
             new_user = User.objects.create_user(username=username, email=email, password=password)

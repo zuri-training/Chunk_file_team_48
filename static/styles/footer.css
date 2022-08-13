@@ -81,7 +81,7 @@ Media Query
 @media screen and (max-width: 1439px) {
   .footer--container {
     max-width: 100vw;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
   }
   .footer--top,
   .footer--middle {
