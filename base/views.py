@@ -1,3 +1,4 @@
+from datetime import datetime
 from pickle import FALSE
 from django.utils.datastructures import MultiValueDictKeyError
 from django.shortcuts import render, redirect
@@ -18,12 +19,12 @@ from .models import ChunkedFile
 dir_path = os.path.dirname(os.path.realpath('go_chunk'))
 folder_path = os.path.join(dir_path,'media')
 temp_folder_path = os.path.join(dir_path,'temp')
-# date = datetime.now().strftime("%Y_%m_%d,%I-%M-%S,%p")
+date = datetime.now().strftime("%M-%S")
 print(folder_path)
 def storingFile(saved, user, ouput_name, file, chunk_size,batch_no):
                 if saved == 'on':
-                    db_file_path = f'media/{user}-{ouput_name}.zip'
-                    zip_file_path = f'media/{user}-{ouput_name}.zip'
+                    db_file_path = f'media/{user}-{ouput_name}-{date}.zip'
+                    zip_file_path = f'media/{user}-{ouput_name}-{date}.zip'
                     for chunk in pd.read_csv(file, chunksize=chunk_size, encoding='Windows-1252'):
                         with ZipFile(zip_file_path, 'a') as zip_file:
                             file_name = f"{ouput_name}-" + str(batch_no) + ".csv"
@@ -34,8 +35,8 @@ def storingFile(saved, user, ouput_name, file, chunk_size,batch_no):
                     csv_obj.save()
 
                 if saved == False:
-                    temp_zip_file_path = f'temp/{user}-{ouput_name}.zip'
-                    temp_db_file_path = f'temp/{user}-{ouput_name}.zip'
+                    temp_zip_file_path = f'temp/{user}-{ouput_name}-{date}.zip'
+                    temp_db_file_path = f'temp/{user}-{ouput_name}-{date}.zip'
                     for chunk in pd.read_csv(file, chunksize=chunk_size, encoding='Windows-1252'):
                         with ZipFile(temp_zip_file_path, 'a') as zip_file:
                             file_name = f"{ouput_name}-" + str(batch_no) + ".csv"
@@ -141,6 +142,9 @@ def chunk_file(request):
         file = request.FILES.get('doc')
         ouput_name = request.POST['file_name']
         chunk_size = request.POST['chunk_no']
+        print(file)
+        print(ouput_name)
+        print(chunk_size)
         user = request.user
         if chunk_size == '' or file == None:
             messages.error(request, 'fields cannot be blank!')

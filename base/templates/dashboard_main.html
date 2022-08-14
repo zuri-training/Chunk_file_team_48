@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/globalstyle.css' %}">
 
     <link rel="stylesheet" href="{% static 'styles/dashboard.css' %}" />
-    <link rel="stylesheet" href="{% static 'styles/dashboard-split-option.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/dashboard-split.css' %}" />
     <link rel="stylesheet" href="{% static 'styles/dashboard-saved-files.css' %}">
     <script src="https://kit.fontawesome.com/0fb08dbc74.js" crossorigin="anonymous"></script>
 </head>
@@ -23,7 +23,7 @@
         {% include 'dashboard_nav.html' %}
 
         {% if messages %}
-        <ul class="messages">
+        <ul class="messages absolute">
             {% for message in messages %}
             <div class="container-fluid p-0">
                 <div class="alert show {{ message.tags }} alert-dismissible" role="alert">
@@ -64,12 +64,20 @@
 <style>
     .alert {
         color: white;
+        min-width: 300px;
         max-width: 400px;
         margin: auto;
         padding: 1rem 1rem;
         border-radius: .84rem;
         margin-top: .8rem;
     }
+
+    .absolute{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 999;
+  }
 
     .alert-danger {
         background-color: rgb(230, 105, 105);

@@ -25,7 +25,7 @@
 /* ------Major container------ */
 .dashboard--component--container {
   width: 400px;
-  height: 400px;
+  padding: .8rem;
   border: 1px solid #9a9a9a;
   border-radius: 4px;
   margin: 25px 0 25px;
@@ -73,7 +73,7 @@
 .split-number-input {
   display: flex;
   font-size: 14px;
-  align-content: center;
+  align-items: center;
   vertical-align: middle;
   margin-left: 40px;
   margin-bottom: 15px;

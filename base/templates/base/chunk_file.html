@@ -1,45 +1,93 @@
 {% extends "dashboard_main.html" %}
 {% load static %}
-<!-- ------Beginning of dashboard main content-------------- -->
 
 {% block content %}
 <div>
-    <form method="POST" class="signup--form" enctype="multipart/form-data">
-        {% csrf_token %}
-        <div class="dashboard--component-container">
-            <h1 class="dasboard-split-option">Split Options</h1>
-            <p class="dasboard-upload-file-description">Set the
-                split options by indicating the details needed.</p>
-            <div class="dashboard--component--container">
-                <label for="drop-zone__input">
-                    <div class="dasboard-upload-outline">
-
-                        <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
-                        <br>
-                        <i class="fa-solid fa-file-lines"></i>
-                        <!-- <p class="dashboard-upload-outline-text">Data_team48_zuri.csv</p> -->
-                        <input type="file" name="doc" id="drop-zone__input">
+        <!-- ------Beginning of Dashboard Upload file------ -->
+        <div class="visible" id="upload-option">
+            <div class="dashboard--component">
+                <div class="dashboard--component-housing">
+                    <div class="header-text">
+                        <h1>Upload File</h1>
+                        <p>Drag and Drop a CSV
+                            file into the File selection
+                            area
+                            below.
+                        </p>
                     </div>
-                </label>
-                <div class="split-number-input">
-                    <label>Name the file:</label>
-                    <input type="text" name="file_name"
-                        placeholder="Name Of Output File (leave blank to use default name)" />
+                    <div class="dashboard--component--container">
+        
+                        <div class="drag-area" id="drag-area">
+                            <div class="icon"><img src="{%static 'images/carbon_cloud-upload.png'%}" alt=""
+                                    class="fas fa-cloud-upload-alt">
+                            </div>
+                            <div id="upload-area-text">
+                                <header>Drag & Drop to Upload File</header>
+                                <span>OR</span>
+                            </div>
+                            <button>Browse File</button>
+                            <input type="file" hidden>
+                        </div>
+                        <button type="click" id="next-page-btn" class="dashboard-btn">Split file</button>
+                    </div>
+        
                 </div>
-
-                <div class="split-number-input"> <label>Enter number of row<br>per file</label>
-                    <input required type="number" name="chunk_no" placeholder="e.g 1,2,3,4...">
-                </div>
-                <div class="split-number-input">
-                    <input type="checkbox" name="saved">
-                    <p>Click to save splited files</p>
-                </div>
-
-
+        
             </div>
-            <button type="submit" class="dashboard-btn">Split file</button> <br>
+        
         </div>
-    </form>
+        
+        
+        <!-- ------End of Dashboard Upload file------ -->
+        
+        <!-- -------Beginning of Dashboard Split Option-------    -->
+        <div class="non-visible" id="split-option">
+            <div class="dashboard--component ">
+                <div class="dashboard--component-housing">
+                    <div class="header-text">
+                        <h1>Split Option</h1>
+                        <p>Set the split options by indicating the details needed.
+                        </p>
+                    </div>
+        
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="dashboard--component--container-2">
+                            <div class="drag-area-2">
+                                <div class="icon">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="drop-area-info">
+                                    <i class="fa-solid fa-file-lines"></i>
+                                    <header></header>
+                                    <span></span>
+                                </div>
+        
+                                <input type="file" name="doc" hidden id="split-option-input">
+                            </div>
+        
+                            <div class="split-number-input"> <label for="">Enter size per
+                                    file<p>(minimum of 2096mb)</p> </label>
+                                <input type="text" name="file_name" placeholder="Name Of Output File (leave blank to use default name)" />
+                            </div>
+                            <div class="split-number-input"> <label for="">Enter number of
+                                    rows per file</label>
+                                <input required type="number" name="chunk_no" placeholder="e.g 1,2,3,4...">
+                            </div>
+                            <div class="split-number-input">
+                                <input type="checkbox" name="saved">
+                                <p>Click to save splited files</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="dashboard-btn">Split file</button>
+                    </form>
+        
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- -------End of Dashboard Split Option-------    -->
+
 </div>
 {% endblock content %}
-
