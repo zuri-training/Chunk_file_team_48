@@ -18,6 +18,7 @@ from .models import ChunkedFile
 
 dir_path = os.path.dirname(os.path.realpath('go_chunk'))
 folder_path = os.path.join(dir_path,'media')
+converted_path = os.path.join(dir_path,'convert')
 temp_folder_path = os.path.join(dir_path,'temp')
 date = datetime.now().strftime("%M-%S")
 print(folder_path)
