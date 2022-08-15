@@ -1,0 +1,252 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Dashboard</title>
+
+    <!-- Global Stylesheets -->
+    <link rel="stylesheet" href="../static/globalstyle.css" />
+    <link rel="stylesheet" href="../static/dashboard.css" />
+    <link rel="stylesheet" href="./dashboard-splitted-files.css">
+  </head>
+
+  <body>
+    <div class="dashboard--container">
+      <!-- Navigation and Sidebar -->
+      <!-- Navigation -->
+      <div class="dashboard--nav">
+        <div class="dashboard--nav--toggle">
+          <div class="dashboard--nav--toggle__hover">
+            <img src="../images/menu.png" alt="toggle icon"
+              class="dashboard--nav--toggle--icon" />
+          </div>
+          <img src="../images/LogoFooter.png" alt="go-chunk-logo"
+            class="dashboard--nav--toggle--logo" />
+        </div>
+        <div class="dashboard--nav--user">
+          <img src="../images/Group 199.png" alt="user img"
+            class="dashboard--nav--user--img">
+          <div class="dashboard--nav--online--icon"></div>
+        </div>
+      </div>
+      <!-- SideBar -->
+      <div class="dashboard--sidebar">
+        <div class="dashboard--sidebar--underline"></div>
+        <div class="dashboard--sidebar--links__center">
+          <!-- Sidebar link -->
+          <a id="split-file-btn" href="./dashboard-split.html"
+            class="dashboard--sidebar--links">
+            <img src="../images/layer-group.svg" alt="sidebar--icon"
+              class="dashboard--sidebar--links--icon">
+            <p class="dashboard--sidebar--links--desc">Split File</p>
+          </a>
+          <!-- End of sidebar link -->
+          <!-- Sidebar link -->
+          <a href="./dashboard-saved-files.html"
+            class="dashboard--sidebar--links">
+            <img src="../images/tick-square.png" alt="sidebar--icon"
+              class="dashboard--sidebar--links--icon">
+            <p class="dashboard--sidebar--links--desc">Saved Files</p>
+          </a>
+          <!-- End of sidebar link -->
+          <!-- Sidebar link -->
+          <a href="./faq.html" class="dashboard--sidebar--links">
+            <img src="../images/message-question.png" alt="sidebar--icon"
+              class="dashboard--sidebar--links--icon">
+            <p class="dashboard--sidebar--links--desc">FAQ</p>
+          </a>
+          <!-- End of sidebar link -->
+          <!-- Sidebar link -->
+          <a href="./dashboard-settings.html" class="dashboard--sidebar--links">
+            <img src="../images/setting-2.png" alt="sidebar--icon"
+              class="dashboard--sidebar--links--icon">
+            <p class="dashboard--sidebar--links--desc">Settings</p>
+          </a>
+          <!-- End of sidebar link -->
+          <!-- Sidebar link -->
+          <a href="./about.html" class="dashboard--sidebar--links">
+            <img src="../images/warning-2.png" alt="sidebar--icon"
+              class="dashboard--sidebar--links--icon">
+            <p class="dashboard--sidebar--links--desc">About Us</p>
+          </a>
+          <!-- End of sidebar link -->
+          <!-- Sidebar link -->
+          <a href="./home.html" class="dashboard--sidebar--links">
+            <img src="../images/login.png" alt="sidebar--icon"
+              class="dashboard--sidebar--links--icon">
+            <p class="dashboard--sidebar--links--desc">Log Out</p>
+          </a>
+          <!-- End of sidebar link -->
+        </div>
+      </div>
+      <!-- End of navigation and sidebar -->
+      <div class="dashboard--main">
+        <div class="dashboard--main--function">
+
+          <!-- Splitted Files Section -->
+          <section id="splitted-files" class="dashboard--splitted--files">
+            <div class="dashboard--splitted--files--info">
+              <div class="dashboard--splitted--files--info--left">
+                <p>You uploaded <span>File Name</span></p>
+                <p>Size : <span>File Size</span></p>
+                <p>Split size : <span>Split Size</span></p>
+              </div>
+              <div class="dashboard--splitted--files--info--right">
+                <p>Date of Split <span>Time of Split</span></p>
+              </div>
+            </div>
+            <p class="dashboard--splitted--files--notice">
+              Your uploaded file has been splitted into {number of files}
+              separate files
+            </p>
+            <section class="dashboard--splitted--files--view">
+              <!-- Beginning of a splitted file -->
+              <div class="dashboard--splitted--files--box">
+                <div class="dashboard--splitted--files--name">
+                  <img src="../images/folder.png" alt="folder icon">
+                  <p>File NameFile NamFile Nam</p>
+                </div>
+                <p class="splitted--file--size">10MB</p>
+                <div class="dashboard--splitted--files--download">
+                  <img src="../images/arrow-down.png" alt="download icon">
+                  <button type="submit">Download</button>
+                </div>
+              </div>
+              <!-- End of a splitted file -->
+              <!-- Beginning of a splitted file -->
+              <div class="dashboard--splitted--files--box">
+                <div class="dashboard--splitted--files--name">
+                  <img src="../images/folder.png" alt="folder icon">
+                  <p>File Name</p>
+                </div>
+                <p class="splitted--file--size">3MB</p>
+                <div class="dashboard--splitted--files--download">
+                  <img src="../images/arrow-down.png" alt="download icon">
+                  <button type="submit">Download</button>
+                </div>
+              </div>
+              <!-- End of a splitted file -->
+              <!-- Beginning of a splitted file -->
+              <div class="dashboard--splitted--files--box">
+                <div class="dashboard--splitted--files--name">
+                  <img src="../images/folder.png" alt="folder icon">
+                  <p>File Name</p>
+                </div>
+                <p class="splitted--file--size">9MB</p>
+                <div class="dashboard--splitted--files--download">
+                  <img src="../images/arrow-down.png" alt="download icon">
+                  <button type="submit">Download</button>
+                </div>
+              </div>
+              <!-- End of a splitted file -->
+              <!-- Beginning of a splitted file -->
+              <div class="dashboard--splitted--files--box">
+                <div class="dashboard--splitted--files--name">
+                  <img src="../images/folder.png" alt="folder icon">
+                  <p>File Name</p>
+                </div>
+                <p class="splitted--file--size">7MB</p>
+                <div class="dashboard--splitted--files--download">
+                  <img src="../images/arrow-down.png" alt="download icon">
+                  <button type="submit">Download</button>
+                </div>
+              </div>
+              <!-- End of a splitted file -->
+              <!-- Beginning of a splitted file -->
+              <div class="dashboard--splitted--files--box">
+                <div class="dashboard--splitted--files--name">
+                  <img src="../images/folder.png" alt="folder icon">
+                  <p>File Name</p>
+                </div>
+                <p class="splitted--file--size">30MB</p>
+                <div class="dashboard--splitted--files--download">
+                  <img src="../images/arrow-down.png" alt="download icon">
+                  <button type="submit">Download</button>
+                </div>
+              </div>
+              <!-- End of a splitted file -->
+
+              <!-- Beginning of a splitted file -->
+              <div class="dashboard--splitted--files--box">
+                <div class="dashboard--splitted--files--name">
+                  <img src="../images/folder.png" alt="folder icon">
+                  <p>File Name</p>
+                </div>
+                <p class="splitted--file--size">100MB</p>
+                <div class="dashboard--splitted--files--download">
+                  <img src="../images/arrow-down.png" alt="download icon">
+                  <button type="submit">Download</button>
+                </div>
+              </div>
+              <!-- End of a splitted file -->
+              <!-- Beginning of a splitted file -->
+              <div class="dashboard--splitted--files--box">
+                <div class="dashboard--splitted--files--name">
+                  <img src="../images/folder.png" alt="folder icon">
+                  <p>File Name</p>
+                </div>
+                <p class="splitted--file--size">200MB</p>
+                <div class="dashboard--splitted--files--download">
+                  <img src="../images/arrow-down.png" alt="download icon">
+                  <button type="submit">Download</button>
+                </div>
+              </div>
+              <!-- End of a splitted file -->
+              <!-- Beginning of a splitted file -->
+              <div class="dashboard--splitted--files--box">
+                <div class="dashboard--splitted--files--name">
+                  <img src="../images/folder.png" alt="folder icon">
+                  <p>File Name</p>
+                </div>
+                <p class="splitted--file--size">3MB</p>
+                <div class="dashboard--splitted--files--download">
+                  <img src="../images/arrow-down.png" alt="download icon">
+                  <button type="submit">Download</button>
+                </div>
+              </div>
+              <!-- End of a splitted file -->
+              <!-- Beginning of a splitted file -->
+              <div class="dashboard--splitted--files--box">
+                <div class="dashboard--splitted--files--name">
+                  <img src="../images/folder.png" alt="folder icon">
+                  <p>File Name</p>
+                </div>
+                <p class="splitted--file--size">50MB</p>
+                <div class="dashboard--splitted--files--download">
+                  <img src="../images/arrow-down.png" alt="download icon">
+                  <button type="submit">Download</button>
+                </div>
+              </div>
+              <!-- End of a splitted file -->
+              <!-- Beginning of a splitted file -->
+              <div class="dashboard--splitted--files--box">
+                <div class="dashboard--splitted--files--name">
+                  <img src="../images/folder.png" alt="folder icon">
+                  <p>File Name</p>
+                </div>
+                <p class="splitted--file--size">1006MB</p>
+                <div class="dashboard--splitted--files--download">
+                  <img src="../images/arrow-down.png" alt="download icon">
+                  <button type="submit">Download</button>
+                </div>
+              </div>
+              <!-- End of a splitted file -->
+
+            </section>
+          </section>
+          <div class="buttons">
+            <button id="btn-1">Download as Zip</button>
+            <button id="btn-2">Save and download later</button>
+          </div>
+
+          <!--End of Splitted Files Section -->
+
+        </div>
+      </div>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+
+</html>
