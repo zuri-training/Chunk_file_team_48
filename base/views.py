@@ -45,6 +45,39 @@ def storingFile(saved, user, ouput_name, file, chunk_size,batch_no):
                         batch_no += 1
                     csv_obj = ChunkedFile.objects.create(user=user, file=temp_db_file_path)
                     csv_obj.save()
+               
+              
+              
+def storingJsonFile(saved, user, ouput_name, file, chunk_size,batch_no):
+                if saved == 'on':
+                    df = pd.read_json(file)
+                    new_file = f'convert/{ouput_name}'
+                    df.to_csv(new_file, index=0)
+                    db_file_path = f'media/{user}-{ouput_name}-{date}.zip'
+                    zip_file_path = f'media/{user}-{ouput_name}-{date}.zip'
+                    for chunk in pd.read_csv(new_file, chunksize=chunk_size, encoding='Windows-1252'):
+                        with ZipFile(zip_file_path, 'a') as zip_file:
+                            file_name = f"{ouput_name}-" + str(batch_no) + ".json"
+                            zip_file.write(file_name,chunk.to_json(file_name, index=True, orient='records') ,compress_type=ZIP_DEFLATED)
+                        os.remove(file_name)
+                        batch_no += 1
+                    csv_obj = ChunkedFile.objects.create(user=user, file=db_file_path)
+                    csv_obj.save()
+
+                if saved == False:
+                    df = pd.read_json(file)
+                    new_file = f'convert/{ouput_name}'
+                    df.to_csv(new_file, index=0)
+                    db_file_path = f'media/{user}-{ouput_name}-{date}.zip'
+                    zip_file_path = f'media/{user}-{ouput_name}-{date}.zip'
+                    for chunk in pd.read_csv(new_file, chunksize=chunk_size, encoding='Windows-1252'):
+                        with ZipFile(zip_file_path, 'a') as zip_file:
+                            file_name = f"{ouput_name}-" + str(batch_no) + ".json"
+                            zip_file.write(file_name,chunk.to_json(file_name, index=True, orient='records') ,compress_type=ZIP_DEFLATED)
+                        os.remove(file_name)
+                        batch_no += 1
+                    csv_obj = ChunkedFile.objects.create(user=user, file=db_file_path)
+                    csv_obj.save()
 
 
 def home(request):
@@ -157,7 +190,8 @@ def chunk_file(request):
         except MultiValueDictKeyError:
             saved = False
             messages.error(request, "You didn't save the splited files. 15 minutes from now it will be deleted")
-
+        if not os.path.exists(converted_path):
+            os.mkdir(f'{dir_path}/convert')
         if not os.path.exists(folder_path):
             os.mkdir(f'{dir_path}/media')
         if not os.path.exists(temp_folder_path):
@@ -168,14 +202,26 @@ def chunk_file(request):
                 ouput_name = file.name
     
             chunk_size = int(chunk_size)
+            batch_no = 1            
+            # storing the chunked file in media folder or temp folder
+            storingFile(saved, user, ouput_name,file, chunk_size,batch_no)
+            messages.success(request, 'file has been split successfully')
+            return redirect('/dashboard/chunk_file/')
+            
+        if  file.name.endswith('json')  :
+            if ouput_name == '':
+                ouput_name = file.name
+    
+            chunk_size = int(chunk_size)
             batch_no = 1
             
             # storing the chunked file in media folder or temp folder
-            storingFile(saved, user, ouput_name,file, chunk_size,batch_no)
-            
+            storingJsonFile(saved, user, ouput_name,file, chunk_size,batch_no)
 
             messages.success(request, 'file has been split successfully')
             return redirect('/dashboard/chunk_file/')
+
+
         else:
             messages.error(request, 'invalid file format')
     return render(request, 'base/chunk_file.html')
