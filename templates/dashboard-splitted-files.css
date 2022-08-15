@@ -124,27 +124,3 @@
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid orange; /* creates padding around scroll thumb */
 }
-
-.buttons{
-  display: flex;
-  width:100%;
-  margin-top: 45px;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  background-color:green;
-}
-
-#btn-1 {
-  padding: 15px 20px;
-  background-color: #ffc056;
-  border: none;
-  border-radius:4px;
- 
-}
-#btn-2{
-padding: 15px 20px;
-  background-color: #ffc056;
-  border: none;
-  border-radius:4px;
-}

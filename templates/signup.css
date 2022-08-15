@@ -5,7 +5,6 @@
 
 body {
   background: #748ce1;
-  padding: 0 15px;
 }
 
 .signup--container {
@@ -34,7 +33,6 @@ body {
 
 .signup--top--content h3 {
   color: #fff;
-  font-size: 32px;
 }
 
 .bottom--content {
@@ -126,18 +124,15 @@ body {
   .signup--container {
     width: 360px;
     height: 900px;
-   
   }
   .signup--top--content {
     width: 100%;
     height: 68px;
     font-size: 20px;
-    padding: 20px;
+    padding: 20px 0;
     align-items: center;
     text-align: center;
     border-radius: 12px;
-  }.signup--top--content h3{
-    font-size: 20px;
   }
   .form-header {
     text-align: center;
