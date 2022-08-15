@@ -1,5 +1,7 @@
-a {
+a,
+a:visited {
   text-decoration: none;
+  color: black;
 }
 
 /* ---- Top of Footer ---- */

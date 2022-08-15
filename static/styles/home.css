@@ -458,12 +458,12 @@
   font-size: var(--fs-small);
 }
 .instruction--steps__flex img {
-  width: 87px;
+  width: 70px;
 }
 .instruction--steps--underline {
   border: 1px solid #d5a048;
   width: 1026px;
-  margin-bottom: 34px;
+  margin: 1rem 0;
 }
 /* ===========
       Media Query

@@ -6,7 +6,7 @@
 .signup--container {
   position: relative;
   width: 610px;
-  height: 900px;
+  padding: 0 0 1rem 0;
   margin: 100px auto;
   background: #fdfdfd;
   box-shadow: 10px 10px 40px rgba(103, 110, 134, 0.8);
@@ -120,7 +120,6 @@
 @media screen and (max-width: 1024px) {
   .signup--container {
     width: 360px;
-    height: 900px;
   }
   .signup--top--content {
     width: 100%;
@@ -130,6 +129,10 @@
     align-items: center;
     text-align: center;
     border-radius: 12px;
+  }
+
+  .signup--top--content h3{
+    font-size: 21px;
   }
   .form-header {
     text-align: center;

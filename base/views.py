@@ -65,6 +65,8 @@ def documentation_how(request):
 def documentation_dashboard(request):
     return render(request, 'base/documentation_dashboard.html')
 
+
+
 def contact(request):
     return render(request, 'base/contact.html')
 
@@ -181,7 +183,10 @@ def chunk_file(request):
 @login_required(login_url='/login/')   
 def dashboard(request):
     return render(request, 'base/chunk_file.html')
-
+    
+@login_required(login_url='/login/')   
+def dashboard_setting(request):
+    return render(request, 'base/dashboard_settings.html')
 
 @login_required(login_url='/login/')
 def splitted_files(request):

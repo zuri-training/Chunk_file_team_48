@@ -16,6 +16,7 @@ urlpatterns = [
     path('documentation_how/', views.documentation_how, name="documentation_how"),
     path('documentation_dashboard/', views.documentation_dashboard, name="documentation_dashboard"),
     path('contact/', views.contact, name="contact"),
+    path('dashboard/settings/', views.dashboard_setting, name="dashboard_settings"),
     path('faq/', views.faq, name="faq"),
     path('privacy/', views.privacy, name="privacy"),
     path('terms_condition/', views.t_c, name="t_c"),

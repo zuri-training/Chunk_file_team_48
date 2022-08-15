@@ -10,8 +10,8 @@ body{
 .signin--container {
   position: relative;
   margin: 150px auto;
+  padding-bottom: 1rem;
   width: 610px;
-  height: 700px;
   background: #fdfdfd;
   box-shadow: 10px 10px 40px rgba(103, 110, 134, 0.8);
   align-items: center;
@@ -155,7 +155,6 @@ body{
 @media screen and (max-width: 1024px) {
   .signin--container {
     width: 360px;
-    height: 600px;
   }
   .signin--top--content {
     width: 100%;

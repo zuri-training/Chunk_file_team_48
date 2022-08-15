@@ -49,7 +49,7 @@
             </div>
             <!-- End of NavLinks -->
             <!-- Nav Buttons -->
-            <div class="nav--buttons doc">
+            <div class="doc">
                 {% if request.user.is_authenticated %}
                 <span>Hello {{user.username}} | </span><a href="{% url 'base:logout' %}">Logout</a>
                 {% else %}

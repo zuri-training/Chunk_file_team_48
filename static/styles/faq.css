@@ -60,7 +60,6 @@
   align-items: center;
   padding: 20px;
   width: 834px;
-  height: 68px;
   margin-top: 20px;
   border-radius: 8px;
   background-color: #2e53d2;
@@ -76,13 +75,16 @@
 .question-box button {
   background-color: #2e53d2;
   color: #ffffff;
-  font-size: 20px;
   font-weight: 400;
   border: 2px solid #ffffff;
   cursor: pointer;
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .answer-question-box {
@@ -106,16 +108,17 @@
 }
 
 .answer-box button {
-  padding: -50px;
-  padding-top: -2rem;
   color: #2e53d2;
   background-color: #ffff;
-  font-size: 20px;
   border: 2px solid #2e53d2;
   cursor: pointer;
-  height: 24px;
-  width: 24px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .answer-box-answer {

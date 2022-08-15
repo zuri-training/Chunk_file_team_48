@@ -48,6 +48,11 @@ main {
   min-width: 1440px;
   margin: 0 auto;
 }
+a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: black;
+}
+
  @media screen and (max-width: 1439px) {
   main {
     min-width: fit-content;

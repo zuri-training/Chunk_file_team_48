@@ -1,0 +1,78 @@
+{% extends "dashboard_main.html" %}
+{% load static %}
+
+{% block content %}
+<div class="dashboard--main">
+    <div class="dashboard--main--function">
+        <section class="dashboard--settings">
+            <div class="dashboard--settings--information">
+                <h1>Welcome {{user.username}},</h1>
+                <p>User Email</p>
+                <h3>Update Profile Photo</h3>
+                <form action="">
+                    <button type="submit" class="dashboard--settings--information--photo">
+                        <img src="{%static 'images/Ellipse 93.png'%}" alt="user image">
+                        <img src=" {%static 'images/fontisto_camera.png '%}" alt="camera icon">
+                    </button>
+                </form>
+            </div>
+            <!-- Profile Settings -->
+            <div class="dashboard--settings--form">
+                <form action="">
+                    <h3>Profile Settings</h3>
+                    <div class="form--field">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" value="mavis" placeholder="Username">
+                    </div>
+                    <div class="form--field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" value="nwaokorieamuchenna@gmail.com"
+                            placeholder="Email">
+                    </div>
+                    <div class="form--field">
+                        <label for="date">Date</label>
+                        <input type="datetime" name="date" id="date" placeholder="Date">
+                    </div>
+                    <!-- End of Profile Settings -->
+                    <!-- Underline -->
+                    <div class="dashboard--settings--underline"></div>
+                    <!-- End of Underline -->
+                    <div class="dashboard--settings--form">
+                        <h3>Password Settings</h3>
+                        <!-- Old Password -->
+                        <div class="form--field password--container">
+                            <label for="oldPassword">Old Password</label>
+                            <input type="password" name="oldPassword" id="oldPassword"
+                                placeholder="Minimum of 8 characters">
+                            <img src="{%static 'images/padlock.svg'%}" alt="lock"
+                                class="dashboard--settings--form--lock lock__absolute-1">
+                        </div>
+                        <!-- End of Old Password -->
+                        <!-- New Password -->
+                        <div class="form--field password--container">
+                            <label for="newPassword">New Password</label>
+                            <input type="password" name="newPassword" id="newPassword"
+                                placeholder="Minimum of 8 characters">
+                            <img src="{%static 'images/padlock.svg'%}" alt="lock"
+                                class="dashboard--settings--form--lock lock__absolute-2">
+                        </div>
+                        <!-- End of New Password -->
+                        <!-- Same Password -->
+                        <div class="form--field password--container">
+                            <label for="samePassword">Re-enter New Password</label>
+                            <input type="password" name="samePassword" id="samePassword"
+                                placeholder="Minimum of 8 characters">
+                            <img src="{%static 'images/padlock.svg'%}" alt="lock"
+                                class="dashboard--settings--form--lock lock__absolute-3">
+                        </div>
+                        <!-- End of Same Password -->
+
+                        <button class="dashboard--settings--btn" type="submit">Save
+                            Changes</button>
+                </form>
+
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock content %}

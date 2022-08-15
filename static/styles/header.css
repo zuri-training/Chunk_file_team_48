@@ -1,11 +1,10 @@
 nav {
   background-color: #fff;
   display: flex;
-  padding: 0% 5%;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 20px 0px #00000033;
-  padding: 15px 100px;
+  padding: 6px 225px;
 }
 .nav-links {
   width: 100%;
@@ -91,7 +90,7 @@ Media Query
   .nav--logo--toggle {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0.6rem 30px 0.3rem 30px;
     width: 100%;
     position: relative;
   }
@@ -130,6 +129,9 @@ Media Query
   .nav--buttons {
     display: block;
     margin-top: 30px;
+  }
+  .doc {
+    display: none;
   }
 }
 
