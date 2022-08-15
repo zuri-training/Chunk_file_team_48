@@ -93,7 +93,7 @@ dropArea.addEventListener("drop", (event) => {
 
 function showFile() {
   let fileType = file.type; //getting selected file type"
-  let validExtensions = ["text/csv", "text/json"]; //adding some valid image extensions in array
+  let validExtensions = ["text/csv", "application/json"]; //adding some valid image extensions in array
   if (validExtensions.includes(fileType)) {
     let name = file.name;
     uploadText.innerHTML = name;
